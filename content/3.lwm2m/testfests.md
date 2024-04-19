@@ -13,7 +13,7 @@ ui:
 
 ### OMA LwM2M Specification Validation Event (SVE) #41
 
-  :::ShSegment{:ui='{"wrapper": "w-1/2"}'}
+  :::ShSegment {:ui='{"wrapper": "w-1/2"}'}
   Information            | Details
   ----------------|--------------
   **Date:** | 10-13 June, 2024
@@ -39,7 +39,7 @@ Over the years, OMA has organized several LwM2M TestFest and Workshop Events.
 A full list of Events can be seen [TestFest Events](https://guidelines.openmobilealliance.org/testfests){target="_blank"}
 
 ::ShSegment
-![events](/images/lwm2m/events.jpeg){ class="border rounded bg-slate-50 shadow-2xl" }
+![events](/images/lwm2m/events.jpeg){ class="border rounded bg-slate-50 shadow-2xl opacity-80" }
 ::
 
 TestFests are held in a confidential and secure testing environment where
@@ -156,3 +156,5 @@ encounter with the specification on the OMA GitHub
 [**Issues - LwM2M for Developers**](https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues){target="_blank"}.
 This repository  is monitored by the [Device Management Working Group](https://lwm2m.openmobilealliance.org/about/){target="_blank"}
 Device Management Working Group and the [IPSO Working Group](https://lwm2m.openmobilealliance.org/about/){target="_blank"}.
+
+![events](/images/lwm2m/events.jpeg){ class="border rounded bg-slate-50 shadow-2xl" }

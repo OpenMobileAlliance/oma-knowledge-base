@@ -18,6 +18,11 @@ ui:
   :::ShSegment
 
   ![working_together_1.jpg](/images/lwm2m/working_together_1.jpg)
+  ## Title 11
+  ### *Subtitle 1*{class="text-pink-400"}
+
+  <p style="color: rgb(147 51 234);">Normal text.</p>
+  
   :::
 
   :::ShSegment
