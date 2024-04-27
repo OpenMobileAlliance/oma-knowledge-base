@@ -12,17 +12,16 @@ and [OMNA LwM2M Registry](https://technical.openmobilealliance.org/OMNA/LwM2M/Lw
 ::ShTwoColumns{size="L"}  
 ---
 ui:
-  wrapper: "pb-10"
+  wrapper: "p-20 shadow-2xl rounded-3xl"
 ---
 
   :::ShSegment
-
   ![working_together_1.jpg](/images/lwm2m/working_together_1.jpg)
   ## Title 11
   ### *Subtitle 1*{class="text-pink-400"}
 
-  <p style="color: rgb(147 51 234);">Normal text.</p>
-  
+  <p>Normal text.</p>
+  <span style="color: rgb(123,34,123);"> text here </span>
   :::
 
   :::ShSegment
