@@ -35,5 +35,5 @@ understand the world. There is no such thing as a dumb question. - Carl Sagen
 
 We invite all to collaborate with us in improving or knowledge base. 
 
->>> Please share your questions and suggestions with us
+>> Please share your questions and suggestions with us
 <a href="https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues" target="_blank"><strong>HERE</strong></a>
