@@ -12,7 +12,7 @@ and [OMNA LwM2M Registry](https://technical.openmobilealliance.org/OMNA/LwM2M/Lw
 ::ShTwoColumns{size="L"}  
 ---
 ui:
-  wrapper: "p-20 shadow-2xl rounded-3xl"
+  wrapper: "p-20 shadow-2xl rounded-2xl"
 ---
 
   :::ShSegment
