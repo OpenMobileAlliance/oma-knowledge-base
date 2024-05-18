@@ -10,6 +10,9 @@ following example.
 
 ::ShTextImg
 ---
+ui:
+  container: "shadow-2xl"
+  text: "text-rose-800"
 textPosition: "left"
 textSpan: "m"
 textAlign: "left"
@@ -26,6 +29,9 @@ The above exmaple is achieved by inserting the following code in markdown docume
 ```md
 ::ShTextImg
 ---
+ui:
+  container: "shadow-2xl"
+  text: "text-rose-800"
 textPosition: "left"
 textSpan: "m"
 textAlign: "left"
