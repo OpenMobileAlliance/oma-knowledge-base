@@ -13,7 +13,7 @@ following example.
 ui:
   container: "shadow-2xl"
   text: "text-rose-800, text-2xl, font-mono"
-  title: "text-2xl"
+  title: "text-2xl font-serif font-bold"
 textPosition: "left"
 textSpan: "l"
 textAlign: "left"
@@ -33,7 +33,7 @@ The above exmaple is achieved by inserting the following code in markdown docume
 ui:
   container: "shadow-2xl"
   text: "text-rose-800, text-2xl, font-mono"
-  title: "text-2xl"
+  title: "text-2xl font-sans font-bold"
 textPosition: "left"
 textSpan: "m"
 textAlign: "left"
