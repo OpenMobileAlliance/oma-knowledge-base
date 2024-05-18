@@ -12,9 +12,10 @@ following example.
 ---
 ui:
   container: "shadow-2xl"
-  text: "text-rose-800"
+  text: "text-rose-800, text-2xl, font-mono"
+  title: "text-2xl"
 textPosition: "left"
-textSpan: "m"
+textSpan: "l"
 textAlign: "left"
 status: "on"
 src: "https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119"
@@ -31,7 +32,8 @@ The above exmaple is achieved by inserting the following code in markdown docume
 ---
 ui:
   container: "shadow-2xl"
-  text: "text-rose-800"
+  text: "text-rose-800, text-2xl, font-mono"
+  title: "text-2xl"
 textPosition: "left"
 textSpan: "m"
 textAlign: "left"
