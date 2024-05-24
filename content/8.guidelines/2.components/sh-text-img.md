@@ -32,7 +32,7 @@ The above exmaple is achieved by inserting the following code in markdown docume
 ---
 ui:
   container: "shadow-2xl"
-  text: "text-rose-800, text-2xl, font-mono"
+  text: "text-rose-800 text-2xl font-mono"
   title: "text-2xl font-sans font-bold"
 textPosition: "left"
 textSpan: "m"
