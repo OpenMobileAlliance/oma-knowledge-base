@@ -12,7 +12,7 @@ following example.
 ---
 ui:
   container: "shadow-2xl"
-  text: "text-rose-800, text-2xl, font-mono"
+  text: "text-rose-800 text-2xl font-mono"
   title: "text-2xl font-serif font-bold"
 textPosition: "left"
 textSpan: "l"
