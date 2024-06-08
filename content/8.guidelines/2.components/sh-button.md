@@ -41,7 +41,7 @@ block: "" #changes the button width
 size: 3xl # modifies the size of the button
 type: "" # possible values button, submit or reset
 ---
-ClickMe!!!  
+[]{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
 
 This is how it is written:
@@ -62,7 +62,7 @@ size: 3xl # modifies the size of the button
 type: "" # possible values button, submit or reset
 ---
 
-ClickMe!!!  
+[]{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
 ```
 
