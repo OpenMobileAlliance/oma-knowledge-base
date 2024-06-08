@@ -6,28 +6,67 @@ constructorName: ShButton
 
 ## Usage
 The most simplest example of usage of the <b>{{ $doc.constructorName }}</b> is with just an `urlButton` and the text to show.
-
 ::ShButton
 ---
-ui: 
-  wrapper: shadow-2xl
-urlButton: '#' # this is a comment to the link to the button.
-rounded: rounded-full
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
 ---
 ClickMe!!!  
 ::
 
+This is how it is written:
+
 ```mdc
 ::ShButton
 ---
-urlButton: '#' # this is a comment to the link to the button.
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
 ---
 
 ClickMe!!!  
 ::
 ```
 
-The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outine` and `link` *variants*:
+
+This is a more advance example of usage the <b>{{ $doc.constructorName }}</b> when some of the style is being modified:
+::ShButton
+---
+ui: 
+  wrapper: shadow-2xl
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+target: "" # open in the same window
+rounded: rounded-3xl
+colorButton: green
+disabled: "" # on, off, TRUE, FALSE
+variant: solid
+block: "" #changes the button width
+size: 3xl # modifies the size of the button
+type: "" # possible values button, submit or reset
+---
+ClickMe!!!  
+::
+
+This is how it is written:
+
+```mdc
+::ShButton
+---
+ui: 
+  wrapper: shadow-2xl
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+target: "" # open in the same window
+rounded: rounded-3xl
+colorButton: green
+disabled: "" # on, off, TRUE, FALSE
+variant: solid
+block: "" #changes the button width
+size: 3xl # modifies the size of the button
+type: "" # possible values button, submit or reset
+---
+
+ClickMe!!!  
+::
+```
+
+The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outline` and `link` *variants*:
 
 ::ShMultiColumn
 ---
@@ -303,7 +342,8 @@ ClickMe!!!
 *it will take you to desirable destination*
 ::
 
-The other components are supported as well.
+### Combine Button with Other Constructors
+It is possible to insert other constructors inside of the <b>{{ $doc.constructorName }}</b> constructor. The other components are supported as well.
 
 ::ShButton
 ---
@@ -312,29 +352,29 @@ variant: outline
 colorButton: blue
 block: true
 ---
-:::ShMultiColumn
----
-ui:
-  wrapper: w-full
-cols: 8
----
-[]{.i-fa6-brands-square-github .text-4xl}
+  :::ShMultiColumn
+  ---
+  ui:
+    wrapper: w-full
+  cols: 8
+  ---
+    []{.i-fa6-brands-square-github .text-4xl}
 
-::ShColumn
----
-title: GitHub repository
-subTitle: "*public*"
-size: 2
----
-::
+    ::ShColumn
+    ---
+    title: GitHub repository
+    subTitle: "*public*"
+    size: 2
+    ---
+    ::
 
-::ShColumn
----
-size: 5
----
-In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
-::
-:::
+    ::ShColumn
+    ---
+    size: 5
+    ---
+    In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
+    ::
+  :::
 ::
 
 ```mdc
@@ -345,29 +385,29 @@ variant: outline
 colorButton: blue
 block: true
 ---
-:::ShMultiColumn
----
-ui:
-  wrapper: w-full
-cols: 8
----
-[]{.i-fa6-brands-square-github .text-4xl}
+  :::ShMultiColumn
+  ---
+  ui:
+    wrapper: w-full
+  cols: 8
+  ---
+    []{.i-fa6-brands-square-github .text-4xl}
 
-::ShColumn
----
-title: GitHub repository
-subTitle: "*public*"
-size: 2
----
-::
+    ::ShColumn
+    ---
+    title: GitHub repository
+    subTitle: "*public*"
+    size: 2
+    ---
+    ::
 
-::ShColumn
----
-size: 5
----
-In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
-::
-:::
+    ::ShColumn
+    ---
+    size: 5
+    ---
+    In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
+    ::
+  :::
 ::
 ```
 
@@ -383,7 +423,7 @@ components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButt
 variants and all other parameters, colorButton for example.
 ```
 
-## Properties
+## Properties and Attributes
 
 These are the properties and attributes to define and style <b>{{ $doc.constructorName }}</b> constructor
 
