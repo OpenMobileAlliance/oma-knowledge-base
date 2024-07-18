@@ -5,7 +5,7 @@ export default defineAppConfig({
   header: {
     menu: {
       font: {
-        type: 'Arial, sans-serif',
+        type: 'DM Mono, Arial, sans-serif',
         weight: 'normal', // 'lighter', 'normal', 'bold', 'bolder', '100', '200', '300', '400', '500', '600', '700', '800', '900', 'initial' , 'inherit'
         size: '22px',
       }
@@ -13,7 +13,7 @@ export default defineAppConfig({
   },
   main: {
     font: {
-      type: 'DM Sans',
+      type: 'Roboto',
       weight: 'normal', // see link for more: https://www.w3schools.com/cssref/pr_font_weight.php
       size: '23px',
     },
