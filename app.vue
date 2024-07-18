@@ -13,9 +13,9 @@ const main = useAppConfig().main;
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
   for (let i = 1; i <= 7; i++) {
-    document.documentElement.style.setProperty(`--h${i}-font-type`, main[`h${i}`].font.type);
-    document.documentElement.style.setProperty(`--h${i}-font-size`, main[`h${i}`].font.size);
-    document.documentElement.style.setProperty(`--h${i}-font-weight`, main[`h${i}`].font.weight);
+    document.documentElement.style.setProperty(`--h${i}-font-type`, (main as any)[`h${i}`].font.type);
+    document.documentElement.style.setProperty(`--h${i}-font-size`, (main as any)[`h${i}`].font.size);
+    document.documentElement.style.setProperty(`--h${i}-font-weight`, (main as any)[`h${i}`].font.weight);
   }
 });
 </script>

@@ -32,7 +32,6 @@ export default defineAppConfig({
     h3: {
       font: {
         type: 'DM Sans',
-        weight: 'lighter',
         size: '1.17em',
       },
     },
