@@ -16,19 +16,19 @@ dataField: "users"
 columns:
   - name: "firstName"
     title: "First Name"
-    filter: false
+    filter: true
     query: true
     sortable: true
     type: text
   - name: "lastName"
     title: "Last Name"
-    filter: false
+    filter: true
     query: true
     sortable: true
     type: text
   - name: "username"
     title: "username"
-    filter: false
+    filter: true
     query: true
     sortable: true
     type: text
