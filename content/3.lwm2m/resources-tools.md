@@ -1,5 +1,60 @@
 ## LwM2M Resources & Tools
 
+```md
+::ShDynamicTable
+---
+dataUrl: "http://dummyjson.com/users"
+dataField: "users"
+columns:
+  - name: "title"
+    title: "Title"
+    filter: false
+    query: true
+    sortable: true
+    type: text
+  - name: "type"
+    title: "Type"
+    filter: false
+    query: true
+    sortable: true
+    type: text
+  - name: "published"
+    title: "Published"
+    filter: false
+    query: true
+    sortable: true
+    type: text
+  - name: "download"
+    title: "Download"
+    filter: false
+    query: false
+    sortable: false
+    type: PDF
+ui:
+  footer: text-sm
+  wrapper: shadow-2xl bg-red-50
+header: LwM2M Related Documents
+footer: "*OMA Copyright &copy; 2024*"
+---
+::
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <table>
     <caption>What is LwM2M</caption>
     <tr>
