@@ -11,7 +11,7 @@ The symplest usage of <b>{{ $doc.constructorName }}</b> can be shown in the foll
 
 ::ShDynamicTable
 ---
-dataUrl: "http://dummyjson.com/users"
+dataUrl: "http:localhost:3000/data/users.json"
 dataField: "users"
 columns:
   - name: "firstName"
