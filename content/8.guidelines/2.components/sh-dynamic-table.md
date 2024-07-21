@@ -71,7 +71,7 @@ To achieve the above the following code needs do be inserted in your Markdown te
 ```mdc
 ::ShDynamicTable
 ---
-dataUrl: "http://dummyjson.com/users"
+dataUrl: "/users.json"
 dataField: "users"
 columns:
   - name: "firstName"
