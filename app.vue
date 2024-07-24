@@ -1,7 +1,9 @@
 <template>
   <NuxtLayout :name="layout">
-    <div :style="{ fontFamily: main.font.type }">
-      <NuxtPage />
+    <div :style="{ fontFamily: main.font.type }" class="grid grid-cols-12">
+      <Aside v-if="$route.path !== '/'" class="col-span-2" />
+      <NuxtPage class="col-span-8" />
+      <!-- <ToC class="col-span-2" /> add Table of Content here-->
     </div>
   </NuxtLayout>
 </template>
