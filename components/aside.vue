@@ -9,6 +9,6 @@
 </template>
 
 <script setup>
-const route = useRoute()
-
+//const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(), { default: () => [] })
+//console.log(navigation)
 </script>
