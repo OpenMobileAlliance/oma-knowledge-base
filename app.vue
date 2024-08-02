@@ -3,10 +3,10 @@
     <NuxtLoadingIndicator />
     <div :style="{ fontFamily: main.font.type }" class="grid grid-cols-12">
       <Aside v-if="$route.path !== '/'" class="col-span-2" />
-      <NuxtPage class="col-span-8" />
-      <!-- <ToC class="col-span-2" /> add Table of Content here-->
+      <NuxtPage class="col-span-8 mx-9" />
+      <TableOfContent v-if="$route.path !== '/'" class="col-span-2" />
     </div>
-    <div class="grid grid-cols-12">
+    <div class="grid grid-cols-12 mx-9">
       <PrevNextPage v-if="$route.path !== '/'" class="col-start-3 col-span-8"/>
     </div>
   </NuxtLayout>

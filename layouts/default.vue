@@ -5,7 +5,7 @@
         <img :src="computedLogoSrc" alt="Logo" />
       </template>
     </AppHeader>
-    <AppBreadcrumbs class="absolute z-20"/>
+    <AppBreadcrumbs v-if="$route.path !== '/'" class="absolute z-20"/>
     <UContainer :ui="{constrained: '',}" class="pb-20">
       <slot />
     </UContainer>
