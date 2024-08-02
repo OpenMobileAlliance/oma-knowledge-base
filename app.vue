@@ -6,6 +6,9 @@
       <NuxtPage class="col-span-8" />
       <!-- <ToC class="col-span-2" /> add Table of Content here-->
     </div>
+    <div class="grid grid-cols-12">
+      <PrevNextPage v-if="$route.path !== '/'" class="col-start-3 col-span-8"/>
+    </div>
   </NuxtLayout>
 </template>
 

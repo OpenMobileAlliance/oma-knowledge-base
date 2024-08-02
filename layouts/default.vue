@@ -8,7 +8,6 @@
     <AppBreadcrumbs class="absolute z-20"/>
     <UContainer :ui="{constrained: '',}" class="pb-20">
       <slot />
-      <PrevNextPage v-if="$route.path !== '/'" />
     </UContainer>
     <AppFooter />
   </div>
