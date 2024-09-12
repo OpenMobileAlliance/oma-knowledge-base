@@ -52,8 +52,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1 
-            icon: text-oma-purple-500 w-1/3
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
+            icon: w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
         subtitle: "OMA SpecWorks"
@@ -64,8 +64,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5 border-[#DFE4EA]
-            icon: text-oma-yellow-300 w-1/3
+            wrapper: mt-5
+            icon: w-1/3
         icon: heroicons-outline:academic-cap
         title: OMA SpecWorks # First Column
         subtitle: Introduction
@@ -77,7 +77,7 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: text-green-400
+            icon: 
         icon: la:balance-scale
         title: IPR # First Column
         subtitle: Terms
@@ -89,8 +89,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5 mb-10
-            icon: text-red-400 w-1/3
-        icon: mdi:account-eye-outline
+            icon: w-1/4
+        icon: ic:baseline-assured-workload
         title: Policies & Terms # First Column
         subtitle: Terms
         urlWrapper: /omaspecworks/about/policies-terms
@@ -106,8 +106,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
-            icon: text-oma-blue-500 w-1/3
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
+            icon: w-1/3
         icon: el:adult
         title: Membership # Second Row
         subtitle: OMA SpecWorks
@@ -119,6 +119,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:partnership
         title: Join # Second Column
         subtitle: OMA SpecWorks
         urlWrapper: ""
@@ -129,6 +131,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: fa6-solid:handshake
         title: Benefits # Second Column
         subtitle: Membership
         urlWrapper: ""
@@ -138,6 +142,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:events
         title: Members # Second Column
         subtitle: OMA SpecWorks
         urlWrapper: ""
@@ -153,9 +159,9 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
-            icon: text-red-800 w-1/3
-        icon: ic:sharp-shopify
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
+            icon: w-1/3
+        icon: carbon:collaborate
         title: Collaborate # Third Column
         subtitle: OMA SpecWorks
         urlWrapper: ""
@@ -165,6 +171,9 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: ic:baseline-diversity-3
+
         title: Affiliates # Third Column
         subtitle: OMA Predecesors
         urlWrapper: ""
@@ -174,6 +183,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:concept
         title: Liaisons # Third Column
         subtitle: Standards Flora
         urlWrapper: ""
@@ -189,8 +200,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
-            icon: text-oma-yellow-800 w-1/3
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
+            icon: w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column
         subtitle: OMASpecWorks
@@ -202,6 +213,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: ic:outline-email
         title: Contact us # Fourth Column
         subtitle: Talk to us
         urlWrapper: 
@@ -210,7 +223,9 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5 mb-10
+            wrapper: mt-5
+            icon: w-1/4
+        icon: ic:outline-live-help
         title: F.A.Q # Fourth Column
         subtitle: Questions & Answers
         urlWrapper: ""
