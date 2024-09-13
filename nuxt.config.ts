@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", "nuxt-gtag"],
 
   content: {
     documentDriven: true,
@@ -14,6 +14,10 @@ export default defineNuxtConfig({
 
   ui: {
     icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
+  },
+
+  gtag: {
+    id: 'G-XXXXXXXXXX'
   },
 
   googleFonts: {
