@@ -17,7 +17,7 @@
 const { prev, next } = useContent()
 
 const config = {
-  button: 'grid grid-rows-3 border p-4 rounded-xl hover:border hover:border-primary/[0.6] dark:hover:border-primary/[0.8] hover:bg-primary/[0.3] dark:hover:bg-primary/[0.2] transition-colors',
+  button: 'grid grid-rows-3 border p-4 rounded-xl hover:border hover:border-primary/[0.1] dark:hover:border-primary/[0.8] hover:bg-primary/[0.1] dark:hover:bg-primary/[0.2] transition-colors',
   icon: 'text-3xl hover:scale-105 hover:text-primary',
   title: 'text-3xl font-semibold mt-2 hover:text-primary',
   description: 'text-lg font-normal mt-2',
