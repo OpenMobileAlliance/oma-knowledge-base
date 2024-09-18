@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
+
+  ssr: false,
   content: {
     documentDriven: true,
     highlight: {
