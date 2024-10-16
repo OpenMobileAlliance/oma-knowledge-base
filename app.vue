@@ -134,7 +134,6 @@ h7 {
 
 /* Dark HTML elements */
 .dark .par, /*custom class for paragraph located in [...slug].vue*/
-.dark strong,
 .dark em,
 .dark ul,
 .dark ol,
@@ -147,6 +146,11 @@ h7 {
 .dark h5,
 .dark h6 {
   color: theme('colors.golden');
+}
+
+.dark strong {
+  color: theme('colors.golden');
+  filter: saturate(3) brightness(0.8);
 }
 /* End of Dark HTML elements */
 
