@@ -1,14 +1,15 @@
 <template>
-  <div class="flex flex-col w-full dark:bg-[#19191a] " :style="{ fontFamily: main.font.type }">
+  <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
+    :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img :src="computedLogoSrc" alt="Logo" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="Logo" />
+        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="Logo" />
       </template>
     </AppHeader>
-    <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
-      :class="route.path === '/' ? 'w-full h-screen' : 'w-full'">
+    <div :class="route.path === '/' ? 'size-full' : 'w-full pb-24 px-4 sm:px-6 lg:px-8'">
       <NuxtPage />
-    </UContainer>
+    </div>
     <AppFooter v-if="route.path !== '/' && route" />
   </div>
 </template>
@@ -23,7 +24,7 @@ const route = useRoute();
 const theme = useColorMode();
 
 const computedLogoSrc = computed(() => {
-  return theme.value === 'dark' ? '/logo-dark.png' : '/logo-light.png';
+  return theme.value === 'dark';
 });
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
@@ -57,6 +58,37 @@ onMounted(() => {
   });
 
 });
+
+const hasScrollbar = ref(false)
+
+const checkScrollbar = () => {
+  const hasVerticalOverflow = document.documentElement.scrollHeight > document.documentElement.clientHeight
+  hasScrollbar.value = hasVerticalOverflow
+}
+
+const computedHeightClass = computed(() => (hasScrollbar.value ? 'h-full' : 'h-screen'))
+
+let observer: MutationObserver | null = null
+
+onMounted(() => {
+  checkScrollbar()
+
+  // Check for changes in the document that may affect scrollability
+  observer = new MutationObserver(checkScrollbar)
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    characterData: true,
+  })
+  window.addEventListener('resize', checkScrollbar)
+})
+
+onBeforeUnmount(() => {
+  if (observer) observer.disconnect()
+  window.removeEventListener('resize', checkScrollbar)
+})
+
 </script>
 
 <style>
@@ -100,9 +132,8 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
-.dark code,
-.dark a,
-.dark p,
+/* Dark HTML elements */
+.dark .par, /*custom class for paragraph located in [...slug].vue*/
 .dark strong,
 .dark em,
 .dark ul,
@@ -115,6 +146,137 @@ h7 {
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: #E7D6C2;
+  color: theme('colors.golden');
 }
+/* End of Dark HTML elements */
+
+/* Links */
+.prose a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: theme('colors.blue.700');
+}
+
+.dark a {
+  color: theme('colors.oma-blue.200');
+  text-decoration: none;
+}
+
+.dark a:hover {
+  color: theme('colors.oma-blue.400');
+}
+/* End of Links */
+
+/* CodeBlock */
+code {
+  border: 3px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: #dcdcdc;
+  padding: 2px 6px;
+  position: relative;
+}
+
+code::before,
+code::after {
+  content: '';
+  display: none;
+}
+
+.dark code {
+  border: 3px solid #414141;
+  border-radius: 6px;
+  background-color: #414141;
+  padding: 2px 6px;
+  color: #ffffff;
+}
+
+pre code {
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.dark pre code {
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+/* End of CodeBlock */
+
+/* Blockquote */
+.light blockquote {
+  background-color: theme('colors.neutral.200');
+  border-radius: 10px;
+  padding: 1rem;
+  border-left: 4px solid #858585;
+  color: #333;
+  font-style: italic;
+}
+
+.light blockquote p {
+  margin: 0;
+  ;
+}
+
+.dark blockquote {
+  background-color: theme('colors.neutral.700');
+  border-radius: 10px;
+  padding: 1rem;
+  border-left: 4px solid #ccc;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.dark blockquote p {
+  margin: 0;
+  color: white;
+}
+/* End of Blockquote */
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 1em;
+}
+
+th:first-child {
+    border-top-left-radius: 0.6rem;
+}
+
+th:last-child {
+    border-top-right-radius: 0.6rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: theme('colors.zinc.200');
+}
+
+th,
+td {
+  border-left: none;
+  border-right: none;
+}
+
+.dark th {
+  background-color: theme('colors.zinc.700');
+  color: #f2f2f2;
+}
+/* End of Table */
 </style>

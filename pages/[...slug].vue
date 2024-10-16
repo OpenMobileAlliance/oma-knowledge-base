@@ -1,56 +1,47 @@
 <template>
   <main class="">
     <article class="prose w-full max-w-full mt-16">
+
       <template v-if="page?.layout === 'doc'">
-        <div class="">
-          <AppSideMenu :items="displayNavigation"
-            class="fixed top-64 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-          <div v-if="page.body?.toc?.links?.length > 0"
-            class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
-            <nav>
-              <button
-                class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
-                <span class="font-semibold text-sm/6 truncate dark:text-white/80 mx-auto">Table of Contents</span>
-              </button>
-              <ul class="space-y-1 lg:block -ml-2">
-                <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`" :class="ui.shadow"
-                    class="not-prose truncate rounded-lg p-2">
-                    {{ link.text }}</ULink>
-                  <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
-                    <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :id="`toc-${subLink.id}`" :to="`${page._path}#${subLink.id}`" :class="ui.shadow"
-                        class="not-prose text-ellipsis rounded-lg p-2">{{ subLink.text }}</ULink>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
+        <div class="grid grid-cols-12 relative">
+          <!-- Sidebar Menu -->
+          <div class="col-start-1 col-span-2 hidden lg:block overflow-auto h-screen sticky top-48">
+            <AppSideMenu :items="displayNavigation" class="overflow-auto" />
           </div>
-          <section :class="contentClass" class="ml-64 p-8 ">
-            <h1 class="capitalize hover:uppercase">
+
+          <!-- Main Content -->
+          <section :class="contentClass"
+            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:ml-9 lg:mr-24 w-full lg:w-full overflow-auto">
+            <h1 class="">
               {{ page.title }}
             </h1>
-            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-10">
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
+              class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <PrevNextPage v-if="$route.path !== '/'" />
           </section>
+
+          <!-- Table of Contents and Useful Links -->
+          <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 h-screen overflow-auto sm:-ml-16">
+            <AppToc class="mb-4" />
+            <AppUsefulLinks class="" />
+          </div>
         </div>
       </template>
+
       <template v-else-if="page?.layout === 'articles'">
-        <div class="-mt-16 mx-64 ">
+        <div class="w-full -mt-16 xl:px-44 2xl:px-64">
           <div class="container flex mx-auto">
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>
           <div class="text-center">
             <h2 class="text-oma-300 text-start text-4xl text-primary dark:text-primary">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="text-start text-3xl text-primary-700 dark:text-primary-700">{{
+            <h3 v-if="page.subtitle" class="mb-20 text-start text-3xl text-primary-400 dark:text-primary-500">{{
               page.subtitle }}</h3>
-            <div class="text-center text-2xl" v-if="page.tags && page.tags.length">
+            <div class="text-center text-2xl dark:text-neutral-400" v-if="page.tags && page.tags.length">
               Tags:
               <span v-for="tag in page.tags" :key="tag"
                 class="border rounded-3xl p-2 mx-2 text-white bg-primary border-primary-600 dark:bg-primary dark:border-primary-400 text-xl">
@@ -58,7 +49,7 @@
               </span>
             </div>
             <div class="flex items-center justify-center">
-              <p v-if="page.rightLabel" class="mr-2 text-2xl ">{{ 'By:' }}</p>
+              <p v-if="page.rightLabel" class="mr-2 text-2xl dark:text-neutral-400">{{ 'By:' }}</p>
               <p v-if="page.rightLabel" class="text-end text-gray-500 dark:text-gray-400 text-2xl">{{ page.rightLabel }}
               </p>
               <p v-if="page.leftLabel" class="mx-2 text-2xl">{{ '|' }}</p>
@@ -66,29 +57,32 @@
               </p>
             </div>
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
-              class="text-left dark:text-white" />
+              class="par text-left dark:text-white" />
             <br />
           </div>
         </div>
       </template>
+
       <template v-else>
-        <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-24">
-          <template #not-found>
+        <div class="grid grid-cols-12 ">
+          <ContentRenderer v-if="page" :value="page" :style="{ fontSize: main.font.size }"
+            class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
+          </ContentRenderer>
+          <div v-else>
             <UAlert title="File not found!" description="The requested resource cannot be found."
               icon="i-heroicons-exclamation-triangle" />
-          </template>
-        </ContentRenderer>
-        <PrevNextPage v-if="route.path !== '/'" />
+          </div>
+        </div>
+        <!--<PrevNextPage v-if="route.path !== '/'" />-->
       </template>
     </article>
-
   </main>
 </template>
 
 <script setup lang="ts">
 
 const config = {
-  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
+  shadow: 'hover:bg-primary-500 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
 };
 
 

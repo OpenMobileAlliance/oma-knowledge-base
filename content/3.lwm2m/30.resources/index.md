@@ -5,6 +5,7 @@ layout: doc
 ---
 
 ## LwM2M Resources
+
 <table>
     <caption>LwM2M Resources</caption>
     <tr>

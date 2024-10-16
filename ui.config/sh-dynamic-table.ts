@@ -1,18 +1,18 @@
 export default {
-  wrapper: "",
+  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
   header: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
-  filter: "",
+  filter:  "",
   table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   tr: {
     base: '',
-    selected: 'bg-gray-50 dark:bg-gray-800/50',
-    active: 'hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer'
+    selected: 'bg-oma-blue-400 hover:bg-oma-blue-300 text-white dark:bg-oma-blue-600 dark:hover:bg-oma-blue-500 dark:text-golden',
+    active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
   },
   th: {
-    base: 'text-left rtl:text-right',
+    base: 'text-left rtl:text-right dark:bg-neutral-600',
     padding: 'px-4 py-3.5',
     color: 'text-gray-900 dark:text-white',
     font: 'font-semibold',
@@ -37,7 +37,7 @@ export default {
       square: true,
       color: 'gray' as const,
       variant: 'ghost' as const,
-      class: '-m-1.5'
+      class: '-m-1.5 font-semibold text-sm'
     },
   }
 }

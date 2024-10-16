@@ -1,17 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/ui",
+    "@nuxtjs/google-fonts",
+    "nuxt-testimonial",
+    '@nuxtjs/color-mode',
+  ],
+
   colorMode: {
-    preference: 'light'
+    preference: 'system'
   },
   content: {
-    documentDriven: true,
     highlight: {
-      theme: 'github-dark'
+      theme: {
+        default: 'github-dark',
+      },
     },
     markdown: {
       anchorLinks: false 
     },
+    api: {
+      baseURL: '/site-api/_content'
+    }
   },
 
   ui: {
@@ -27,7 +39,13 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
     head: {
+      charset: "utf-8",
+      htmlAttrs: {
+        lang: 'en'
+      },
+      viewport: "width=device-width, initial-scale=1",
       link: [
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
       ],
@@ -36,4 +54,11 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   compatibilityDate: "2024-08-13",
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/news', '/news/articles'],
+      failOnError: false,
+    },
+  }
 });

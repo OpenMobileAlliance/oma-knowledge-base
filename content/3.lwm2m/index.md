@@ -8,6 +8,8 @@ Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find co
 
 ::ShMultiColumn
 ---
+ui:
+    wrapper: bg-golden/[0.2] dark:bg-neutral-800
 cols: 5 
 ---
     :::ShColumn 
@@ -20,6 +22,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon: w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-eos-icons:rotating-gear
         title: What is LwM2M # First Column First Row
         subtitle: 
@@ -77,6 +80,7 @@ cols: 5
         ui:
             wrapper:  bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
+            subtitle: dark:text-gray-300/[0.8]
         icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
         subtitle: LwM2M
@@ -121,6 +125,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-svg-spinners:wind-toy
         title: Technical Resources # Third Column
         subtitle: LwM2M
@@ -184,7 +189,7 @@ cols: 5
         icon: pajamas:issue-type-maintenance
         title: Tools # Third Column
         subtitle: LwM2M
-        urlWrapper: "/lwm2m/resources/tools"
+        urlWrapper: "/tools/"
         ---
         ::::
         
@@ -200,6 +205,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon:  w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
         subtitle: LwM2M
@@ -216,7 +222,7 @@ cols: 5
         title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/test-events"
+        urlWrapper: "/oma-events/test-events"
         ---
         ::::
 
@@ -229,7 +235,7 @@ cols: 5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/webinar-workshops"
+        urlWrapper: "/oma-events/webinar-workshops"
         ---
         ::::
 
@@ -242,7 +248,7 @@ cols: 5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/members-meetings"
+        urlWrapper: "/oma-events/members-meetings"
         ---
         ::::
 
@@ -264,7 +270,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/5
-        icon: pajamas:api
+        icon: fluent-mdl2:product-list
         title: Product Listing # Fourth Column
         subtitle: |
             LwM2M
@@ -283,6 +289,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fifth Column
         subtitle: LwM2M
@@ -298,9 +305,21 @@ cols: 5
         icon: i-ic:baseline-groups-3
         title: LwM2M Groups # Fifth Column
         subtitle: Working Groups
-        urlWrapper: "/lwm2m/get-involved/working-groups"
+        urlWrapper: "/omaspecworks/collaborate/working-groups"
         ---
-        ::::        
+        ::::     
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: fluent:news-24-regular
+        title: Newsletter # Fifth Column
+        subtitle: Apply
+        urlWrapper: "/newsletter"
+        ---
+        ::::
 
         ::::ShMicroCard
         ---
@@ -324,7 +343,7 @@ cols: 5
         title: Contact us # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/omaspecworks/get-involved/contact-us"
+        urlWrapper: "contact-us"
         ---
         ::::
         ::::ShMicroCard
@@ -336,11 +355,9 @@ cols: 5
         title: F.A.Q # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/omaspecworks/get-involved/faq"
+        urlWrapper: "/faq#lwm2m"
         ---
         ::::
     :::     
 ::
-
-
 

@@ -3,11 +3,23 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
   content: [
-    'ui.config/*.ts'
+    'ui.config/*.ts',
+    'plugins/*.ts'
   ],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.oma-blue.300'),
+              textDecoration: 'none',
+            },
+          },
+        },
+      }),
       colors: {
+        'golden': '#E7D6C2',
           'oma-red': {
             50: '#f2d8d7',
             100: '#e4b1af',
