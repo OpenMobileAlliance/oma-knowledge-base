@@ -1,7 +1,7 @@
 <template>
-    <div class="flex-row">
-        <div :class="ui.wrapper">
-            <figure :class="ui.figure">
+    <div :class="ui.wrapper">
+        <div :class="ui.inner">
+            <figure :class="ui.base">
                 <img :src="urlImage" :alt="altImage" :class="ui.image">
             </figure>
         </div>
