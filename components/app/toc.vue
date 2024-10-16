@@ -34,9 +34,9 @@
 
 <script setup lang="ts">
 const config = {
-    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 dark:hover:text-oma-blue-100',
-    active: 'bg-primary-200 dark:bg-primary-600 p-2',
-    normal: 'w-full p-2',
+    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 dark:hover:text-oma-blue-100 hover:rounded-lg pt-2 pb-2',
+    active: 'p-2',
+    normal: 'w-full ',
     link: {
         active: 'text-oma-blue-500 dark:text-oma-blue-200 font-bold',
         normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
@@ -55,27 +55,59 @@ const { data: page } = await useAsyncData(() => queryContent(route.path).findOne
 
 const activeSection = ref<string | null>(null);
 
-onMounted(() => {
+const observeSections = () => {
+    const options = {
+        root: null,
+        threshold: 1, // Trigger as soon as the section enters or exits the viewport
+        rootMargin: '0px 0px -99% 0px' // Trigger when the section is at the top of the viewport
+    };
+
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
+        entries.forEach((entry) => {
+            // Check if the section is intersecting and its top is at the top of the viewport
+            if (entry.isIntersecting && entry.boundingClientRect.top === 0) {
                 activeSection.value = entry.target.id;
             }
-        });
-    }, { rootMargin: '-10%' });
 
+            // Remove highlight if the section goes out of the viewport (i.e., is not intersecting)
+            if (!entry.isIntersecting && activeSection.value === entry.target.id) {
+                activeSection.value = null;
+            }
+        });
+    }, options);
+
+    // Observe all section elements
     page.value.body.toc.links.forEach((link) => {
         const section = document.getElementById(link.id);
-        if (section) observer.observe(section);
-
+        if (section) {
+            observer.observe(section);
+        }
         if (link.children) {
             link.children.forEach((subLink) => {
                 const subSection = document.getElementById(subLink.id);
-                if (subSection) observer.observe(subSection);
+                if (subSection) {
+                    observer.observe(subSection);
+                }
             });
         }
     });
-});
+
+    return observer;
+};
+
+
+// Initialize observer when component is mounted
+let observer
+onMounted(() => {
+    observer = observeSections()
+})
+
+// Cleanup observer when component is destroyed
+onUnmounted(() => {
+    if (observer) {
+        observer.disconnect()
+    }
+})
 
 const isActive = (id: string) => {
     return activeSection.value === id;
