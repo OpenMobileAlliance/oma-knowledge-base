@@ -13,28 +13,28 @@ layout: doc
         <th>Explanation</th>
     </tr>
     <tr>
-        <td><a href="https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html" target="_blank">OMNA Registry</a></td>
-        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td><a href="/lwm2m/resources#omna-registry" target="_blank">OMNA Registry</a></td>
+        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources/registry/objects#omna-lwm2m-objects" target="_blank"><strong>here</strong></a> for more information.</td>
     </tr>
     <tr>
-        <td><a href="https://raw.githubusercontent.com/OpenMobileAlliance/LwM2M/development/SUP/LWM2M.xsd?token=GHSAT0AAAAAABZGAUAJW6K33I5BKDUEIOSOZULWQLQ" target="_blank">OMA SenML Units</a></td>
-        <td>Standardized measurement units for consistent data interpretation and integration across IoT resources. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td><a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/refs/heads/prod/LWM2M_senml_units.xml" target="_blank">OMA SenML Units</a></td>
+        <td>Standardized measurement units for consistent data interpretation and integration across IoT resources. Click <a href="/lwm2m/resources#oma-senml-units" target="_blank"><strong>here</strong></a> for more information.</td>
     </tr>
     <tr>
-        <td><strong>OMA LwM2M Schemas</strong>: <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M.xsd" target="_blank">v1.0</a>, <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M-v1_1.xsd" target="_blank">v1.1</a></td>
-        <td>Structured framework defining data organization rules for consistent communication between IoT devices. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td style="color:#3571b5;  font-weight: bold;"><strong> LwM2M Schemas:</strong> <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M.xsd" target="_blank">v1.0</a>, <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M-v1_1.xsd" target="_blank">v1.1</a></td>
+        <td>Structured framework defining data organization rules for consistent communication between IoT devices. Click <a href="/lwm2m/resources#oma-lwm2m-schemas"><strong>here</strong></a> for more information.</td>
     </tr>
     <tr>
         <td><a href="https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues" target="_blank">Report LwM2M Issues</a></td>
-        <td>Platform for reporting and tracking bugs to ensure the robustness and reliability of OMA LwM2M specifications. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td>Platform for reporting and tracking bugs to ensure the robustness and reliability of OMA LwM2M specifications. Click <a href="/lwm2m/resources#report-lwm2m-issues"><strong>here</strong></a> for more information.</td>
     </tr>
     </tr>
-        <td><a href="" target="_blank">LwM2M Best Practice</a></td>
-        <td>Guidelines for efficient and standardized creation and registration of LwM2M objects to minimize delays and rejections. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td><a href="/lwm2m/resources#lwm2m-best-practices" target="_blank">LwM2M Best Practice</a></td>
+        <td>Guidelines for efficient and standardized creation and registration of LwM2M objects to minimize delays and rejections. Click <a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-ORG-Guidelines_Creation_Registration_LwM2M_Objects_Resources-V1_0_1-20190115-A.pdf" target="_blank"><strong>here</strong></a> for more information.</td>
     </tr>
     </tr>
-        <td><a href="" target="_blank">LwM2M Product Listing</a></td>
-        <td>The LwM2M Product Listing showcases products implementing the OMA LwM2M protocol, validated through Test events, enhancing visibility and trust for companies. Click <a href=""><strong>here</strong></a> for more information.</td>
+        <td><a href="/lwm2m/resources#lwm2m-product-listing" target="_blank">LwM2M Product Listing</a></td>
+        <td>The LwM2M Product Listing showcases products implementing the OMA LwM2M protocol, validated through Test events, enhancing visibility and trust for companies. Click <a href="/lwm2m/community/product-listing" target="_blank"><strong>here</strong></a> for more information.</td>
     </tr>
 </table>
 
