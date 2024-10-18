@@ -14,7 +14,7 @@ layout: doc
     </tr>
     <tr>
         <td><a href="/lwm2m/resources#omna-registry" target="_blank">OMNA Registry</a></td>
-        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources/registry/objects#omna-lwm2m-objects" target="_blank"><strong>here</strong></a> for more information.</td>
+        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources/registry/objects" target="_blank"><strong>here</strong></a> for more information.</td>
     </tr>
     <tr>
         <td><a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/refs/heads/prod/LWM2M_senml_units.xml" target="_blank">OMA SenML Units</a></td>
