@@ -29,12 +29,12 @@ size: L
             ---
             ui:
                 wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-                icon: w-2/3
+                icon: w-1/2
                 subtitle: dark:text-gray-300/[0.8]
             urlWrapper: /tools/lwm2m-api-registry/
             title: API Registry
             subtitle: LwM2M
-            icon: material-symbols-light:api
+            icon: tabler:network
             ---
             :::::
         ::::
@@ -50,9 +50,9 @@ size: L
                 icon: w-1/3
                 subtitle: dark:text-gray-300/[0.8]
             urlWrapper: /tools/lwm2m-guidelines
-            title: LwM2M Guidelines
+            title: LwM2 Guidelines
             subtitle: Documentation
-            icon: carbon:container-registry
+            icon: tabler:network
             ---
             :::::        
         ::::
@@ -65,12 +65,12 @@ size: L
             ---
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900     
-                icon: w-1/3
+                icon: w-1/4
                 subtitle: dark:text-gray-300/[0.8]
             urlWrapper: /tools/lwm2m-editor-validator
             title: Editor | Validator
             subtitle: LwM2M
-            icon: grommet-icons:validate
+            icon: ph:hand-coins-fill
             ---
             :::::
         ::::
@@ -88,25 +88,7 @@ size: L
             urlWrapper: ""
             title: Developer's Tool Kit
             subtitle: DECOMMISSIONED
-            icon: carbon:api-key
-            ---
-            :::::
-        ::::
-
-        ::::ShColumn 
-        --- 
-        ui: # Fifth Column
-        ---
-            :::::ShMicroCard
-            ---
-            ui:
-                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 hover:scale-100 hover:shadow-none hover:cursor-no-drop dark:hover:border-neutral-600
-                icon: w-1/5
-                subtitle: dark:text-gray-300/[0.8]
-            urlWrapper: /tools/validation-errors
-            title: Validation Error Code
-            subtitle: LwM2M
-            icon: simple-icons:codestream
+            icon: i-devicon-plain:fastapi
             ---
             :::::
         ::::

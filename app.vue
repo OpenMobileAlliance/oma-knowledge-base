@@ -219,6 +219,7 @@ pre code {
 
 .light blockquote p {
   margin: 0;
+  ;
 }
 
 .dark blockquote {
