@@ -55,60 +55,6 @@ const { data: page } = await useAsyncData(() => queryContent(route.path).findOne
 
 const activeSection = ref<string | null>(null);
 
-const observeSections = () => {
-    const options = {
-        root: null,
-        threshold: 1, // Trigger as soon as the section enters or exits the viewport
-        rootMargin: '0px 0px -99% 0px' // Trigger when the section is at the top of the viewport
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            // Check if the section is intersecting and its top is at the top of the viewport
-            if (entry.isIntersecting && entry.boundingClientRect.top === 0) {
-                activeSection.value = entry.target.id;
-            }
-
-            // Remove highlight if the section goes out of the viewport (i.e., is not intersecting)
-            if (!entry.isIntersecting && activeSection.value === entry.target.id) {
-                activeSection.value = null;
-            }
-        });
-    }, options);
-
-    // Observe all section elements
-    page.value.body.toc.links.forEach((link) => {
-        const section = document.getElementById(link.id);
-        if (section) {
-            observer.observe(section);
-        }
-        if (link.children) {
-            link.children.forEach((subLink) => {
-                const subSection = document.getElementById(subLink.id);
-                if (subSection) {
-                    observer.observe(subSection);
-                }
-            });
-        }
-    });
-
-    return observer;
-};
-
-
-// Initialize observer when component is mounted
-let observer
-onMounted(() => {
-    observer = observeSections()
-})
-
-// Cleanup observer when component is destroyed
-onUnmounted(() => {
-    if (observer) {
-        observer.disconnect()
-    }
-})
-
 const isActive = (id: string) => {
     return activeSection.value === id;
 };
