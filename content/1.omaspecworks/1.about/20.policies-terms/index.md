@@ -35,3 +35,4 @@ Maintaining an open organization is key to OMA’s vision for broad industry par
 This document defines the policy for the invitation and participation of guests to OMA meetings. This policy applies to all forms of meetings, i.e. physical or electronic meetings.
 
 [View the Complete OMA Meeting Guest Policy](/omaspecworks/about/policies-terms/guest-policy)
+
