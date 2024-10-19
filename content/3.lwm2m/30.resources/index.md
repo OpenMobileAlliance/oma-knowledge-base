@@ -13,28 +13,28 @@ layout: doc
         <th>Explanation</th>
     </tr>
     <tr>
-        <td><a href="/lwm2m/resources#omna-registry" target="_blank">OMNA Registry</a></td>
-        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources/registry/objects" target="_blank"><strong>here</strong></a> for more information.</td>
+        <td><a href="/lwm2m/resources/registry" target="_blank">OMNA LwM2M Registry</a></td>
+        <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources#omna-registry" target="_blank">here</a> for more information.</td>
     </tr>
     <tr>
         <td><a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/refs/heads/prod/LWM2M_senml_units.xml" target="_blank">OMA SenML Units</a></td>
-        <td>Standardized measurement units for consistent data interpretation and integration across IoT resources. Click <a href="/lwm2m/resources#oma-senml-units" target="_blank"><strong>here</strong></a> for more information.</td>
+        <td>Standardized measurement units for consistent data interpretation and integration across IoT resources. </br> Click <a href="/lwm2m/resources#oma-senml-units">here</a> for more information.</td>
     </tr>
     <tr>
         <td style="color:#3571b5;  font-weight: bold;"><strong> LwM2M Schemas:</strong> <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M.xsd" target="_blank">v1.0</a>, <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/LWM2M-v1_1.xsd" target="_blank">v1.1</a></td>
-        <td>Structured framework defining data organization rules for consistent communication between IoT devices. Click <a href="/lwm2m/resources#oma-lwm2m-schemas"><strong>here</strong></a> for more information.</td>
+        <td>Structured framework defining data organization rules for consistent communication between IoT devices. </br> Click <a href="/lwm2m/resources#oma-lwm2m-schemas">here</a> for more information.</td>
     </tr>
     <tr>
         <td><a href="https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues" target="_blank">Report LwM2M Issues</a></td>
-        <td>Platform for reporting and tracking bugs to ensure the robustness and reliability of OMA LwM2M specifications. Click <a href="/lwm2m/resources#report-lwm2m-issues"><strong>here</strong></a> for more information.</td>
+        <td>Platform for reporting and tracking bugs to ensure the robustness and reliability of OMA LwM2M specifications. </br> Click <a href="/lwm2m/resources#report-lwm2m-issues">here</a> for more information.</td>
     </tr>
     </tr>
-        <td><a href="/lwm2m/resources#lwm2m-best-practices" target="_blank">LwM2M Best Practice</a></td>
-        <td>Guidelines for efficient and standardized creation and registration of LwM2M objects to minimize delays and rejections. Click <a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-ORG-Guidelines_Creation_Registration_LwM2M_Objects_Resources-V1_0_1-20190115-A.pdf" target="_blank"><strong>here</strong></a> for more information.</td>
+        <td><a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-ORG-Guidelines_Creation_Registration_LwM2M_Objects_Resources-V1_0_1-20190115-A.pdf" target="_blank">LwM2M Best Practice</a></td>
+        <td>Guidelines for efficient and standardized creation and registration of LwM2M objects to minimize delays and rejections. Click <a href="/lwm2m/resources#lwm2m-best-practices">here</a> for more information.</td>
     </tr>
     </tr>
-        <td><a href="/lwm2m/resources#lwm2m-product-listing" target="_blank">LwM2M Product Listing</a></td>
-        <td>The LwM2M Product Listing showcases products implementing the OMA LwM2M protocol, validated through Test events, enhancing visibility and trust for companies. Click <a href="/lwm2m/community/product-listing" target="_blank"><strong>here</strong></a> for more information.</td>
+        <td><a href="/lwm2m/community/product-listing">LwM2M Product Listing</a></td>
+        <td>The LwM2M Product Listing showcases products implementing the OMA LwM2M protocol, validated through Test events, enhancing visibility and trust for companies. </br> Click <a href="/lwm2m/resources#lwm2m-product-listing">here</a> for more information.</td>
     </tr>
 </table>
 
@@ -45,7 +45,7 @@ layout: doc
         <th>Explanation</th>
     </tr>
     <tr>
-        <td><a href="https://wiki-archive.openmobilealliance.org/Tools/Registry-API_25664023.html" target="_blank">LwM2M Registry API</a></td>
+        <td><a href="/tools/lwm2m-api-registry/">LwM2M Registry API</a></td>
         <td>API for accessing detailed metadata and managing IoT objects within the LwM2M ecosystem.</td>
     </tr>
     <tr>
@@ -59,7 +59,7 @@ layout: doc
 </table>
 
 ### OMNA Registry
-The OMA Lightweight M2M (LwM2M) Registry is a centralized database managed by the Open Mobile Alliance Naming Authority (OMNA) that assigns unique Object IDs to various types of devices and services for IoT deployments. It categorizes these Object IDs into several classes, including those produced by OMA (Object IDs 0-1023), reserved for future use (Object IDs 1024-2047), registered by third-party standards organizations (Object IDs 2048-10240), and those registered by companies or individuals (Object IDs 10241-32768). Additionally, there are ranges for company bulk reservations (Object IDs 32769-42768) and for testing purposes (Object IDs 42769-42800). This registry ensures that each Object ID is unique, preventing conflicts and enabling seamless interoperability between different IoT devices and services.
+The <a href="/lwm2m/resources/registry" alt="LwM2M Objects/Resources">OMA Lightweight M2M (LwM2M) Registry</a> is a centralized database managed by the Open Mobile Alliance Naming Authority (OMNA) that assigns unique Object IDs to various types of devices and services for IoT deployments. It categorizes these Object IDs into several classes, including those produced by OMA (Object IDs 0-1023), reserved for future use (Object IDs 1024-2047), registered by third-party standards organizations (Object IDs 2048-10240), and those registered by companies or individuals (Object IDs 10241-32768). Additionally, there are ranges for company bulk reservations (Object IDs 32769-42768) and for testing purposes (Object IDs 42769-42800). This registry ensures that each Object ID is unique, preventing conflicts and enabling seamless interoperability between different IoT devices and services. The Objects and Resources are stored in a GitHub repository called <a href="https://github.com/OpenMobileAlliance/lwm2m-registry/tree/prod" target="_blank" alt="OMA LwM2M GitHub repository">lwm2m-registry</a>
 
 #### OMA Object and Resource Registry
 OMA maintains a registry for objects and resources, which provides standardized definitions and IDs for various types of objects and their resources. This registry ensures consistency and interoperability across different devices and manufacturers.
@@ -76,7 +76,9 @@ The registry includes:
 * **Extensibility**: New objects and resources can be registered to address emerging needs and technologies.
 
 ### OMA SenML Units
-<strong>OMA LwM2M adopts SenML</strong> <i>(Sensor Markup Language)</i> Units to ensure standardized and consistent measurement units across IoT resources. By following the rules provided by SenML, OMA LwM2M facilitates interoperability and data exchange among diverse IoT devices and platforms. Using standardized units is crucial for accurately interpreting sensor data, avoiding ambiguity, and ensuring that data from different sources can be seamlessly integrated and compared. This standardization also aids in the development of reliable and scalable IoT solutions, as developers can confidently build applications knowing that the data conforms to a recognized and consistent set of units. The adoption of SenML Units ultimately enhances the efficiency and reliability of IoT ecosystems, fostering innovation and broader adoption of IoT technologies.
+OMA LwM2M adopts SenML <i>(Sensor Markup Language)</i> Units to ensure standardized and consistent measurement units across IoT resources. By following the rules provided by SenML, OMA LwM2M facilitates interoperability and data exchange among diverse IoT devices and platforms. Using standardized units is crucial for accurately interpreting sensor data, avoiding ambiguity, and ensuring that data from different sources can be seamlessly integrated and compared. This standardization also aids in the development of reliable and scalable IoT solutions, as developers can confidently build applications knowing that the data conforms to a recognized and consistent set of units. The adoption of SenML Units ultimately enhances the efficiency and reliability of IoT ecosystems, fostering innovation and broader adoption of IoT technologies. 
+
+OMA maintains a private set of <a href="https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/refs/heads/prod/LWM2M_senml_units.xml" target="_blank" alt="LwM2M SenML Units">LwM2M SenML Units</a> to be used if registering a new unit with the <a href='https://www.iana.org/assignments/senml/senml.xhtml' target='_blank' alt='IANA SenML Registry'>IANA SenML Registry</a> takes too long.
 
 ### OMA LwM2M Schemas
 The <strong>OMA LwM2M Schema</strong> is a structured framework that defines the rules and format for organizing and validating data, ensuring consistent and interoperable communication between IoT devices and services.  The <strong>OMA LwM2M Schema</strong> has undergone significant enhancements from version 1.0 to version 1.1 to better support the evolving needs of IoT deployments. The primary differences between LwM2M Schema v1.0 and v1.1 can be seen in the updated XML schema definitions, which reflect improvements in resource definitions, data type support, and overall schema structure. Version 1.1 introduces additional data types and resource attributes, enhancing the flexibility and expressiveness of the schema. These updates enable more complex IoT use cases and improve compatibility with a wider range of devices and services. Furthermore, the refined schema structure in v1.1 provides better support for modularity and scalability, making it easier for developers to create and manage large-scale IoT solutions. These advancements ensure that OMA LwM2M remains at the forefront of IoT standards, providing robust and future-proof specifications for IoT device management and service enablement.

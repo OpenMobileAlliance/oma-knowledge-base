@@ -5,7 +5,7 @@ layout: doc
 ---
 
 ## Overview
-OMNA can provide you with a unique Object or/and Resource Identifier: (Object ID) or (Resource ID).
+OMNA can provide you with a unique Object or/and Resource Identifier: (<a href="/lwm2m/resources/registry/objects#omna-lwm2m-objects" alt="OMA LwM2M Objects Registry">Object ID</a>) or (<a href="/lwm2m/resources/registry/resources#omna-lwm2m-resources" alt="OMA LwM2M Resource Registry">Resource ID).
 
 To register a new (Object ID) or (Resource ID), your submission will be redirected to <a href="https://github.com/OpenMobileAlliance/lwm2m-registry/blob/prod/README.md" target="_blank">README</a> file in `lwm2m-registry`.
 
