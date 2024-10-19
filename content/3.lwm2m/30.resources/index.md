@@ -13,7 +13,7 @@ layout: doc
         <th>Explanation</th>
     </tr>
     <tr>
-        <td><a href="/lwm2m/resources/registry" target="_blank">OMNA LwM2M Registry</a></td>
+        <td><a href="/lwm2m/resources/registry">OMNA LwM2M Registry</a></td>
         <td>Centralized database for assigning unique Object IDs to IoT devices and services, ensuring seamless interoperability. Click <a href="/lwm2m/resources#omna-registry" target="_blank">here</a> for more information.</td>
     </tr>
     <tr>
