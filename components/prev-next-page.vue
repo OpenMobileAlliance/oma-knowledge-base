@@ -11,7 +11,6 @@
       <div :class="ui.title">{{ next.title }}</div>
       <div v-if="showDescription && next.description" :class="ui.description">{{ next.description }}</div>
     </NuxtLink>
-    {{ next }}
   </div>
 </template>
 
@@ -20,10 +19,10 @@ const route = useRoute();
 const [prev, next] = await queryContent().findSurround(route.path);
 
 const config = {
-  button: 'grid grid-rows-3 border p-4 rounded-xl hover:border hover:border-primary/[0.6] dark:hover:border-primary/[0.8] hover:bg-primary/[0.3] dark:hover:bg-primary/[0.2] transition-colors',
-  icon: 'text-3xl hover:scale-105 hover:text-primary text-black hover:text-primary dark:text-golden dark:hover:text-primary',
-  title: 'text-3xl font-semibold mt-2 text-black hover:text-primary dark:text-golden dark:hover:text-primary',
-  description: 'text-lg font-normal mt-2 text-gray-700 hover:text-primary dark:text-golden/[0.4] dark:hover:text-primary',
+  button: 'grid grid-rows-3 border-2 dark:border-golden p-4 rounded-xl hover:border-2 hover:border-primary/[0.6] dark:hover:border-saturate-150 hover:bg-primary/[0.3] dark:hover:bg-primary/[0.2] transition-colors',
+  icon: 'text-3xl hover:scale-105 text-black dark:text-golden dark:hover:saturate-150',
+  title: 'text-3xl font-semibold mt-2 text-black dark:text-golden dark:hover:saturate-150 words-break',
+  description: 'text-lg font-normal mt-2 text-gray-700 dark:text-golden/[0.4] dark:hover:saturate-[125] words-break',
 };
 
 // Use defineProps to accept a boolean prop for showDescription
