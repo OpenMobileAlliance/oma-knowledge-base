@@ -13,7 +13,9 @@
         </div>
         <ShButton
           class="p-4 rounded-2xl mt-4 sm:mt-12 hover:contrast-150 dark:text-white dark:hover:text-white hover:text-white"
-          color="primary" size="lg" urlButton="/omaspecworks/" target="_parent">Get Started</ShButton>
+          color="primary" size="lg" urlButton="/omaspecworks" target="_parent">
+          Get Started
+        </ShButton>
       </div>
       <div class="flex flex-col lg:flex-row h-[80%] sm:h-full lg:h-1/6 lg:pl-16 items-end p-3 sm:p-0 mt-12 sm:mt-14 lg:mt-96">
         <ContentQuery>
