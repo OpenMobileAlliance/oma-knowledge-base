@@ -16,14 +16,16 @@
           <div class="flex justify-between items-start mb-2">
             <div :class="ui.right">
               <ColorMode />
-              <span class="mr-2 text-base">
+              <span class="mr-2 text-base mt-1">
                 <!-- TODO: provide proper URL -->
-                <ULink to="/" active-class="text-primary" class="text-black dark:text-golden hover:text-primary">Sign In
-                </ULink>
+                <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }"
+                  :ui="{ background: 'bg-golden/[0.5] dark:bg-neutral-600', item: { active: 'bg-golden saturate-150 dark:bg-golden/[0.2]' } }">
+                  <UIcon name="stash:user-avatar" dynamic class="text-3xl" />
+                </UDropdown>
               </span>
-              <span class="hidden sm:flex mr-2 text-base">
+              <!-- <span class="hidden sm:flex mr-2 text-base">
                 <ULink to="/contact-us" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
-              </span>
+              </span> -->
               <slot name="right">
                 <AppSocialLinks class="text-xl hidden sm:flex" />
               </slot>
@@ -109,6 +111,16 @@ const { ui, attrs } = useUI(
   true,
 );
 
+const items = [
+  [{
+    label: 'Sign In',
+    icon: 'i-heroicons-user'
+  }], [{
+    label: 'Sign Up',
+    icon: 'i-heroicons-user-plus'
+  }]
+]
+
 const isDropdownVisible = ref(false);
 
 const toggleDropdownAndRotation = () => {
@@ -137,7 +149,6 @@ function isLinkActive(path: string): boolean {
 </script>
 
 <style scoped>
-
 .background {
   background-color: rgb(242, 235, 226);
 }
@@ -145,5 +156,4 @@ function isLinkActive(path: string): boolean {
 .dark .background {
   @apply bg-neutral-700
 }
-
 </style>
