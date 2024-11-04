@@ -20,8 +20,15 @@
                 <!-- TODO: provide proper URL -->
                 <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }"
                   :ui="{ background: 'bg-golden/[0.5] dark:bg-neutral-600', item: { active: 'bg-golden saturate-150 dark:bg-golden/[0.2]' } }">
+                  <template v-slot:item="{ item }">
+                    <ULink :to="item.to" class="text-black hover:text-black dark:text-golden hover:dark:text-golden flex items-center">
+                      <UIcon :name="item.icon" class="text-2xl mr-2" />
+                      {{ item.label }}
+                    </ULink>
+                  </template>
                   <UIcon name="stash:user-avatar" dynamic class="text-3xl" />
                 </UDropdown>
+
               </span>
               <!-- <span class="hidden sm:flex mr-2 text-base">
                 <ULink to="/contact-us" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
@@ -113,11 +120,13 @@ const { ui, attrs } = useUI(
 
 const items = [
   [{
-    label: 'Sign In',
-    icon: 'i-heroicons-user'
+    label: 'Login',
+    icon: 'i-heroicons-user',
+    to: 'https://member.openmobilealliance.org/'
   }], [{
-    label: 'Sign Up',
-    icon: 'i-heroicons-user-plus'
+    label: 'Create an account',
+    icon: 'i-heroicons-user-plus',
+    to: 'http://member.openmobilealliance.org/AccountCreation/GetAccount.asp'
   }]
 ]
 
