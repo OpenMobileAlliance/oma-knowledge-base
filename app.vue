@@ -1,10 +1,12 @@
 <template>
   <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
     :style="{ fontFamily: main.font.type }">
+    <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="Logo" />
-        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="Logo" />
+        <img v-if="computedLogoSrc && windowWidth > 640" src="/logo-dark.png" alt="Logo" />
+        <img v-if="!computedLogoSrc && windowWidth > 640" src="/logo-light.png" alt="Logo" />
+        <img v-if="windowWidth < 640" src="/logo.png" alt="Logo" class="h-16" />
       </template>
     </AppHeader>
     <div :class="route.path === '/' ? 'size-full' : 'w-full pb-24 px-4 sm:px-6 lg:px-8'">
@@ -89,6 +91,20 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', checkScrollbar)
 })
 
+const windowWidth = ref(0);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  windowWidth.value = window.innerWidth;
+  window.addEventListener('resize', handleResize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize);
+});
 </script>
 
 <style>
@@ -133,7 +149,8 @@ h7 {
 }
 
 /* Dark HTML elements */
-.dark .par, /* custom class for paragraph located in /[...slug].vue */
+.dark .par,
+/* custom class for paragraph located in /[...slug].vue */
 .dark em,
 .dark ul,
 .dark ol,
@@ -160,6 +177,7 @@ h7 {
   color: theme('colors.golden');
   filter: saturate(3) brightness(0.75);
 }
+
 /* End of Dark HTML elements */
 
 /* Links */
@@ -179,6 +197,7 @@ a:hover {
 .dark a:hover {
   color: theme('colors.oma-blue.400');
 }
+
 /* End of Links */
 
 /* CodeBlock */
@@ -217,6 +236,7 @@ pre code {
   background: none;
   color: #ffffff;
 }
+
 /* End of CodeBlock */
 
 /* Blockquote */
@@ -246,6 +266,7 @@ pre code {
   margin: 0;
   color: white;
 }
+
 /* End of Blockquote */
 
 /* Table */
@@ -260,11 +281,11 @@ td:first-child {
 }
 
 th:first-child {
-    border-top-left-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
 }
 
 th:last-child {
-    border-top-right-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
 }
 
 th,
@@ -289,5 +310,6 @@ td {
   background-color: theme('colors.zinc.700');
   color: #f2f2f2;
 }
+
 /* End of Table */
 </style>
