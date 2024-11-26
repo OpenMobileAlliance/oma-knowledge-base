@@ -34,5 +34,5 @@ This workshop represents the Utility sector's new functionalities by adopting th
 - Open Discussion and Q&A: Facilitate an open discussion among attendees to share insights, ask questions, and engage in discussions related to the previous topics.
 
  </br>
-      <button><a  href="https://www.dofactory.com/html/buttons">Open Utility Form</a></button>
+      <button><a  href="http://21247113.hs-sites.com/iot-for-utilities-workshop-1">Open Utility Form</a></button>
  </br>
