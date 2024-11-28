@@ -24,7 +24,7 @@ const excludedPaths = [
   "/landing-page-floaters",
   "/landing-page-menu",
   "/test-guide",
-  "/guidelines/index"
+  "/guidelines/"
 ];
 const excludedDirectoryRegex = /^\/guidelines(\/|$)/;
 
@@ -35,7 +35,7 @@ const [prev, next] = await queryContent()
     _partial: false,           // Exclude partial content (this could be used instead of the _dir exlusion above)
     $and: [
       { _path: { $not: { $in: excludedPaths } } }, // Exclude specific files
-      { _path: { $not: excludedDirectoryRegex } }, // Exclude specific diectorie; -> think about adding all of this to app.config.ts
+      { _path: { $not: excludedDirectoryRegex } }, // Exclude specific directory; -> think about adding all of this to app.config.ts
     ]
   })
   .findSurround(route.path);
