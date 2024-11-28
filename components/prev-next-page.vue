@@ -24,7 +24,6 @@ const excludedPaths = [
   "/landing-page-floaters",
   "/landing-page-menu",
   "/test-guide",
-  "/guidelines/"
 ];
 const excludedDirectoryRegex = /^\/guidelines(\/|$)/;
 
