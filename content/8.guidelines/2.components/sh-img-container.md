@@ -6,7 +6,7 @@ layout: doc
 ---
 
 ### Usage
-This constructor is mainly used withs `.svg` image file types, to create a more unified look and feel when displaying those formats.
+This constructor is mainly used with `.svg` image file types, to create a more unified look and feel when displaying those formats.
 
 ::ShAlert
 ---
@@ -43,7 +43,7 @@ figcaption: |
 ```
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
 The constructor creates a display format showcasing an image and an optional caption. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
@@ -58,7 +58,7 @@ The constructor creates a display format showcasing an image and an optional cap
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">ui</td>
+      <td rowspan="5">ui</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShImgContainer</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the image container component. Each attribute within the <code>ui</code> property targets a specific part of the image display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
@@ -76,7 +76,6 @@ The constructor creates a display format showcasing an image and an optional cap
     </tr>
     <tr>
       <td><code>image</code></td>
-      <td>n/a</td>
       <td>Styles applied to the image itself, including size, alignment, and additional effects like borders or shadows.</td>
     </tr>
     <tr>
@@ -93,11 +92,6 @@ The constructor creates a display format showcasing an image and an optional cap
       <td><code>altImage</code></td>
       <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
-    </tr>
-    <tr>
-      <td><code>figcaption</code></td>
-      <td>n/a</td>
-      <td>The text displayed below the image as a caption.</td>
     </tr>
     <tr>
       <td><code>description</code></td>
@@ -130,10 +124,10 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShImgContainer
 ---
 ui:
-  wrapper: shadow-lg bg-gray-100 p-4
+  wrapper: shadow-lg bg-purple-300 dark:bg-purple-900 p-4 rounded-xl
   image: rounded-lg border border-gray-300
   figcaption: text-lg text-gray-600 italic
-urlImage: https://example.com/image.jpg
+urlImage: /images/lwm2m/overall_architecture.drawio.svg
 altImage: Custom Image
 figcaption: |
     This is a custom caption with styled text.
@@ -145,15 +139,12 @@ figcaption: |
 These style properties can be modified via `ui` and are stored in the <b>{{ $doc.constructorName }}.ts</b> file:
 
 ```ts
-export default {
-    wrapper: "max-w-xl mx-auto p-4 bg-white shadow-md rounded-md",
-    inner: "flex justify-center items-center",
-    base: "relative",
-    image: "w-full h-auto rounded-lg",
-    figcaption: "text-center text-sm text-gray-500 mt-2",
-    // Default Tailwind CSS values
-    default: {
-    }
+export default{
+    wrapper: 'flex-row',
+    inner: 'bg-white dark:bg-black pt-3 pb-3 mx-32 rounded-lg',
+    base: 'dark:invert flex flex-col justify-center items-center m-4',
+    image: '',
+    figcaption: 'flex justify-center italic text-neutral-600 dark:text-neutral-400',
 }
 ```
 
@@ -161,27 +152,24 @@ export default {
 These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-* **Value**: `"max-w-xl mx-auto p-4 bg-white shadow-md rounded-md"`
-* **Description**: Defines the overall styling for the container holding the image and caption. The value includes a maximum width, centered layout, padding, shadow, and rounded corners.
+* **Value**: `"flex-row"`
+* **Description**: Defines the flex direction for the container's children, arranging them in a row.
 
 _**inner**_
-* **Value**: `"flex justify-center items-center"`
-* **Description**: Applies flexbox layout for centering the image within the container.
+* **Value**: `"bg-white dark:bg-black pt-3 pb-3 mx-32 rounded-lg"`
+* **Description**: Provides the inner container with background color support for light and dark modes, top and bottom padding, side margins, and rounded corners.
 
 _**base**_
-* **Value**: `"relative"`
-* **Description**: A relative container for positioning the image element.
+* **Value**: `"dark:invert flex flex-col justify-center items-center m-4"`
+* **Description**: Acts as a relative container with inverted colors in dark mode, flex column layout, centered content, and margin.
 
 _**image**_
-* **Value**: `"w-full h-auto rounded-lg"`
-* **Description**: Defines the image's width, height, and rounded corners.
+* **Value**: `""`
+* **Description**: No default styles are applied; this class is left intentionally blank for custom image-specific styling.
 
 _**figcaption**_
-* **Value**: `"text-center text-sm text-gray-500 mt-2"`
-* **Description**: Applies styles to the optional caption, including text size, color, and top margin.
+* **Value**: `"flex justify-center italic text-neutral-600 dark:text-neutral-400"`
+* **Description**: Applies a centered flex layout with italic text style and neutral text color, adapting for light and dark modes.
 
-_**default**_
-* **Value**: n/a
-* **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
 These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
