@@ -76,25 +76,30 @@ The <b>{{ $doc.constructorName }}</b> constructor creates a display format showc
     <tr>
       <th>Property</th>
       <th>Attributes</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">ui</td>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShSocial</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the Social Media component. Each attribute within the <code>ui</code> property targets a specific part of the Social Media display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the Social Media post. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
       <td><code>src</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>The source URL of the Social Media post; Facebook, LinkedIn, X (formally Twitter) to be displayed.</td>
     </tr>
     <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
   </tbody>

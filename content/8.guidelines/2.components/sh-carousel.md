@@ -140,70 +140,85 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="8">ui</td>
+      <td rowspan="8"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the carousel container.</td>
     </tr>
     <tr>
       <td><code>inner</code></td>
+      <td><code>config.inner</code></td>
       <td>Defines the styling for the inner sliding container.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td><code>config.title</code></td>
       <td>Styles applied to the title text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
+      <td><code>config.subtitle</code></td>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
+      <td><code>config.image</code></td>
       <td>Styles applied to the image element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>indicators</code></td>
+      <td><code>config.indicators</code></td>
       <td>Defines the styling for the carousel indicators (pagination dots).</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
+      <td><code>config.icon</code></td>
       <td>Defines the styling for icons or in this context indicators such as scale when hover, color change etc.</td>
     </tr>
     <tr>
-      <td>component</td>
+      <td><code>component</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>In order to use any component inside <code>ShCarousel</code>, this prop must be used. It is <strong>mandatory</strong> to use it for each new component that you wish to add to <code>ShCarousel</code> constructor.</td>
     </tr>
     <tr>
-      <td>items</td>
+      <td><code>items</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>An array of slide items, each with a component and its props.</td>
     </tr>
     <tr>
-      <td>urlImage</td>
+      <td><code>urlImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
-      <td>altImage</td>
+      <td><code>altImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
-      <td>icon</td>
+      <td><code>icon</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intended to define the icon used for indicators.</td>
     </tr>
     <tr>
-      <td>description</td>
+      <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intended to be used as a help to content writer. Doesn’t render on the website.</td>
     </tr>

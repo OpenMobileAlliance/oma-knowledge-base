@@ -52,49 +52,59 @@ The constructor creates a display format showcasing an image and an optional cap
   <thead>
     <tr>
       <th>Property</th>
-      <th>Class</th>
+      <th>Attribute</th>
+      <th>Deafult</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">ui</td>
+      <td rowspan="5"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShImgContainer</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the image container component. Each attribute within the <code>ui</code> property targets a specific part of the image display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds both the image and its caption.</td>
     </tr>
     <tr>
       <td><code>inner</code></td>
+      <td><code>config.inner</code></td>
       <td>Styles applied to the inner section that holds the image.</td>
     </tr>
     <tr>
       <td><code>base</code></td>
+      <td><code>config.base</code></td>
       <td>A placeholder for additional base styles that can be applied to the image component.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
+      <td><code>config.image</code></td>
       <td>Styles applied to the image itself, including size, alignment, and additional effects like borders or shadows.</td>
     </tr>
     <tr>
       <td><code>figcaption</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Optional caption text displayed below the image. This includes font size, color, and alignment settings.</td>
     </tr>
     <tr>
       <td><code>urlImage</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
       <td><code>altImage</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Help content for developers or content writers, does not render on the website.</td>
     </tr>

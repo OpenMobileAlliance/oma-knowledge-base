@@ -15,7 +15,7 @@ This is and example of how a basic <b>{{ $doc.constructorName }}</b> component i
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
+  wrapper: bg-cyan-300 dark:bg-cyan-800 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -31,7 +31,7 @@ This is how the above <b>{{ $doc.constructorName }}</b> is written in markdown:
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
+  wrapper: bg-cyan-300 dark:bg-cyan-800 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -68,7 +68,7 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>n/a</td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <td><code>description</code></td>

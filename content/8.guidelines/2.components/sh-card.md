@@ -67,108 +67,133 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="11">ui</td>
+      <td rowspan="11"><code>ui</coode></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
       <td><code>upperBase</code></td>
+      <td><code>config.upperBase</code></td>
       <td>Defines the styling for the upper section of the component, typically where the image is displayed.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
+      <td><code>config.image</code></td>
       <td>Styles applied to the image element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>lowerBase</code></td>
+      <td><code>config.lowerBase</code></td>
       <td>Defines the styling for the lower section of the component, typically where the text content is displayed.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td><code>config.title</code></td>
       <td>Styles applied to the title text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
+      <td><code>config.subtitle</code></td>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
+      <td><code>config.text</code></td>
       <td>Styles applied to the text content, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>leftLabel</code></td>
+      <td><code>config.leftLabel</code></td>
       <td>Defines the overall styling for the leftLabel that holds the text.</td>
     </tr>
     <tr>
       <td><code>centerLabel</code></td>
+      <td><code>config.centerLabel</code></td>
       <td>Defines the overall styling for the centerLabel that holds the text.</td>
     </tr>
     <tr>
       <td><code>rightLabel</code></td>
+      <td><code>config.rightLabel</code></td>
       <td>Defines the overall styling for the rightLabel that holds the text.</td>
     </tr>
     <tr>
-      <td>urlUpperBase</td>
+      <td><code>urlUpperBase</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The URL that wraps the upper section of the component, typically for navigation purposes.</td>
     </tr>
     <tr>
-      <td>urlImage</td>
+      <td><code>urlImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
-      <td>altImage</td>
+      <td><code>altImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
-      <td>title</td>
+      <td><code>title</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The title text to be displayed.</td>
     </tr>
     <tr>
-      <td>subtitle</td>
+      <td><code>subtitle</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The subtitle text to be displayed, if any.</td>
     </tr>
     <tr>
-      <td>text</td>
+      <td><code>text</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The main text content to be displayed.</td>
     </tr>
     <tr>
-      <td>leftLabel</td>
+      <td><code>leftLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the left label.</td>
     </tr>
     <tr>
-      <td>centerLabel</td>
+      <td><code>centerLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the center label.</td>
     </tr>
     <tr>
-      <td>rightLabel</td>
+      <td><code>rightLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the right label.</td>
     </tr>
     <tr>
-      <td>imageBackground</td>
+      <td><code>imageBackground</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The background image for the component's image section.</td>
     </tr>
-    <td>description</td>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -182,7 +207,7 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-primary # Add text-color
+    text: text-primary dark:text-black # Add text-color
     leftLabel: text-primary  # Add text-color
     centerLabel: text-primary
     rightLabel: text-primary
@@ -216,7 +241,7 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-primary # Add text-color
+    text: text-primary dark:text-black # Add text-color
     leftLabel: text-primary  # Add text-color
     centerLabel: text-primary
     rightLabel: text-primary

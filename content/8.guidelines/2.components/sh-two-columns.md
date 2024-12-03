@@ -97,7 +97,7 @@ The <b>{{ $doc.constructorName }}</b> constructor supports the following propert
 #### Properties and Attributes Description
 The `gap` property controls gutters between columns.
 Values for this property and its basic usage can be found in
-[tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
+[TailwindCSS](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
 
 <table>
   <thead>
@@ -113,24 +113,29 @@ Values for this property and its basic usage can be found in
       <td rowspan="2"><code>ui</code></td>
       <td>n/a</td>
       <td>n/a</td>
-      <td>Optional configuration object for customizing various styling aspects of the `ShTwoColumns` component.</td>
+      <td>Optional configuration object for customizing various styling aspects of the <code>ShTwoColumns</code> component.</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>n/a</td>
-      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShTwoColumns</code>. The attribute <code>shadow-2xl</code> is used to provide a shadow effect around the wrapper.</td>
+      <td><code>config.wrapper</code></td>
+      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShTwoColumns</code>. 
     </tr>
     <tr>
       <td><code>size</code></td>
       <td>n/a</td>
-      <td>"L"</td>
-      <td>Optional. Specifies the width of the left column.</td>
+      <td><code>L</code></td>
+      <td>
+        Optional. Specifies the width of the left column.</br>
+        <b>Options:</b> <code>2XS</code>, <code>XS</code>, <code>S</code>, <code>M</code>, <code>L</code>, <code>XL</code>, <code>2XL</code>, <code>3XL</code> & <code>4XL</code>
+      </td>
     </tr>
     <tr>
       <td><code>gap</code></td>
       <td>n/a</td>
-      <td>"gap-4"</td>
-      <td>Optional. Controls the gutters between columns. Refer to the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a> for values and usage.</td>
+      <td><code>gap-4</code></td>
+      <td>
+        Optional. Controls the gutters between columns.</br>
+        <b>Options:</b> Refer to the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a> for values and usage.</td>
     </tr>
     <td><code>description</code></td>
       <td>n/a</td>

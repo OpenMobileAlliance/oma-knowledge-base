@@ -60,94 +60,114 @@ The constructor creates a display format showcasing an avatar that represents a 
     <tr>
       <th>Property</th>
       <th>Class</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9">ui</td>
+      <td rowspan="9"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShAvatar</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the avatar component. Each attribute within the <code>ui</code> property targets a specific part of the avatar display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
       <td><code>base</code></td>
+      <td><code>config.base</code></td>
       <td>A placeholder for additional base styles that can be applied to the avatar component.</td>
     </tr>
     <tr>
       <td><code>avatar</code></td>
+      <td><code>config.avatar</code></td>
       <td>Styles applied to the avatar image itself, including properties like grayscale effect, rounded shape, and size.</td>
     </tr>
     <tr>
       <td><code>socials</code></td>
+      <td><code>config.socials</code></td>
       <td>Contains the styles for the social media icons, including their alignment and spacing.</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
+      <td><code>config.icon</code></td>
       <td>Defines the styling for individual social media icons, including hover effects and transition animations.</td>
     </tr>
     <tr>
       <td><code>name</code></td>
+      <td><code>config.name</code></td>
       <td>Styles applied to the text displaying the name of the person, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>role</code></td>
+      <td><code>config.role</code></td>
       <td>Styles applied to the text displaying the role or position of the person.</td>
     </tr>
     <tr>
       <td><code>company</code></td>
+      <td><code>config.company</code></td>
       <td>Styles applied to the text displaying the company name of the person.</td>
     </tr>
     <tr>
       <td><code>srcAvatar</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the avatar image to be displayed.</td>
     </tr>
     <tr>
       <td><code>altAvatar</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>Alternative text for the avatar image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
       <td><code>name</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The name of the person to be displayed.</td>
     </tr>
     <tr>
       <td><code>role</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>The role or position of the person within the company.</td>
     </tr>
     <tr>
       <td><code>company</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The name of the company the person is associated with.</td>
     </tr>
     <tr>
       <td><code>linkedin</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's LinkedIn profile.</td>
     </tr>
     <tr>
       <td><code>facebook</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>URL link to the person's Facebook profile.</td>
     </tr>
     <tr>
       <td><code>instagram</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's Instagram profile.</td>
     </tr>
     <tr>
       <td><code>twitter</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's Twitter profile.</td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>

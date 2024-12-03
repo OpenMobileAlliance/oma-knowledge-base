@@ -35,21 +35,25 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a short text that i
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">ui</td>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>

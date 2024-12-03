@@ -59,70 +59,85 @@ The constructor creates a display format for a list of cards, including a header
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="8">ui</td>
+      <td rowspan="8"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShListCards</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the list cards component. Each attribute within the <code>ui</code> property targets a specific part of the list cards display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds the entire list of cards. This typically includes padding, margins, and general layout settings.</td>
     </tr>
     <tr>
       <td><code>header</code></td>
+      <td><code>config.header</code></td>
       <td>Styles applied to the header section, including the title, subtitle, and description. This can include font size, color, and alignment settings.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td><code>config.title</code></td>
       <td>Define the style of title fonts, displayed prominently at the top of the header section.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
+      <td><code>config.subtitle</code></td>
       <td>Define the style of subtitle fonts, which provides additional context or description for the list of cards.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
+      <td><code>config.text</code></td>
       <td>Define the style of text fonts</td>
     </tr>
     <tr>
       <td><code>base</code></td>
+      <td><code>config.base</code></td>
       <td>Styles applied to the grid layout of the cards. This typically includes grid columns and gap settings.</td>
     </tr>
     <tr>
       <td><code>gap</code></td>
+      <td><code>config.gap</code></td>
       <td>The gap size between the cards in the grid layout.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The title of the list of cards, displayed prominently at the top of the header section.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>The subtitle, which provides additional context or description for the list of cards.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Additional descriptive text or instructions displayed below the subtitle.</td>
     </tr>
     <tr>
       <td><code>cols</code></td>
       <td>n/a</td>
-      <td>The number of columns in the grid layout for the cards.</td>
+      <td><code>gridClass</code></td>
+      <td>The number of columns in the grid layout for the cards. The <code>gridClass</code> inteligentlly calculates number of cols that can be visible depending of the width of the screen. For any screen larger that <code>1300px</code> this component will allow user to enter his desired number of columns. Any width lower than that, it will automatically set columns to either 3, 2 or 1.</td>
     </tr>
     <tr>
       <td><code>cardID</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>This prop allows this constructor to list cards in order that is inputed</td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>This is used to help content writers. Doesn`t render on site.</td>
     </tr>

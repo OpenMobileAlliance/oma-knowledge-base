@@ -55,100 +55,121 @@ The <b>{{ $doc.constructorName }}</b> constructor allows for clients and custome
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="8">ui</td>
+      <td rowspan="8"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
+      <td><code>config.image</code></td>
       <td>Styles applied to the image element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td><code>config.title</code></td>
       <td>Styles applied to the title text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
+      <td><code>config.subtitle</code></td>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
+      <td><code>config.text</code></td>
       <td>Styles applied to the text content, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>button</code></td>
+      <td><code>config.button</code></td>
       <td>Defines the styling for the button element, including hover effects and transition animations.</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
+      <td><code>config.icon</code></td>
       <td>Styles applied to the icon element, including properties like size and color.</td>
     </tr>
     <tr>
-      <td>urlImage</td>
+      <td><code>urlImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
-      <td>altImage</td>
+      <td><code>altImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
-      <td>title</td>
+      <td><code>title</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The title text to be displayed.</td>
     </tr>
     <tr>
-      <td>subtitle</td>
+      <td><code>subtitle</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The subtitle text to be displayed, if any.</td>
     </tr>
     <tr>
-      <td>text</td>
+      <td><code>text</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The main text content to be displayed.</td>
     </tr>
     <tr>
-      <td>urlButton</td>
+      <td><code>urlButton</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The URL link the button will navigate to when clicked.</td>
     </tr>
     <tr>
-      <td>labelButton</td>
+      <td><code>labelButton</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The label text displayed on the button.</td>
     </tr>
     <tr>
-      <td>colorButton</td>
+      <td><code>colorButton</code></td>
       <td>n/a</td>
+      <td><code>black</code></td>
       <td>The color of the button.</td>
     </tr>
     <tr>
-      <td>styleButton</td>
+      <td><code>styleButton</code></td>
       <td>n/a</td>
-      <td>The style of the button (e.g., outline, soft, solid, link, ghost). </td>
+      <td><code>solid</code></td>
+      <td>The style of the button (can be: <code>outline</code>, <code>soft</code>, <code>solid</code>, <code>link</code>, <code>ghost</code>). </td>
     </tr>
     <tr>
-      <td>icon</td>
+      <td><code>icon</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The name of the icon to be displayed.</td>
     </tr>
     <tr>
-      <td>altIcon</td>
+      <td><code>altIcon</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Alternative text for the icon, used for accessibility.</td>
     </tr>
     <tr>
-      <td>description</td>
+      <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>
