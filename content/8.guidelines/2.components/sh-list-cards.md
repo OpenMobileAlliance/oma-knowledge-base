@@ -178,7 +178,7 @@ cardID: [55, 50, 45]
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the <b>{{ $doc.constructorName }}</b> file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -202,7 +202,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the `<b>{{ $doc.constructorName }}</b>` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 * **Value**: `"pl-4 pr-4 pb-10 shadow-md dark:shadow-none bg-neutral-100 dark:bg-neutral-900/[0.6] rounded-2xl"`

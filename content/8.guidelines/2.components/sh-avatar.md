@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
  
 #### Example Basic
 
@@ -50,10 +50,10 @@ twitter: https://www.linkedin.com/in/jpradocueva/
 ::
 ```
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -155,7 +155,7 @@ The constructor creates a display format showcasing an avatar that represents a 
 </table>
 
 
-### Example Usage
+#### Example Usage
 #### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
@@ -213,7 +213,7 @@ twitter: https://www.linkedin.com/in/jpradocueva/
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 
 ```ts
@@ -233,7 +233,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-white rounded-md"`
@@ -271,7 +271,7 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
 
 ::ShFaq
 ---

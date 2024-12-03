@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
 ##### Example Basic
 
@@ -57,10 +57,10 @@ urlUpperBase: https://www.nasa.gov
 ```
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor represents a card divided in two halfs, with upper half containing image, and lower half containing text with additional options for inserting labels. Text & labels both fully support Markdown syntax. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in two halfs, with upper half containing image, and lower half containing text with additional options for inserting labels. Text & labels both fully support Markdown syntax. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -243,7 +243,7 @@ urlUpperBase: https://www.nasa.gov
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-card.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -264,7 +264,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"flex flex-col justify-between border-2 rounded-xl mx-auto max-w-lg overflow-hidden"</code>
@@ -310,4 +310,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

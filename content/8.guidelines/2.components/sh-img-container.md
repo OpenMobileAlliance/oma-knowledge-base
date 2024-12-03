@@ -16,7 +16,7 @@ This constructor inverts colors in dark mode, so any other image inserted will h
 ::
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
 #### Example Basic
 
@@ -46,7 +46,7 @@ figcaption: |
 These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The constructor creates a display format showcasing an image and an optional caption. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The constructor creates a display format showcasing an image and an optional caption. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -101,7 +101,7 @@ The constructor creates a display format showcasing an image and an optional cap
   </tbody>
 </table>
 
-### Example Usage
+#### Example Usage
 #### Advanced Settings
 An example with customized ui attributes for enhanced display:
 
@@ -136,7 +136,7 @@ figcaption: |
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the <b>{{ $doc.constructorName }}.ts</b> file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default{

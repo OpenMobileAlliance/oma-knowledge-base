@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
 ##### Example Basic
 
@@ -25,10 +25,10 @@ This is how it is constructed
 ```
 
 ### Props
-There aren`t any properties associated to the {{ $doc.constructorName }} constructor.
+There aren`t any properties associated to the <b>{{ $doc.constructorName }}</b> constructor.
 
 #### Attributes Description
-The {{ $doc.constructorName }} constructor represents a short text that is easily visible. It can be used to represent versions of files, documents, updates etc. Below is a description of the attribute used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor represents a short text that is easily visible. It can be used to represent versions of files, documents, updates etc. Below is a description of the attribute used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -63,7 +63,7 @@ An example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
+    wrapper: hover:scale-125 duration-300 mx-10 bg-oma-red-50 dark:bg-oma-red-700 text-primary
 ---
 1.2+
 ::
@@ -74,16 +74,16 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
+    wrapper: hover:scale-125 duration-300 mx-10 bg-oma-red-50 dark:bg-oma-red-700 text-primary
 ---
 1.2+
 ::
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-card.ts` and `status.ts` files:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> and `status.ts` files:
 
-`sh-badge.ts`
+<code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>
 
 ```ts
 import status from './status';
@@ -113,10 +113,10 @@ export default status;
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>status.default</code>
 *  **Description**: This defines the overall styling for the container holding the element. The value status.default is defined inside of <code>status.ts</code> file.
 
-This style property ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+This style property ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

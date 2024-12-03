@@ -343,7 +343,7 @@ ClickMe!!!
 *it will take you to desirable destination*
 ::
 
-### Combine Button with Other Constructors
+#### Combine Button with Other Constructors
 It is possible to insert other constructors inside of the <b>{{ $doc.constructorName }}</b> constructor. The other components are supported as well.
 
 ::ShButton
@@ -424,7 +424,7 @@ components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButt
 styleButtons and all other parameters, colorButton for example.
 ```
 
-## Properties and Attributes
+## Props
 
 These are the properties and attributes to define and style <b>{{ $doc.constructorName }}</b> constructor
 
@@ -530,9 +530,8 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
     </tbody>
 </table>
 
-
-
 ## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> and `status.ts` files:
 
 ```ts
 export default {
@@ -583,7 +582,7 @@ export default {
 
 #### Class Descriptions
 
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"align-middle m-1"</code>
@@ -658,4 +657,4 @@ _**default**_
   }</code>
 *  **Description**: Defines default settings. The value includes default text size (size: 'base'), default button style (styleButton: 'solid'), default button color (colorButton: 'primary'), and default link target (target: '_blank').
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

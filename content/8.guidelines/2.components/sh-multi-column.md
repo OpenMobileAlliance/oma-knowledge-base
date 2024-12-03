@@ -126,7 +126,7 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
   </tbody>
 </table>
 
-### Advance Usage
+#### Advance Usage
 In the following example the <b>{{ $doc.constructorName }}</b> component is styled using the attribute `ui.wrapper` and `class` property. The [ShColumn](/guidelines/components/sh-column) component is usually used with the <b>{{ $doc.constructorName }}</b> component to present each column content. It is possible to use different width for each column.
 
 This <b>{{ $doc.constructorName }}</b> contains the following content:
@@ -225,7 +225,7 @@ Second column second row with double width
 
 ```
 
-### Advance Multicolumn
+#### Advance Multicolumn
 
 The <b>{{ $doc.constructorName }}</b> can have multiple *rows* and each row can organise its 
 columns with different column sizes. Columns can spread in multiple rows like in the following
@@ -425,8 +425,8 @@ cols: 4 # Indicates that the width of the `MultiColumn` is divided in 4 spaces o
 ::
 ```
 
-### Config
-These style properties can be modified via `ui` and are stored in the <b>{{ $doc.constructorName }}</b> file:
+## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -440,8 +440,6 @@ export default {
 
 #### Class Descriptions
 These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
-
-### Class Descriptions
 
 _**wrapper**_:
 

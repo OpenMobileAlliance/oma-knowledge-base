@@ -12,7 +12,7 @@ multi-column layout. The column has `header`, that can render `title` and
 `subtitle` in the header accompanied with an image.
 Beside the main content the column also can have the `footer` content as well.
 
-### Basic Usage (no style)
+#### Basic Usage (no style)
 
 This is how a basic <b>{{ $doc.constructorName }}</b> without style is displayed:
 
@@ -42,7 +42,7 @@ This is `ShColumn` component design to show content of the first column.
 ::
 ```
 
-### Basic Usage (with style)
+#### Basic Usage (with style)
 
 This is how a basic <b>{{ $doc.constructorName }}</b> with style is displayed:
 
@@ -77,7 +77,7 @@ This is `ShColumn` component design to show content of the first column.
 ```
 
 
-### Advanced Usage
+#### Advanced Usage
 This is an advance example of a <b>{{ $doc.constructorName }}</b> constructor which contains:
 * Column Title and Subtitle is centered,
 * Markdown text,
@@ -234,9 +234,9 @@ The constructor allows you to organize content inside one column and then nest i
 </table>
 
 ## Config
-The style attributes can be modified via `ui` and are stored in the `sh-column.ts` and `sh-grid-sizes.ts` file:
+The style attributes can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> and `sh-grid-sizes.ts` file:
 
-`sh-column.ts`
+<code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>
 
 ```ts
 export default {
@@ -323,7 +323,7 @@ export default {
 }
 ```
 
-### Attributes Description
+#### Attributes Description
 This section describes the attributes values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_

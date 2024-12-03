@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
 ##### Example Basic
 
@@ -47,10 +47,10 @@ text: |
 ```
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor gives you an option to hold both image and text in one row. Text size, position and alignement are fully adjustable. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor gives you an option to hold both image and text in one row. Text size, position and alignement are fully adjustable. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -191,9 +191,9 @@ text: |
 ```
 
 ### Config
-This is the content inside of the `sh-text-img.ts` & `status.ts`. It list properties where styles can be applied: 
+This is the content inside of the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> & `status.ts`. It list properties where styles can be applied: 
 
-`sh-text-img.ts`
+<code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>
 
 ```ts
 export default {
@@ -226,7 +226,7 @@ export default status;
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"px-8 border dark:border-gray-700 rounded-2xl"</code>
@@ -256,4 +256,4 @@ _**default**_
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

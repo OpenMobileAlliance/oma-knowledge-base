@@ -154,7 +154,7 @@ Testing alert component with shorten width
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-alert.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {

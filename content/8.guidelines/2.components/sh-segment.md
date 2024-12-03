@@ -78,7 +78,7 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
   </tbody>
 </table>
 
-### Advanced Usage
+#### Advanced Usage
 This is how a complex example of the <b>{{ $doc.constructorName }}</b> is displayed. When hovering over the content is zoom in/out and contains different type of content:
 * Markdown content
 * HTML Table
@@ -166,7 +166,7 @@ This is a table written in HTML:
   </tr>
 </table>
 
-It can also include other components. For example another `ShSegment`.
+It can also include other components. For example another <b>{{ $doc.constructorName }}</b>.
 
 :::ShSegment
 ---
@@ -185,7 +185,7 @@ That is making this used to show this component flexibility.
 ```    
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-segment.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 {
@@ -193,7 +193,7 @@ These style properties can be modified via `ui` and are stored in the `sh-segmen
 }
 ```
 
-### Attributes Descriptions
+#### Attributes Descriptions
 This section indicates the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `wrapper` attributes.
 
 _**wrapper**_

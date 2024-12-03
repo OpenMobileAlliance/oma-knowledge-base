@@ -32,8 +32,8 @@ qas:
 ::
 ```
 
-### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+## Props
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes
 These are the properties and attributes to define and style the <b>{{ $doc.constructorName }}</b> constructor:
@@ -149,8 +149,8 @@ qas:
 ::
 ```
 
-### Config
-These style properties can be modified via `ui` and are stored in the `sh-faq.ts` file:
+## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -173,7 +173,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**header.wrapper**_
 *  **Value**: `mt-10`
@@ -219,4 +219,4 @@ _**default**_
 *  **Value**: `{}`
 *  **Description**: Placeholder for default Tailwind CSS values, currently empty.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase its capabilities.
 
 ##### Example Basic
 
@@ -130,10 +130,10 @@ items:
 
 ### Props
 
-These are the properties and attributes associated with the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated with the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor represents a carousel component that supports rotating slides, navigation controls, and automatic slide transitions. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor represents a carousel component that supports rotating slides, navigation controls, and automatic slide transitions. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -211,7 +211,7 @@ The {{ $doc.constructorName }} constructor represents a carousel component that 
 </table>
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-carousel.ts`:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>:
 
 ```ts
 export default {
@@ -263,4 +263,4 @@ _**default**_
 *  **Value**: `{}`
 *  **Description**: Placeholder for default Tailwind CSS values. This can be used to set any default styles if needed.
 
-These style properties ensure that the {{ $doc.constructorName }} is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

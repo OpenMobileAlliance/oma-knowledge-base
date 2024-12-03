@@ -7,7 +7,7 @@ layout: doc
 
 ### Usage
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase Social Media posts.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase Social Media posts.
 ##### X (Twitter) embeded post
 
 ::ShSocial
@@ -66,10 +66,10 @@ src: "https://www.linkedin.com/embed/feed/update/urn:li:share:716126327786642227
 ::
 ```
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor creates a display format showcasing a Social Media post.  Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor creates a display format showcasing a Social Media post.  Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -101,7 +101,7 @@ The {{ $doc.constructorName }} constructor creates a display format showcasing a
 </table>
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-social.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -117,7 +117,7 @@ export default {
 
 #### Class Descriptions
 
-These style properties represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or override through the `ui` properties' attribute. 
+These style properties represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or override through the `ui` properties' attribute. 
 
 
 _**wrapper**_
@@ -147,4 +147,4 @@ _**default**_
 * **Value**: `{}`
 * **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
