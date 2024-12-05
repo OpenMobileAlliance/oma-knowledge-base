@@ -348,6 +348,8 @@ It is possible to insert other constructors inside of the <b>{{ $doc.constructor
 
 ::ShButton
 ---
+ui:
+  wrapper: w-fit
 urlButton: "https://opensource.org/"
 styleButton: outline
 colorButton: blue
