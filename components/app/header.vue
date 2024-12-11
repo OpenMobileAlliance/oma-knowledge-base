@@ -125,7 +125,7 @@ const items = [
   }], [{
     label: 'Create an account',
     icon: 'i-heroicons-user-plus',
-    to: 'https://account.openmobilealliance.org/AccountCreation/GetAccount.asp'
+    to: 'https://member.openmobilealliance.org/AccountCreation/GetAccount.asp'
   }]
 ]
 
