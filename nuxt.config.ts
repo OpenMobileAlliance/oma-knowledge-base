@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    url: 'https://openmobilealliance.org/', 
+    url: 'https://www.openmobilealliance.org/', 
     name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
   },
 
@@ -33,8 +33,9 @@ export default defineNuxtConfig({
     }
   },
 
-  ui: {
-    icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
+  icon: {
+    provider: 'iconify',
+    serverBundle: false,
   },
 
   gtm: {
@@ -68,7 +69,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/news', '/news/articles'],
+      routes: ['/news', '/news/articles', '/guidelines'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
