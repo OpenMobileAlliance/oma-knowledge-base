@@ -16,7 +16,7 @@
           <div class="flex justify-between items-center lg:items-start mb-2">
             <div :class="ui.right">
               <ColorMode />
-              
+
               <span class="mr-2 text-base mt-1">
                 <UDropdown :items="items" mode="click" :popper="{ placement: 'bottom-start' }"
                   :ui="{ background: 'bg-golden contrast-[90%] dark:bg-neutral-600', item: { active: 'bg-golden saturate-150 dark:bg-golden/[0.2]' } }">
@@ -40,20 +40,33 @@
               </slot>
             </div>
           </div>
+
           <ul class="hidden 2xl:flex gap-1.5">
-            <li v-for="link in topLinks" :key="link.path" class="ml-4"
+            <li v-for="link in topLinks" :key="link.path" class="ml-4 group relative"
               :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-              <ULink :to="link._path" :class="[
-                {
-                  'relative after:content-[\'\'] after:absolute after:bottom-[-7px] after:left-0 after:w-full after:h-[5px] after:bg-oma-blue-400 after:rounded-full dark:after:bg-oma-blue-200 after:mt-[14px]': isLinkActive(link._path)
-                },
-                ui.shadow,
-                'text-black dark:text-golden'
-              ]">
+              <ULink :to="link._path" :class="[{
+                'relative after:content-[\'\'] after:absolute after:bottom-[-7px] after:left-0 after:w-full after:h-[5px] after:bg-oma-blue-400 after:rounded-full dark:after:bg-oma-blue-200 after:mt-[14px]': isLinkActive(link._path)
+              },
+              ui.shadow,
+                'text-black dark:text-golden']">
                 {{ link.title }}
               </ULink>
+              <!-- Child titles (dropdown) -->
+              <ul v-if="link.children"
+                class="absolute hidden group-hover:flex group-hover:visible mt-1 flex-col gap-1 truncate bg-[#f3eade] dark:bg-neutral-800 rounded-xl p-2 z-40">
+                <li v-for="(child, index) in link.children.slice(0, link.children.length - 1)" :key="child.path"
+                  :class="[ui.shadow, 'p-2 group relative text-black']"
+                  :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
+                  <ULink :to="child._path"
+                    class='text-lg block text-black dark:text-golden hover:text-black dark:hover:text-golden'>
+                    {{ child.title }}
+                  </ULink>
+                  <!-- Optionally add more children here if needed -->
+                </li>
+              </ul>
             </li>
           </ul>
+
           <!-- Dropdown for smaller screens -->
           <div class="2xl:hidden lg:mx-0 order-first">
             <UDropdown mode="click" :popper="{ placement: 'bottom-start' }">
@@ -67,10 +80,10 @@
                 class="background absolute right-0 mt-11 flex flex-col gap-1.5 p-5 rounded-xl shadow-md z-10">
                 <li v-for="(link, index) in topLinks" :key="link.path" class="text-sm lg:text-xl"
                   :style="{ fontFamily: header.menu.font.type }">
-                  <div v-if="index !== 0" class="p-3 mb-2">
+                  <div v-if="index !== 0" class="p-0 mt-1 mb-2">
                     <hr />
                   </div>
-                  <ULink @click="toggleDropdownAndRotation" :to="link._path" :class="ui.shadow">
+                  <ULink @click="toggleDropdownAndRotation" :to="link._path" :class="[ui.shadow, 'block']">
                     {{ link.title }}
                   </ULink>
                 </li>
