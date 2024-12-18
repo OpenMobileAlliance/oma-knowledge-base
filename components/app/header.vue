@@ -87,7 +87,7 @@
 
 <script setup lang="ts">
 const config = {
-  wrapper: "flex flex-col -mb-px sticky top-0 z-50",
+  wrapper: "flex flex-col -mb-px sticky top-0 z-40",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
   center: "flex justify-around 2xl:flex-col grow",
