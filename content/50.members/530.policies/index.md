@@ -1,6 +1,6 @@
 ---
 title: Policies & Terms
 description:
-layout: doc
+layout: 
 ---
 ### OMA Policies & Terms

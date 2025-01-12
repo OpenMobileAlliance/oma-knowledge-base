@@ -1,6 +1,6 @@
 ---
 title: Working Groups
 description:
-layout: doc
+layout: 
 ---
 ### OMA Working Groups (TBD)

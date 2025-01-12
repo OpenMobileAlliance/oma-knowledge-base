@@ -1,6 +1,6 @@
 ---
 title: Contact Us
 description:
-layout: doc
+layout: 
 ---
 ### OMA Contact Us (TBD)

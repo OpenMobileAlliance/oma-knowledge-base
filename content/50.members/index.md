@@ -1,6 +1,6 @@
 ---
 title: Members
 description:
-layout: doc
+layout: 
 ---
 ### OMA Members (TBD)

@@ -1,5 +1,5 @@
 ---
-title: Afiliates
+title: Affiliates
 description:
 layout: doc
 ---

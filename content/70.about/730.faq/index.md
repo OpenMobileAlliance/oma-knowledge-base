@@ -1,6 +1,6 @@
 ---
 title: FAQ
 description:
-layout: doc
+layout: 
 ---
 ### OMA Frequent Asked Questions (TBD)

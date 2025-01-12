@@ -1,6 +1,6 @@
 ---
 title: Home
 description:
-layout: doc
+layout: 
 ---
 ### OMA Home (TBD)

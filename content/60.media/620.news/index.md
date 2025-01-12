@@ -1,6 +1,6 @@
 ---
 title: IN THE NEWS
 description:
-layout: doc
+layout: 
 ---
 ### OMA News

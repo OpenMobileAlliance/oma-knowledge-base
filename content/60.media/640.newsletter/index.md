@@ -1,6 +1,6 @@
 ---
 title: NEWSLETTER
 description:
-layout: doc
+layout: 
 ---
 ### OMA NEWSLETTER TBD

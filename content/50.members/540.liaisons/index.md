@@ -1,6 +1,6 @@
 ---
 title: Liaisons
 description:
-layout: doc
+layout: 
 ---
 ### OMA Liaisons with Other Standards Flora TBD 

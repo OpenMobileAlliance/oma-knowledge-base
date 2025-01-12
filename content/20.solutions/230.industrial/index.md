@@ -1,6 +1,6 @@
 ---
 title: Industrial
 description:
-layout: doc
+layout: 
 ---
 ### OMA Industrial Applications (TBD)

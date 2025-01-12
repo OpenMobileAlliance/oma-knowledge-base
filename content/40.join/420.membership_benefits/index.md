@@ -1,6 +1,6 @@
 ---
 title: Membership Benefits
 description:
-layout: doc
+layout: 
 ---
 ### OMA Membership Benefitis TBD

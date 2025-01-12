@@ -1,6 +1,6 @@
 ---
 title: Support Resources
 description:
-layout: doc
+layout: 
 ---
 ### OMA Support Resources (TBD)

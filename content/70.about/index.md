@@ -1,6 +1,6 @@
 ---
 title: About
 description:
-layout: doc
+layout: 
 ---
 ### OMA About (TBD)

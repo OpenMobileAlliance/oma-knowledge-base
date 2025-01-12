@@ -1,6 +1,6 @@
 ---
 title: History
 description:
-layout: doc
+layout: 
 ---
 ### OMA History (TBD)

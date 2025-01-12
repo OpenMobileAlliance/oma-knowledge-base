@@ -1,6 +1,6 @@
 ---
 title: Transportation
 description:
-layout: doc
+layout: 
 ---
 ### OMA Transportation Applications (TBD)

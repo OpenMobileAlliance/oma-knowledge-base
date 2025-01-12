@@ -1,6 +1,6 @@
 ---
 title: Utilities
 description:
-layout: doc
+layout: 
 ---
 ### OMA Utilities (TBD)

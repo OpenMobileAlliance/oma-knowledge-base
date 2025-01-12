@@ -1,6 +1,6 @@
 ---
 title: Board Members Overview
 description:
-layout: doc
+layout: 
 ---
 ### OMA Board Members Overview (TBD)

@@ -1,6 +1,6 @@
 ---
 title: Membership Packages
 description:
-layout: doc
+layout: 
 ---
 ### OMA Membership Packages TBD

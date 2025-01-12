@@ -1,6 +1,6 @@
 ---
 title: Blogs
 description:
-layout: doc
+layout: 
 ---
 ### OMA Blogs

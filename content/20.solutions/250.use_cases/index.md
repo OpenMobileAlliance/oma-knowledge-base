@@ -1,6 +1,6 @@
 ---
 title: Use Cases
 description:
-layout: doc
+layout: 
 ---
 ### OMA Use Cases (TBD)
