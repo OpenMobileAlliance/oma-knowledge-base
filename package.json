@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@iconify-json/devicon": "^1.2.4",
-    "@iconify-json/fa6-brands": "^1.2.1",
+    "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/heroicons-solid": "^1.2.0",
     "@iconify-json/icons8": "^1.2.0",
 
