@@ -1,5 +1,6 @@
 ---
 title: Articles
 description:
+layout: doc
 ---
-Pending text.
+## TBD

@@ -1,7 +1,7 @@
 ---
 title: SyncML
 description:
-layout: 
+layout: doc
 ---
 ## Material from Affiliates - SyncML
 

@@ -1,6 +1,6 @@
 ---
 title: EVENTS
 description:
-layout: 
+layout: doc
 ---
 ### OMA EVENTS
