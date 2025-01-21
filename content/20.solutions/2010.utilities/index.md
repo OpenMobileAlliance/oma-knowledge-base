@@ -1,9 +1,8 @@
 ---
-title: Utilities
+title: OMA Utilities
 description:
 layout: doc
 ---
-### OMA Utilities
 
 ::ShTextImg
 ---

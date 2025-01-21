@@ -1,5 +1,5 @@
 ---
-title: Use Cases
+title: LwM2M Use Cases
 description:
 layout: doc
 ---
