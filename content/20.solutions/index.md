@@ -1,7 +1,7 @@
 ---
 title: Solutions
 description:
-layout: 
+layout: doc
 ---
 ### OMA Solutions (TBD)
 Lorem ipsum odor amet, consectetuer adipiscing elit. Tellus cursus faucibus fringilla himenaeos praesent; condimentum netus. Augue rutrum fusce elementum faucibus sociosqu. Convallis ultrices dictumst congue augue consectetur dignissim augue. Lacinia luctus auctor arcu per enim suspendisse mollis potenti. Efficitur dignissim dui montes non nisi. Ipsum ornare blandit finibus, mus himenaeos laoreet vestibulum at ad. Suspendisse fusce congue curabitur in praesent. Sapien aliquam taciti luctus mus posuere. Integer ligula condimentum mi duis eros tellus netus dapibus.

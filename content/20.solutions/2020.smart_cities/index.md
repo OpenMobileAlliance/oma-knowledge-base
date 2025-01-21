@@ -1,6 +1,6 @@
 ---
 title: Smart Cities
 description:
-layout: 
+layout: doc
 ---
 ### OMA Smart Cities (TBD)
