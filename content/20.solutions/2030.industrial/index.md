@@ -27,7 +27,7 @@ The [OMA Lightweight M2M protocol](/lwm2m/applications-use-cases#lwm2m-messaging
 * **Resource 5602**: Max Measured Value (maximum recorded temperature)
 * **Resource 5603**: Reset Min and Max Measured Values (function to reset min/max values)
 
-## Interaction Model
+###ß Interaction Model
 The LwM2M protocol allows interactions with objects and resources through standard operations:
 
 * **Read**: Retrieve the current value of a resource.
@@ -35,7 +35,7 @@ The LwM2M protocol allows interactions with objects and resources through standa
 * **Execute**: Invoke a function on a resource.
 * **Observe/Notify**: Subscribe to changes in a resource's value.
 
-## Controlling Sensors
+### Controlling Sensors
 To control different sensors using the LwM2M protocol, a client on the sensor device registers with an LwM2M server. The server can then interact with the sensors by reading values, writing configurations, and executing commands. For example:
 
 * **Temperature Monitoring**: The server reads the temperature sensor value periodically to monitor environmental conditions.
