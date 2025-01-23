@@ -118,7 +118,7 @@ const selectedTags = ref<string[]>([]);
 
 // Fetch cards and sort by cardID prop order
 const getCards = async () => {
-  const result = await queryContent('news/articles')
+  const result = await queryContent('media/articles')
     .where({ cardID: { $in: props.cardID } })
     .find();
 
