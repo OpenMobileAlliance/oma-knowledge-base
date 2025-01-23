@@ -11,6 +11,10 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap"
   ],
 
+  routeRules: {
+    '/': { redirect: '/home' }
+  },
+
   site: {
     url: 'https://www.openmobilealliance.org/', 
     name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
