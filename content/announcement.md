@@ -1,3 +1,3 @@
 ---
-visible: true # When set to true, makes Announcement banner visible
+visible: false # When set to true, makes Announcement banner visible
 ---
