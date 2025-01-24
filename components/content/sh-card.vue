@@ -1,10 +1,11 @@
 <template>
   <div :class="ui.wrapper">
     <div :class="ui.upperBase" :style="backgroundClass">
-      <NuxtLink :to="urlUpperBase" target="_blank" class="not-prose">
-        <div class="h-80 w-full flex justify-center items-center">
+      <NuxtLink :to="urlUpperBase" :target="target" class="not-prose">
+        <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
           <img :src="urlImage" :class="ui.image" :alt="altImage" />
         </div>
+        <MDC v-else :value="upperBaseText" :class="ui.upperBaseText" />
       </NuxtLink>
     </div>
     <div :class="ui.lowerBase">
@@ -16,8 +17,8 @@
       </div>
       <div :class="ui.text">
         <MDC v-if="text" :value="text" />
-        <ContentRenderer v-else >
-          <MDC :value="excerpt" excerpt class="dark:text-golden"/>
+        <ContentRenderer v-else>
+          <MDC :value="excerpt" excerpt class="dark:text-golden" />
         </ContentRenderer>
       </div>
       <div v-if="page._path === '/news'">
@@ -51,7 +52,9 @@ const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryConte
 const props = withDefaults(
   defineProps<{
     urlUpperBase?: string;
+    upperBaseText?: string;
     urlImage?: string;
+    target?: string;
     altImage?: string;
     title?: string;
     subtitle?: string;
@@ -69,7 +72,9 @@ const props = withDefaults(
     ui: () => ({}),
     description: "",
     urlUpperBase: "",
+    upperBaseText: "",
     urlImage: "",
+    target: "_blank",
     altImage: "",
     title: "",
     subtitle: "",

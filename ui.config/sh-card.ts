@@ -1,6 +1,7 @@
 export default {
   wrapper: "flex flex-col justify-between border-2 dark:border-neutral-700 hover:border-2 hover:border-primary dark:hover:border-2 dark:hover:border-primary rounded-xl mx-auto max-w-lg overflow-hidden bg-inherit shadow-2xl",
   upperBase: "flex items-center justify-center rounded-t-xl",
+  upperBaseText: "",
   image: "h-full w-screen rounded-b-xl overflow-hidden",
   lowerBase: "p-6 rounded-b-xl",
   title: "title text-3xl font-bold text-primary",
