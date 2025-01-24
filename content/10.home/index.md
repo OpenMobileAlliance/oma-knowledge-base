@@ -1,13 +1,14 @@
 ---
 title: Home
 description: Welcome to OMASpecWorks Home Page
-layout: 
+layout: web
+icon: line-md:home-twotone
 ---
 
 ::ShSegment
 ---
 ui:
-    wrapper: space-y-9 px-6 sm:px-16 mb-10 -mt-16
+    wrapper: space-y-9 mb-10
 ---
     ::ShTextImg
     ---
