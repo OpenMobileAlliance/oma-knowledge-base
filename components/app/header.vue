@@ -40,7 +40,8 @@
               </slot>
             </div>
           </div>
-
+          <!-- <AppMenus class="z-50"/> -->
+          <!-- 
           <ul class="hidden 2xl:flex gap-1.5">
             <li v-for="link in topLinks" :key="link.path" class="ml-4 group relative"
               :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
@@ -51,7 +52,6 @@
                 'text-black dark:text-golden']">
                 {{ link.title }}
               </ULink>
-              <!-- Child titles (dropdown) -->
               <ul v-if="link.children"
                 class="absolute hidden group-hover:flex group-hover:visible mt-1 flex-col gap-1 truncate bg-[#f3eade] dark:bg-neutral-800 rounded-xl p-2 z-40">
                 <li v-for="(child, index) in link.children.slice(0, link.children.length - 1)" :key="child.path"
@@ -61,11 +61,10 @@
                     class='text-lg block text-black dark:text-golden hover:text-black dark:hover:text-golden'>
                     {{ child.title }}
                   </ULink>
-                  <!-- Optionally add more children here if needed -->
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- Dropdown for smaller screens -->
           <div class="2xl:hidden lg:mx-0 order-first">
@@ -94,7 +93,7 @@
       </div>
     </div>
     <hr class="mt-1 border-neutral-50/[0.5] dark:border-neutral-700" />
-    <AppBreadcrumbs v-if="route.name !== 'index'" />
+    <AppBreadcrumbs v-if="route.name !== 'index'" class="z-10" />
   </header>
 </template>
 

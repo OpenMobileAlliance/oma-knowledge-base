@@ -1,15 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/content",
-    "@nuxt/ui",
-    "@nuxtjs/google-fonts",
-    "nuxt-testimonial",
-    '@nuxtjs/color-mode',
-    '@zadigetvoltaire/nuxt-gtm',
-    "@nuxtjs/sitemap"
-  ],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap", '@primevue/nuxt-module'],
 
   routeRules: {
     '/': { redirect: '/home' }
