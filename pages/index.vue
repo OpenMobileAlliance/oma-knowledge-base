@@ -1,5 +1,5 @@
-<template>
-  <div :class="ui.landingHero.wrapper" class="bg-[url('/images/landing-hero/lh-3.jpeg')] bg-cover bg-center">
+<!-- <template> -->
+  <!-- <div :class="ui.landingHero.wrapper" class="bg-[url('/images/landing-hero/lh-3.jpeg')] bg-cover bg-center">
     <div class="grid grid-cols-2">
       <div class="col-start-1 col-span-1 flex flex-col items-start pl-5 sm:pl-14 lg:pl-28 pt-20 h-screen">
         <img src="/logo.png" alt="Logo" :class="ui.landingHero.logo"
@@ -26,20 +26,28 @@
           <h1 v-if="data[0].title !== 'Landing Page Menu'" :class="ui.landingPage.menu.title">{{ data[0].title }}</h1>
           <h3 :class="ui.landingPage.menu.description">{{ data[0].description }}</h3>
           <ContentRenderer :value="item" v-for="item in data" :class="ui.landingPage.menu.content"/>
-        </ContentQuery>
+        </ContentQuery> -->
         <!-- <ContentQuery path="/landing-page-floaters" v-slot="{ data }">
           <ContentRenderer :value="item" v-for="item in data"
             class="flex flex-col lg:flex-row h-[80%] sm:h-full lg:h-1/6 lg:pl-16 items-end p-3 sm:p-0 mt-12 sm:mt-14 lg:mt-64" />
         </ContentQuery> -->
-      </div>
+      <!-- </div>
     </div>
   </div>
 
   <ContentDoc class="lg:w-3/4 xl:w-1/2 min-w-max mx-auto mt-14 pb-24" />
-  <AppFooter />
-</template>
+  <AppFooter /> -->
+<!-- </template> -->
 
 <script setup lang="ts">
+
+// Redirect to the first page in the navigation handled in nuxt.config.ts
+// const router = useRouter()
+// const data = await useAsyncData('data', () => fetchContentNavigation())
+// console.log(data.data._rawValue[1]._path)
+// router.replace(data.data._rawValue[1]._path)
+
+/*
 
 const config = {
   landingHero: {
@@ -71,7 +79,5 @@ const { ui, attrs } = useUI(
   config,
 );
 
-const theme = useColorMode();
-const route = useRoute();
-
+*/
 </script>

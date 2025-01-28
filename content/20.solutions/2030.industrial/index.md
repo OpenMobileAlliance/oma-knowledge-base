@@ -1,7 +1,7 @@
 ---
 title: OMA Industrial Applications
 description:
-layout: doc
+layout: web
 ---
 
 * **Energy Sector**: Manage smart grids, monitor energy consumption, and control distributed energy resources.
