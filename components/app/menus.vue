@@ -63,7 +63,7 @@
 </template>
 
 <script setup lang="ts">
-import { MenuBar } from '@imengyu/vue3-context-menu';
+//import { MenuBar } from '@imengyu/vue3-context-menu';
 //import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css';
 //import type { MenuBarOptions, MenuItem } from '@imengyu/vue3-context-menu';
 
