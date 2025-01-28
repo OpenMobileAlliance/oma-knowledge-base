@@ -40,7 +40,7 @@
               </slot>
             </div>
           </div>
-          <!-- <AppMenus class="z-50"/> -->
+          <AppMenus class="z-50"/>
           <!-- 
           <ul class="hidden 2xl:flex gap-1.5">
             <li v-for="link in topLinks" :key="link.path" class="ml-4 group relative"
