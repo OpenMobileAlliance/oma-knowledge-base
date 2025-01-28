@@ -1,5 +1,5 @@
 ---
-title: Articles
+title: Media
 description:
 layout: doc
 ---
