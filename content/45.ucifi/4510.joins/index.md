@@ -15,8 +15,6 @@ positionText: left
 spanText: m
 alignText: left
 urlImage: /images//landing-hero/innovation1.jpeg
-title: |
-    
 subtitle: |
     A Unified Vision for Smart Cities
 text: |
@@ -36,9 +34,7 @@ ui:
 positionText: right
 spanText: m
 alignText: left
-urlImage: /images//landing-hero/innovation1.jpeg
-title: |
-    
+urlImage: /images//landing-hero/innovation1.jpeg    
 subtitle: |
     Strengthening the Mission
 text: |
@@ -73,9 +69,7 @@ ui:
 positionText: left
 spanText: m
 alignText: left
-urlImage: /images//landing-hero/innovation1.jpeg
-title: | 
-    
+urlImage: /images//landing-hero/innovation1.jpeg    
 subtitle: |
     The Future of the uCIFI® Data Model
 text: |
