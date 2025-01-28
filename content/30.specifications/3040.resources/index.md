@@ -27,16 +27,14 @@ These tools empower developers and organizations to streamline their processes, 
 ---
 cols: 4
 ---
-:::ShMicroCard
----
-urlImage: 
-urlWrapper: 
-title: |
-    Microsoft sets non-profit to cut software related carbon emissions. 
-subtitle: |
-    Axios gets you smarter, faster on what matters.
-text: |
-    This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
----
-:::
+    :::ShCard
+    --- 
+    title: |
+        Microsoft sets non-profit to cut software related carbon emissions. 
+    subtitle: |
+        Axios gets you smarter, faster on what matters.
+    text: |
+        This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+    ---
+    :::
 ::
