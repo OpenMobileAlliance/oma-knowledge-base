@@ -65,7 +65,7 @@
         </div>
       </template>
 
-      <template v-if="page?.layout === 'web'">
+      <template v-else-if="page?.layout === 'web'">
         <div class="grid grid-cols-12 relative">
 
           <!-- Main Content -->
