@@ -7,6 +7,7 @@ layout: doc
 ::ShTextImg
 ---
 ui:
+    wrapper: mb-12
     title: text-4xl
     subtitle: text-3xl text-neutral-600
     text: text-xl
