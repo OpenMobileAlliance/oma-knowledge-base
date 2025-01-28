@@ -1,7 +1,7 @@
 ---
 title: uCIFI® DATA MODEL
 description:
-layout: doc
+layout: 
 ---
 
 ::ShTextImg
