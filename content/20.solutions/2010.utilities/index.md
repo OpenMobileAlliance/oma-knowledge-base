@@ -30,32 +30,91 @@ Moreover, real-world use cases highlight the transformative impact of __LwM2M__ 
 
 ## Technical Overview
 
-### 1. Interoperability
+::ShMultiColumn
+---
+cols: 3 # number of columns
+---
 
-- LwM2M supports various data formats and integrates seamlessly with other standard development organizations (SDOs), allowing utilities to leverage existing systems and data.
+:::ShCard 
+---
+text: | 
+    All the uCIFI® data model objects and their associated attributes are modelized using LwM2M formats so they LwM2M supports various data formats and integrates seamlessly with other standard development organizations (SDOs), allowing utilities to leverage existing systems and data.
+title: |
+    1
+subtitle: |
+    Interoperability
+---
+:::
 
-### 2. Scalability
+:::ShCard 
+---
+text: | 
+    The protocol's design accommodates large-scale deployments, offering centralized network management, efficient resource allocation, and group operations.
+title: |
+    2
+subtitle: |
+    Scalability
+---
+:::
 
-- The protocol's design accommodates large-scale deployments, offering centralized network management, efficient resource allocation, and group operations.
+:::ShCard 
+---
+text: | 
+    LwM2M employs robust security measures, including secure device onboarding, authentication, and encrypted communication (DTLS, TLS, OSCORE), ensuring data integrity and privacy.
+title: |
+    3
+subtitle: |
+    Security
+---
+:::
 
-### 3. Security
+::
 
-- LwM2M employs robust security measures, including secure device onboarding, authentication, and encrypted communication (DTLS, TLS, OSCORE), ensuring data integrity and privacy.
+## Benefits for Utilities
 
-## Benefits for Utilities:
+::ShMultiColumn
+---
+cols: 3 # number of columns
+---
 
-### 1. Efficiency and Cost Savings
+:::ShCard 
+---
+text: | 
+    **Streamlined Operations**: LwM2M provides a unified standard for device lifecycle and network management, reducing the complexity of handling multiple proprietary systems. This standardization minimizes operational costs and accelerates device deployment.
 
-- **Streamlined Operations**: LwM2M provides a unified standard for device lifecycle and network management, reducing the complexity of handling multiple proprietary systems. This standardization minimizes operational costs and accelerates device deployment.
-- **Power Efficiency**: The protocol's design optimizes power usage, making it suitable for battery-powered devices. This contributes to longer device lifecycles and lower operational costs.
+    **Power Efficiency**: The protocol's design optimizes power usage, making it suitable for battery-powered devices. This contributes to longer device lifecycles and lower operational costs.
+title: |
+    1
+subtitle: |
+    Efficiency and Cost Savings
+---
+:::
 
-### 2. Remote Monitoring and Management
+:::ShCard 
+---
+text: | 
+    **Enhanced Security**: LwM2M ensures secure device onboarding, authentication, and access control, protecting against unauthorized access and cyber threats. 
+    
+    **Real-Time Connectivity Monitoring**: Continuous monitoring helps detect and resolve network issues, ensuring uninterrupted service.
+title: |
+    2
+subtitle: |
+    Remote Monitoring and Management
+---
+:::
 
-- **Enhanced Security**: LwM2M ensures secure device onboarding, authentication, and access control, protecting against unauthorized access and cyber threats.
-- **Real-Time Connectivity Monitoring**: Continuous monitoring helps detect and resolve network issues, ensuring uninterrupted service.
+:::ShCard 
+---
+text: | 
+    **Vendor-Agnostic**: LwM2M's vendor-agnostic nature allows utilities to integrate various devices and systems, reducing dependency on specific vendors and fostering innovation.
+    **Multi-Network Compatibility**: The protocol works seamlessly across multiple network technologies, ensuring compatibility with existing and future infrastructures.
+title: |
+    3
+subtitle: |
+    Interoperability and Scalability
+---
+:::
 
-### 3. Interoperability and Scalability
+::
 
-- **Vendor-Agnostic**: LwM2M's vendor-agnostic nature allows utilities to integrate various devices and systems, reducing dependency on specific vendors and fostering innovation.
-- **Multi-Network Compatibility**: The protocol works seamlessly across multiple network technologies, ensuring compatibility with existing and future infrastructures.
 
