@@ -1,57 +1,75 @@
 <template>
-    <ul class="w-fit flex items-end justify-center space-y-2 dark:bg-transparent rounded-lg">
-        <li v-for="(item, index) in menuData.items" :key="index" class="group relative">
+    <ul class="w-fit flex items-end justify-center space-y-2  rounded-lg">
+        <li v-for="(item, index) in menuData.items" :key="index" class="group/item relative">
             <!-- Root Menu Button -->
             <button @click="item.onClick"
-                class="w-full flex items-center justify-start px-4 py-2 text-left hover:bg-golden dark:hover:bg-gray-800 hover:rounded-lg transition duration-200">
+                class="w-full flex items-center justify-start px-4 py-2 text-left hover:bg-white dark:hover:bg-gray-800 hover:rounded-t-lg">
                 <span class="flex items-center space-x-2">
-                    <img v-if="item.svgIcon" :src="item.svgIcon" alt="icon" class="w-5 h-5" />
+                    <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
                     <span class="font-medium text-gray-900 dark:text-gray-100">
                         {{ item.label }}
                     </span>
                 </span>
+                <UIcon v-if="item.children" name="mdi:chevron-right" class="ml-auto" />
             </button>
 
             <!-- Submenu -->
             <ul v-if="item.children"
-                class="absolute bottom-full top-10 left-0 hidden group-hover:block shadow-lg rounded-lg mt-0 bg-white dark:bg-gray-800 z-10">
-                <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group relative">
-                    <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" /> -->
+                class="absolute top-10 left-0 hidden group-hover/item:flex flex-col shadow-lg rounded-b-lg mt-0 bg-inherit bg-white dark:bg-gray-800 z-50">
+                <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
                     <button @click="child.onClick"
-                        class="w-full flex items-center px-4 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
-                        <img v-if="child.svgIcon" :src="child.svgIcon" alt="icon" class="w-5 h-5 mr-2" />
+                        class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition ease-out duration-200">
+                        <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
                         <span class="font-medium text-gray-900 dark:text-gray-100">
                             {{ child.label }}
                         </span>
-                        <UIcon v-if="child.children" name="mdi:chevron-right" />
+                        <UIcon v-if="child.children" name="mdi:chevron-right" class="ml-auto" />
                     </button>
 
                     <!-- Recursive Submenu -->
                     <ul v-if="child.children"
-                        class="absolute left-full top-0 hidden group-hover:block shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800">
+                        class="absolute left-full top-0 hidden group-hover/sub:flex flex-col shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800">
                         <li v-for="(subChild, subChildIndex) in child.children" :key="subChildIndex"
-                            class="group relative">
+                            class="group/subsub relative">
                             <button @click="subChild.onClick"
-                                class="w-full flex items-center px-4 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
-                                <img v-if="subChild.svgIcon" :src="subChild.svgIcon" alt="icon" class="w-5 h-5 mr-2" />
+                                class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
+                                <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
                                 <span class="font-medium text-gray-900 dark:text-gray-100">
                                     {{ subChild.label }}
                                 </span>
+                                <UIcon v-if="subChild.children" name="mdi:chevron-right" class="ml-auto" />
                             </button>
 
                             <!-- Recursive deeper submenus -->
                             <ul v-if="subChild.children"
-                                class="absolute left-full top-0 hidden group-hover:block shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800">
+                                class="absolute left-full top-0 hidden group-hover/subsub:flex flex-col shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800">
                                 <li v-for="(deepChild, deepChildIndex) in subChild.children" :key="deepChildIndex"
-                                    class="relative">
+                                    class="group/deeper relative">
                                     <button @click="deepChild.onClick"
-                                        class="w-full flex items-center px-4 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
-                                        <img v-if="deepChild.svgIcon" :src="deepChild.svgIcon" alt="icon"
-                                            class="w-5 h-5 mr-2" />
+                                        class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
+                                        <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
                                         <span class="font-medium text-gray-900 dark:text-gray-100">
                                             {{ deepChild.label }}
                                         </span>
+                                        <UIcon v-if="deepChild.children" name="mdi:chevron-right" class="ml-auto" />
                                     </button>
+
+                                    <!-- 5th Level (and more if needed) -->
+                                    <ul v-if="deepChild.children"
+                                        class="absolute left-full top-0 hidden group-hover/deeper:flex flex-col shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800">
+                                        <li v-for="(fifthChild, fifthChildIndex) in deepChild.children"
+                                            :key="fifthChildIndex" class="relative">
+                                            <button @click="fifthChild.onClick"
+                                                class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
+                                                <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
+                                                <span class="font-medium text-gray-900 dark:text-gray-100">
+                                                    {{ fifthChild.label }}
+                                                </span>
+                                                <UIcon v-if="fifthChild.children" name="mdi:chevron-right"
+                                                    class="ml-auto" />
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -70,8 +88,13 @@
 const router = useRouter();
 const route = useRoute();
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation());
-const frontmatter = await queryContent(route.path).where({ icon: { $exists: true } }).find();
-//console.log(frontmatter[0].icon);
+
+const frontmatter = ref<any[]>([])
+
+ watchEffect(async () => {
+   frontmatter.value = await queryContent(route.path).where({ icon: { $exists: true } }).find();
+//   console.log(frontmatter.value[0].icon);
+ });
 
 // List of folder and file titles to filter out
 const excludedTitles = [
@@ -96,7 +119,7 @@ const filteredNavigation = computed(() =>
         !excludedTitles.includes(navItem.title) && !excludedPaths.includes(navItem._path)
     )
 );
-console.log(filteredNavigation.value);
+//console.log(filteredNavigation.value);
 
 // Recursive function to process deeper levels of navigation
 const processNavigationItem = (navItem: any): MenuItem => ({
@@ -116,5 +139,7 @@ const menuData: MenuBarOptions = computed(() => ({
     minWidth: 230,
 }));
 
-
+defineExpose({
+    frontmatter,
+});
 </script>
