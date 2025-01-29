@@ -1,13 +1,13 @@
 <template>
-<header class="-mb-1 w-full text-xs italic flex items-center">
-    <div class="mx-auto mt-4">
-      <NuxtLink to="/" :class="ui.linkCrumb">HOME</NuxtLink>
-      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-primary/[0.6] dark:text-primary/[0.8]">
-        &nbsp; > &nbsp;
+  <header class="-mb-1 w-full text-xs italic flex items-center">
+    <div class="flex mx-auto mt-4">
+      <NuxtLink v-if="route.path!=='/home'" to="/" :class="ui.linkCrumb">HOME</NuxtLink>
+      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="flex text-primary/[0.6] dark:text-primary/[0.8]">
+        <div v-if="route.path !== '/home'">&nbsp; > &nbsp;</div>
         <NuxtLink v-if="crumb.to != route.path" :to="crumb.to"
           :class="{ [ui.linkCrumb]: isBreadcrumbActive(crumb, index) }">
           {{ crumb.label.toUpperCase() }}
-      </NuxtLink>
+        </NuxtLink>
         <span v-else :class="[ui.activeCrumb, { '': isBreadcrumbActive(crumb, index) }]">{{
           crumb.label.toUpperCase() }}</span>
       </span>
@@ -36,7 +36,6 @@ const { ui } = useUI(
   toRef(props, "ui"),
   config
 );
-
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
 const route = useRoute();
