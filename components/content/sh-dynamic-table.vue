@@ -17,7 +17,7 @@
           </div>
           <div class="pl-4">
             <button @click="downloadCSV" class="hover:scale-125" title="Download CSV file">
-              <Icon name="i-carbon-download" />
+              <UIcon name="i-carbon-download" />
             </button>
           </div>
           <div class="pl-8 grow">

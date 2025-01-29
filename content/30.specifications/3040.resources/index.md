@@ -1,11 +1,12 @@
 ---
-title: Support Tools
+title: OMA Resources
 description:
 layout: doc
 ---
 
 ## Introduction to LwM2M Tools
-The Open Mobile Alliance (OMA) provides a comprehensive suite of tools designed to support the development, management of Lightweight M2M (LwM2M) Objects. These tools play a critical role in facilitating the deployment of IoT devices by ensuring seamless interaction within the LwM2M ecosystem. Below is an overview of the key tools available:
+The Open Mobile Alliance (OMA) provides a comprehensive suite of resources and tools designed to support the development, management of Lightweight M2M (LwM2M) Objects. These resources play a critical role in facilitating the deployment of IoT devices by ensuring seamless interaction within the LwM2M ecosystem. Below is an overview of what is available:
+
 
 ### LwM2M Service API Registry: 
 * A powerful API managed by the OMNA, offering access to metadata for all LwM2M objects, aiding developers and organizations in retrieving detailed object information for efficient device management.
@@ -21,3 +22,19 @@ The Open Mobile Alliance (OMA) provides a comprehensive suite of tools designed 
 * Detailed documentation guiding users in defining and registering new LwM2M objects and resources, ensuring adherence to OMA standards.
 
 These tools empower developers and organizations to streamline their processes, ensuring accuracy and interoperability within the LwM2M ecosystem.
+
+::ShMultiColumn
+---
+cols: 4
+---
+    :::ShCard
+    --- 
+    title: |
+        Microsoft sets non-profit to cut software related carbon emissions. 
+    subtitle: |
+        Axios gets you smarter, faster on what matters.
+    text: |
+        This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+    ---
+    :::
+::
