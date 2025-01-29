@@ -20,7 +20,7 @@
                     <button @click="child.onClick"
                         class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition ease-out duration-200">
                         <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
-                        <span class="font-medium text-gray-900 dark:text-gray-100">
+                        <span class="font-medium text-gray-900 dark:text-gray-100 truncate">
                             {{ child.label }}
                         </span>
                         <UIcon v-if="child.children" name="mdi:chevron-right" class="ml-auto" />
@@ -34,7 +34,7 @@
                             <button @click="subChild.onClick"
                                 class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
                                 <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
-                                <span class="font-medium text-gray-900 dark:text-gray-100">
+                                <span class="font-medium text-gray-900 dark:text-gray-100 truncate">
                                     {{ subChild.label }}
                                 </span>
                                 <UIcon v-if="subChild.children" name="mdi:chevron-right" class="ml-auto" />
@@ -48,7 +48,7 @@
                                     <button @click="deepChild.onClick"
                                         class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
                                         <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
-                                        <span class="font-medium text-gray-900 dark:text-gray-100">
+                                        <span class="font-medium text-gray-900 dark:text-gray-100 truncate">
                                             {{ deepChild.label }}
                                         </span>
                                         <UIcon v-if="deepChild.children" name="mdi:chevron-right" class="ml-auto" />
@@ -62,7 +62,7 @@
                                             <button @click="fifthChild.onClick"
                                                 class="w-full space-x-2 flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200">
                                                 <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic /> -->
-                                                <span class="font-medium text-gray-900 dark:text-gray-100">
+                                                <span class="font-medium text-gray-900 dark:text-gray-100 truncate">
                                                     {{ fifthChild.label }}
                                                 </span>
                                                 <UIcon v-if="fifthChild.children" name="mdi:chevron-right"
