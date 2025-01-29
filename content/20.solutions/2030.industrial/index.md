@@ -1,7 +1,7 @@
 ---
 title: OMA Industrial Applications
 description:
-layout: doc
+layout: web
 ---
 
 ::ShTextImg

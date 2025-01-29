@@ -2,6 +2,7 @@
 title: EVENTS
 description:
 layout: doc
+icon: material-symbols-light:event-upcoming-outline-rounded
 ---
 
 ::ShAlert

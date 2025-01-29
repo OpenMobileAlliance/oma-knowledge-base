@@ -65,6 +65,28 @@
         </div>
       </template>
 
+      <template v-else-if="page?.layout === 'web'">
+        <div class="grid grid-cols-12 relative">
+
+          <!-- Main Content -->
+          <section :class="contentClass"
+            class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-12 w-full lg:w-full overflow-auto">
+            <h1 class="">
+              {{ page.title }}
+            </h1>
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
+              class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
+              <template #not-found>
+                <UAlert title="File not found!" description="The requested resource cannot be found."
+                  icon="i-heroicons-exclamation-triangle" />
+              </template>
+            </ContentRenderer>
+            <PrevNextPage v-if="route.path !== '/'" />
+          </section>
+
+        </div>
+      </template>
+
       <template v-else>
         <div class="grid grid-cols-12 ">
           <ContentRenderer v-if="page" :value="page" :style="{ fontSize: main.font.size }"
