@@ -30,32 +30,113 @@ Moreover, real-world use cases highlight the transformative impact of __LwM2M__ 
 
 ## Technical Overview
 
-### 1. Interoperability
+::ShMultiColumn
+---
+ui:
+cols: 3
+---
+  :::ShColumn 
+  --- 
+  ui:
+    wrapper: "rounded-lg hover:bg-stone-100 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-2 min-h-20"
+      title: "tracking-wider text-primary text-center text-4xl"
+      subtitle: "rounded-xs min-h-4 max-h-4 bg-slate-600bg-slate-600 w-1/3 mt-4"
+  title: "1"
+  subtitle: "____"
+  ---
+  [Interoperability]{.text-base .text-oma-blue-500 .font-semibold}
+  
+  LwM2M supports various data formats and integrates seamlessly with other standard development organizations (SDOs), allowing utilities to leverage existing systems and data.
+  :::
+  :::ShColumn 
+  ---
+  ui:
+    wrapper: "rounded-lg hover:bg-stone-200 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-4 min-h-20"
+      title: "tracking-wider text-primary text-center text-4xl"
+  title: "2"
+  ---
+  [Scalability]{.text-base .text-oma-blue-500 .font-semibold} 
+  
+  The protocol's design accommodates large-scale deployments, offering centralized network management, efficient resource allocation, and group operations.
+  :::
 
-- LwM2M supports various data formats and integrates seamlessly with other standard development organizations (SDOs), allowing utilities to leverage existing systems and data.
+  :::ShColumn 
+  ---
+  ui:
+    wrapper: "rounded-lg hover:bg-stone-300 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-4 min-h-20"
+      title: "tracking-wider text-primary text-center text-4xl"
+  title: "3"
+  ---
+  [Security]{.text-base .text-oma-blue-500 .font-semibold}
+  
+  LwM2M employs robust security measures, including secure device onboarding, authentication, and encrypted communication (DTLS, TLS, OSCORE), ensuring data integrity and privacy.
+  :::
+::
 
-### 2. Scalability
+## Benefits for Utilities
 
-- The protocol's design accommodates large-scale deployments, offering centralized network management, efficient resource allocation, and group operations.
+::ShMultiColumn
+---
+ui:
+cols: 3
+---
+  :::ShColumn 
+  --- 
+  ui:
+    wrapper: "rounded-lg border-4 hover:bg-stone-200 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-4 min-h-20"
+      title: "tracking-wider text-primary text-center"
+      subtitle: "text-center"
+  title: "Efficiency and<br /> Cost Savings"
+  ---
+  [Streamlined Operations]{.text-base .text-oma-blue-500 .font-semibold}
+  
+  LwM2M provides a unified standard for device lifecycle and network management, reducing the complexity of handling multiple proprietary systems. This standardization minimizes operational costs and accelerates device deployment.
+  
+  [Power Efficiency]{.text-base .text-oma-blue-500 .font-semibold}
 
-### 3. Security
+  The protocol's design optimizes power usage, making it suitable for battery-powered devices. This contributes to longer device lifecycles and lower operational costs.
+  :::
+  :::ShColumn 
+  ---
+  ui:
+    wrapper: "rounded-lg border-4 hover:bg-stone-200 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-4 min-h-20"
+      title: "tracking-wider text-primary text-center"
+  title: "Remote Monitoring and Management"
+  ---
+  [Enhanced Security]{.text-base .text-oma-blue-500 .font-semibold} 
 
-- LwM2M employs robust security measures, including secure device onboarding, authentication, and encrypted communication (DTLS, TLS, OSCORE), ensuring data integrity and privacy.
+  LwM2M ensures secure device onboarding, authentication, and access control, protecting against unauthorized access and cyber threats.
 
-## Benefits for Utilities:
+  [Real-Time Connectivity Monitoring]{.text-base .text-oma-blue-500 .font-semibold}
 
-### 1. Efficiency and Cost Savings
+  Continuous monitoring helps detect and resolve network issues, ensuring uninterrupted service.
+  :::
 
-- **Streamlined Operations**: LwM2M provides a unified standard for device lifecycle and network management, reducing the complexity of handling multiple proprietary systems. This standardization minimizes operational costs and accelerates device deployment.
-- **Power Efficiency**: The protocol's design optimizes power usage, making it suitable for battery-powered devices. This contributes to longer device lifecycles and lower operational costs.
-
-### 2. Remote Monitoring and Management
-
-- **Enhanced Security**: LwM2M ensures secure device onboarding, authentication, and access control, protecting against unauthorized access and cyber threats.
-- **Real-Time Connectivity Monitoring**: Continuous monitoring helps detect and resolve network issues, ensuring uninterrupted service.
-
-### 3. Interoperability and Scalability
-
-- **Vendor-Agnostic**: LwM2M's vendor-agnostic nature allows utilities to integrate various devices and systems, reducing dependency on specific vendors and fostering innovation.
-- **Multi-Network Compatibility**: The protocol works seamlessly across multiple network technologies, ensuring compatibility with existing and future infrastructures.
-
+  :::ShColumn 
+  ---
+  ui:
+    wrapper: "rounded-lg border-4 hover:bg-stone-200 dark:text-black p-4 text-slate-500 text-sm"
+    header:
+      wrapper: "text-lg border-b-2 border-stone-500 mb-4 pb-4 min-h-20"
+      title: "tracking-wider text-primary text-center"
+  title: "Interoperability and Scalability"
+  ---
+  [Vendor-Agnostic]{.text-base .text-oma-blue-500 .font-semibold}
+  
+  LwM2M's vendor-agnostic nature allows utilities to integrate various devices and systems, reducing dependency on specific vendors and fostering innovation.
+  
+  [Multi-Network Compatibility]{.text-base .text-oma-blue-500 .font-semibold}
+  
+  The protocol works seamlessly across multiple network technologies, ensuring compatibility with existing and future infrastructures.
+  :::
+::
