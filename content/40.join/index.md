@@ -2,6 +2,7 @@
 title: Join OMA
 description:
 layout: doc
+icon: material-symbols-light:join-left
 ---
 
 Joining OMA SpecWorks is easier than ever! Simply complete our straightforward <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank">Membership Application</a>, agree to the <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0002-Bylaws.pdf" target="_blank">Bylaws</a>, and submit the  [applicable dues](/omaspecworks/membership). Approval typically takes just 10 business days, and you’ll be on your way to unlocking the full <a href="/omaspecworks/membership/benefits"> benefits of membership</a>.
