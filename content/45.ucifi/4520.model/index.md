@@ -28,7 +28,6 @@ cols: 4 # number of columns
     :::ShCard 
     ---
     ui:
-        wrapper: hover:inset-y-12
         title: text-6xl text-center
         subtitle: text-center
         text: text-center
