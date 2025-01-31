@@ -1,5 +1,9 @@
 <template>
   <div :class="ui.wrapper">
+    <img v-if="props.coverImage && !coverText" :src="props.coverImage" :class="[ui.coverImage, opacityClass]" />
+    <div v-if="coverText" :class="[ui.coverText, opacityClass]">
+      <MDC :value="coverText" class="px-4" />
+    </div>
     <div :class="ui.upperBase" :style="backgroundClass">
       <NuxtLink :to="urlUpperBase" :target="target" class="not-prose">
         <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
@@ -43,6 +47,7 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 import { card as config } from '@/ui.config' // Import the config file
 
@@ -51,6 +56,9 @@ const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryConte
 
 const props = withDefaults(
   defineProps<{
+    coverImage?: string;
+    coverText?: string;
+    opacity?: boolean;
     urlUpperBase?: string;
     upperBaseText?: string;
     urlImage?: string;
@@ -71,6 +79,9 @@ const props = withDefaults(
   {
     ui: () => ({}),
     description: "",
+    coverImage: "",
+    coverText: "",
+    opacity: false,
     urlUpperBase: "",
     upperBaseText: "",
     urlImage: "",
@@ -98,4 +109,12 @@ const backgroundClass = computed(() => {
   }
 });
 
+const opacityClass = computed(() => {
+  if (props.opacity===true) {
+    return "transition-opacity duration-700 group-hover:opacity-0";
+  }
+  else {
+    return "transition-transform duration-700 group-hover:-translate-y-full";
+  }
+});
 </script>

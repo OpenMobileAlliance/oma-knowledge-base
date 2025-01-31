@@ -73,7 +73,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
   </thead>
   <tbody>
     <tr>
-      <td rowspan="11"><code>ui</coode></td>
+      <td rowspan="14"><code>ui</coode></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
@@ -84,9 +84,24 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
+      <td><code>coverImage</code></td>
+      <td><code>config.coverImage</code></td>
+      <td>Defines the styling for the cover image that spans across the whole constructor</td>
+    </tr>
+    <tr>
+      <td><code>coverText</code></td>
+      <td><code>config.coverText</code></td>
+      <td>Defines the styling for the cover text (including the color of the background) that spans across the whole constructor</td>
+    </tr>
+    <tr>
       <td><code>upperBase</code></td>
       <td><code>config.upperBase</code></td>
       <td>Defines the styling for the upper section of the component, typically where the image is displayed.</td>
+    </tr>
+    <tr>
+      <td><code>upperBaseText</code></td>
+      <td><code>config.upperBaseText</code></td>
+      <td>Defines the styling for the text in the upper section of the component, instead of where the image is displayed.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
@@ -127,6 +142,30 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
       <td><code>rightLabel</code></td>
       <td><code>config.rightLabel</code></td>
       <td>Defines the overall styling for the rightLabel that holds the text.</td>
+    </tr>
+    <tr>
+      <td><code>coverImage</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Link to external or internal image that will be presented as a cover across the whole constructor</td>
+    </tr>
+    <tr>
+      <td><code>coverText</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Inscription that will be presented as a cover across the whole constructor (full Markdown support)</td>
+    </tr>
+    <tr>
+      <td><code>opacity</code></td>
+      <td>n/a</td>
+      <td><code>false</code></td>
+      <td>Setting this to true will trigger fadeaway effect on <code>coverImage</code> or <code>coverText</code>. Default state triggers the transition effect</td>
+    </tr>
+    <tr>
+      <td><code>upperBaseText</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Allows you to have text in upper section of this constructor, instead of an image</td>
     </tr>
     <tr>
       <td><code>urlUpperBase</code></td>
@@ -200,6 +239,123 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
 #### Example Usage
 ##### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
+
+Special cover effect can be applied to any <b>{{ $doc.constructorName }}</b>, allowing the main content to be 'hidden' from the first sight, while revealing itself only on hover over. Here is the list of possible combinations of cover options w/ effects:
+1. `image w/ transition`
+2. `image w/ opacity`
+3. `text w/ transition`
+4. `text w/ opacity`
+
+We are going to show `image w/ transition` & `text w/ opacity`
+::ShTwoColumns
+---
+ui:
+  wrapper: mb-12
+---
+  :::ShCard
+  --- 
+  coverImage: https://www.nasa.gov/wp-content/uploads/2024/11/sts066-s-011orig.jpg
+  text: |
+      NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+  title: |
+      NASA Space Program
+  subtitle: |
+      Per aspera ad astra
+  leftLabel: |
+      Hello left [label](https://www.nasa.gov)
+  centerLabel: |
+      Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+  rightLabel: |
+      Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+  imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+  urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+  urlUpperBase: https://www.nasa.gov
+  ---
+  :::
+
+  :::ShCard
+  --- 
+  ui:
+    coverText: text-6xl bg-gradient-to-b from-[#0B3D91] via-sky-500 to-white
+  coverText: |
+      Welcome to </br> NASA
+  opacity: true
+  text: |
+      NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+  title: |
+      NASA Space Program
+  subtitle: |
+      Per aspera ad astra
+  leftLabel: |
+      Hello left [label](https://www.nasa.gov)
+  centerLabel: |
+      Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+  rightLabel: |
+      Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+  imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+  urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+  urlUpperBase: https://www.nasa.gov
+  ---
+  :::
+::
+
+Code for `image w/ transition` & `text w/ opacity` respectively:
+
+::ShTwoColumns
+---
+ui:
+  wrapper: mb-12
+---
+```mdc
+  :::ShCard
+    --- 
+    coverImage: https://www.nasa.gov/wp-content/uploads/2024/11/sts066-s-011orig.jpg
+    text: |
+        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+    title: |
+        NASA Space Program
+    subtitle: |
+        Per aspera ad astra
+    leftLabel: |
+        Hello left [label](https://www.nasa.gov)
+    centerLabel: |
+        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+    rightLabel: |
+        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+    urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+    urlUpperBase: https://www.nasa.gov
+    ---
+  :::
+```
+
+```mdc
+  :::ShCard
+    --- 
+    ui:
+      coverText: text-6xl bg-gradient-to-b from-[#0B3D91] via-sky-500 to-white
+    coverText: |
+        Welcome to </br> NASA
+    opacity: true
+    text: |
+        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+    title: |
+        NASA Space Program
+    subtitle: |
+        Per aspera ad astra
+    leftLabel: |
+        Hello left [label](https://www.nasa.gov)
+    centerLabel: |
+        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+    rightLabel: |
+        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+    urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+    urlUpperBase: https://www.nasa.gov
+    ---
+  :::
+```
+::
 
 ::ShCard
 ---

@@ -1,5 +1,7 @@
 export default {
-  wrapper: "flex flex-col justify-between border-2 dark:border-neutral-700 hover:border-2 hover:border-primary dark:hover:border-2 dark:hover:border-primary rounded-xl mx-auto max-w-lg overflow-hidden bg-inherit shadow-2xl",
+  wrapper: "flex flex-col relative group justify-between border-2 dark:border-neutral-700 hover:border-2 hover:border-primary dark:hover:border-2 dark:hover:border-primary rounded-xl mx-auto max-w-lg overflow-hidden bg-inherit shadow-2xl",
+  coverImage: "absolute mb-0 bottom-0 w-full h-screen object-cover opacity-100 ease-in-out",
+  coverText: "absolute bottom-0 w-full h-full flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100",
   upperBase: "flex items-center justify-center rounded-t-xl",
   upperBaseText: "",
   image: "h-full w-screen rounded-b-xl overflow-hidden",
