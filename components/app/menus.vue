@@ -5,7 +5,7 @@
             <button @click="item.onClick"
                 :class="[item.label === 'HOME' ? 'hover:rounded-lg cursor-pointer' : 'hover:rounded-t-lg cursor-default', ui.rootMenuButton]">
                 <span class="flex items-center space-x-2">
-                    <!-- <UIcon v-if="item.label" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" />  -->
+                    <!-- <UIcon v-if="iconsMap[item.label]" :name="iconsMap[item.label]" dynamic :class="ui.contentIcon" /> -->
                     <span :class="ui.rootMenuLabel">
                         {{ item.label }}
                     </span>
@@ -111,11 +111,7 @@ const router = useRouter();
 const route = useRoute();
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation());
 
-const frontmatter = ref<any[]>([])
 
-watchEffect(async () => {
-    frontmatter.value = await queryContent(route.path).where({ icon: { $exists: true } }).find();
-});
 
 // List of folder and file titles to filter out
 const excludedTitles = [
@@ -169,7 +165,30 @@ const menuData: MenuBarOptions = computed(() => ({
     items: filteredNavigation.value?.map((navItem: any) => processNavigationItem(navItem)),
 }));
 
-defineExpose({
-    frontmatter,
+const iconsMap = ref<Record<string, string>>({});
+
+watchEffect(async () => {
+    if (!menuData.value?.items) return;
+
+    // Fetch all documents that have an "icon" in frontmatter
+    const allIcons = await queryContent().where({ icon: { $exists: true } }).find();
+
+    console.log("All icons data:", allIcons); // Debugging
+
+    // Create a mapping: label -> icon
+    const iconsLookup = new Map(allIcons.map((content) => [content.title, content.icon])); // Using title instead of _path for matching
+
+    // Map icons to menu items based on label
+    menuData.value.items.forEach((item) => {
+        // Check if there is an icon for the current item.label
+        if (iconsLookup.has(item.label)) {
+            iconsMap.value[item.label] = iconsLookup.get(item.label)!; // Assign the icon from lookup
+        }
+    });
+
+    // Ensure reactivity is fully updated before logging
+    nextTick(() => {
+        console.log("Icons Map after update:", iconsMap.value); // Debugging after reactivity update
+    });
 });
 </script>
