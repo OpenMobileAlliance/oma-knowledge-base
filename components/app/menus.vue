@@ -173,7 +173,7 @@ watchEffect(async () => {
     // Fetch all documents that have an "icon" in frontmatter
     const allIcons = await queryContent().where({ icon: { $exists: true } }).find();
 
-    console.log("All icons data:", allIcons); // Debugging
+    //console.log("All icons data:", allIcons); // Debugging
 
     // Create a mapping: label -> icon
     const iconsLookup = new Map(allIcons.map((content) => [content.title, content.icon])); // Using title instead of _path for matching
@@ -188,7 +188,7 @@ watchEffect(async () => {
 
     // Ensure reactivity is fully updated before logging
     nextTick(() => {
-        console.log("Icons Map after update:", iconsMap.value); // Debugging after reactivity update
+        //console.log("Icons Map after update:", iconsMap.value); // Debugging after reactivity update
     });
 });
 </script>
