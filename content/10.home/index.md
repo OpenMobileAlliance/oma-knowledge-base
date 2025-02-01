@@ -13,7 +13,7 @@ ui:
     ::ShTextImg
     ---
     ui:
-        title: text-5xl
+        title: text-4xl
         subtitle: text-3xl text-neutral-600
         text: text-xl
     positionText: left
@@ -36,7 +36,7 @@ ui:
     ::ShTextImg
     ---
     ui:
-        title: text-5xl
+        title: text-4xl
         subtitle: text-3xl text-neutral-600
         text: text-xl
     positionText: right
@@ -63,7 +63,7 @@ ui:
     ::ShTextImg
     ---
     ui:
-        title: text-5xl
+        title: text-4xl
         subtitle: text-3xl text-neutral-600
         text: text-xl
     positionText: left
