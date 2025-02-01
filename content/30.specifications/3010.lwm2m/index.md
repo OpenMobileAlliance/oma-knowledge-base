@@ -1,7 +1,7 @@
 ---
 title: LwM2M
 description:
-layout: doc
+layout: web
 ---
 
 ## To Be Removed
