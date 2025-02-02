@@ -1,5 +1,12 @@
 <template>
   <div :class="[ui.wrapper]">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[ui.coverImage, coverEffectClass]" :src="props.coverImage" />
+    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
+      <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
+    </div>
+    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[ui.coverText, coverEffectClass]">
+      <MDC :value="coverText" class="px-4" />
+    </div>
     <NuxtLink :to="urlWrapper" class="not-prose" :target="target">
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage" />
@@ -29,6 +36,10 @@ import { microCard as config } from '@/ui.config' // Importing the config file
 const props = withDefaults(
   defineProps<{
     description?: string;
+    opacity?: boolean;
+    coverImage?: string;
+    coverIcon?: string;
+    coverText?: string;
     urlWrapper?: string;
     target?: string;
     urlImage?: string;
@@ -44,6 +55,10 @@ const props = withDefaults(
   {
     ui: () => ({}),
     description: "",
+    opacity: false,
+    coverImage: "",
+    coverIcon: "",
+    coverText: "",
     urlWrapper: "",
     target: "_self",
     urlImage: "",
@@ -72,4 +87,23 @@ const copyToClipboard = () => {
 function onClick() {
   alert('Currently copied: ' + colorName.value);
 }
+
+const coverEffectClass = computed(() => {
+  if (props.opacity === true) {
+    return "transition-opacity duration-700 group-hover:opacity-0";
+  }
+  else {
+    return "transition-transform duration-700 group-hover:-translate-y-full";
+  }
+});
 </script>
+
+<style scoped>
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+</style>

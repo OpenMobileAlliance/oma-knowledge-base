@@ -7,6 +7,15 @@ layout: doc
 
 ### Usage
 
+::ShAlert
+---
+typeAlert: danger
+---
+When using links (anchors) in this component, use either `urlWrapper` or create a link from `title`, `subtitle` or `text`.
+</br>
+Do NOT combine both as it can result in undesired effects.
+::
+
 #### Presentation
 This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
@@ -26,7 +35,7 @@ ui:
   subtitle: |
       Axios gets you smarter, faster on what matters.
   text: |
-      This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
   ---
   :::
 ::
@@ -43,7 +52,7 @@ title: |
 subtitle: |
     Axios gets you smarter, faster on what matters.
 text: |
-    This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 ```
@@ -65,7 +74,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9"><code>ui</code></td>
+      <td rowspan="13"><code>ui</code></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
@@ -74,6 +83,26 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td><code>wrapper</code></td>
       <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
+    </tr>
+    <tr>
+      <td><code>coverImage</code></td>
+      <td><code>config.coverImage</code></td>
+      <td>Defines the styling for the cover image that spans across the whole constructor</td>
+    </tr>
+    <tr>
+      <td><code>coverText</code></td>
+      <td><code>config.coverText</code></td>
+      <td>Defines the styling for the cover text (including the color of the background) that spans across the whole constructor</td>
+    </tr>
+    <tr>
+      <td><code>coverIconWrapper</code></td>
+      <td><code>config.coverIconWrapper</code></td>
+      <td>Defines the styling for the wrapper of the <code>coverIcon</code> component</td>
+    </tr>
+    <tr>
+      <td><code>coverIcon</code></td>
+      <td><code>config.coverIcon</code></td>
+      <td>Defines the styling for the icon used for covering the constructor</td>
     </tr>
     <tr>
       <td><code>image</code></td>
@@ -108,6 +137,30 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td>n/a</td>
       <td><code>_self</code></td>
       <td>Specifies where to open the linked document.</td>
+    </tr>
+    <tr>
+      <td><code>coverImage</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Link to external or internal image that will be presented as a cover across the whole constructor</td>
+    </tr>
+    <tr>
+      <td><code>coverIcon</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Any valid icon from <a href="https://icon-sets.iconify.design/" target="_blank">Iconify</a></td>
+    </tr>
+    <tr>
+      <td><code>coverText</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Inscription that will be presented as a cover across the whole constructor (full Markdown support)</td>
+    </tr>
+    <tr>
+      <td><code>opacity</code></td>
+      <td>n/a</td>
+      <td><code>false</code></td>
+      <td>Setting this to true will trigger fadeaway effect on <code>coverImage</code>, <code>coverIcon</code> or <code>coverText</code>. Default state triggers the transition effect</td>
     </tr>
     <tr>
       <td><code>urlImage</code></td>
@@ -176,7 +229,7 @@ ui:
   subtitle: |
       Axios gets you smarter, faster on what matters.
   text: |
-      This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
   ---
   :::
 ::
@@ -197,56 +250,212 @@ title: |
 subtitle: |
     Axios gets you smarter, faster on what matters.
 text: |
-    This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
+    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 ```
+
+The following example will showcase an options on <b>{{ $doc.constructorName }}</b> and how to hidde its content:
+
+::ShMultiColumn
+---
+cols: 3
+---
+  :::ShMicroCard
+  ---
+  #opacity: true
+  #coverIcon: fluent:cursor-hover-16-regular
+  #coverText: Hello
+  coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  opacity: true
+  #coverIcon: fluent:cursor-hover-16-regular
+  coverText: Three options for hidding content
+  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  opacity: true
+  coverIcon: fluent:cursor-hover-16-regular
+  #coverText: Hello
+  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  :::
+::
+
+This is how these examples are written (hover over for full view):
+
+::ShMultiColumn
+---
+cols: 3
+---
+  ::ShColumn
+  ---
+  class: 
+  ---
+  ```mdc
+  ::ShMicroCard
+  ---
+  #opacity: true
+  #coverIcon: fluent:cursor-hover-16-regular
+  #coverText: Hello
+  coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  ::
+  ```
+  ::
+
+  ::ShColumn
+  ---
+  class: 
+  ---
+  ```mdc
+  ::ShMicroCard
+  ---
+  opacity: true
+  #coverIcon: fluent:cursor-hover-16-regular
+  coverText: Three options for hidding content
+  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  ::
+  ```
+  ::
+
+  ::ShColumn
+  ---
+  class: 
+  ---
+  ```mdc
+  ::ShMicroCard
+  ---
+  opacity: true
+  coverIcon: fluent:cursor-hover-16-regular
+  #coverText: Hello
+  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
+  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  ::
+  ```
+  ::
+::
 
 ### Config
 These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
-  wrapper: "container flex flex-col rounded-2xl p-4 mx-auto justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
-  image: "relative mt-4 w-full h-auto flex shrink mx-auto",
-  icon: "relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200", 
-  title: "title text-xl font-medium text-black dark:text-white break-words",
-  subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words",
-  text: "text font-light text-md text-gray-400 dark:text-gray-600 mt-7 break-words",
+  wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+  coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
+  coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
+  coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
+  coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+  image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+  icon: "relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20", 
+  title: "title text-xl font-medium text-black dark:text-white break-words z-20",
+  subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+  text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   default: {
   }
 }
 ```
 
-#### Class Descriptions
-These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+### Class Descriptions
 
-_**wrapper**_
-* **Value**: `"container flex flex-col rounded-2xl p-4 mx-auto justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden"`
-* **Description**: A container with a flex column layout, rounded corners, padding, centered alignment, and text alignment. Includes hover effects for scaling, shadow, and border color changes, with light and dark mode background and border styles.
+These class values are used in the <b>{{ $doc.constructorName }}</b> component. The values are customizable and can be adjusted through the `ui` properties' attributes.
 
-_**image**_
-* **Value**: `"relative mt-4 w-full h-auto flex shrink mx-auto"`
-* **Description**: Positions the image relatively, with top margin, full width, auto height, flexible shrinking behavior, and centered alignment.
+**_wrapper_**
+- **Value**: `"container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden"`
+- **Description**: A flexible container with a column layout, rounded corners, padding, centered alignment, and a maximum width of medium size. Includes hover effects for scaling, shadow, and border color changes. The component adapts to both light and dark modes with respective background and border styles.
 
-_**icon**_
-* **Value**: `"relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200"`
-* **Description**: A small icon with relative positioning, flexible behavior, centered alignment, and responsive top margin. Includes light and dark mode blue text colors with hover effects.
+**_coverImage_**
+- **Value**: `"absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40"`
+- **Description**: Positions the cover image absolutely at the bottom left, stretching it across the full width and height. The image will fill the container and maintain full opacity with smooth transition effects.
 
-_**title**_
-* **Value**: `"title text-xl font-medium text-black dark:text-white break-words"`
-* **Description**: Applies medium-weight, large-sized text with black coloring (light mode) or white coloring (dark mode). Allows text wrapping for long words.
+**_coverText_**
+- **Value**: `"absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40"`
+- **Description**: Centers the cover text within the container, positioning it absolutely across the entire area. The text is centered both vertically and horizontally with smooth transition effects. The background color changes for light and dark modes.
 
-_**subtitle**_
-* **Value**: `"subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words"`
-* **Description**: A thin, base-sized text style with neutral or gray coloring, a top margin, and wrapping for long words. Adjusts font weight for dark mode.
+**_coverIconWrapper_**
+- **Value**: `"bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40"`
+- **Description**: A wrapper for the cover icon, positioned absolutely across the entire area. It has a background that adapts to light and dark modes and covers the container's full size.
 
-_**text**_
-* **Value**: `"text font-light text-md text-gray-400 dark:text-gray-600 mt-7 break-words"`
-* **Description**: A light-text style with medium size, gray coloring, top margin, and wrapping for long words. Adjusts text color for dark mode.
+**_coverIcon_**
+- **Value**: `"absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40"`
+- **Description**: Positions the cover icon absolutely across the container, ensuring it covers the entire area. The icon has full opacity and is contained within the wrapper with smooth transition effects.
 
-_**default**_
-* **Value**: `n/a`
-* **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
+**_image_**
+- **Value**: `"relative mt-4 w-full h-auto flex shrink mx-auto z-20"`
+- **Description**: Positions the image relatively with a top margin, full width, and automatic height. The image is centered horizontally with flexible shrinking behavior and placed in front of the cover elements.
 
-These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+**_icon_**
+- **Value**: `"relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20"`
+- **Description**: A small icon with relative positioning, flexible behavior, centered alignment, and responsive top margin. It includes light and dark mode blue text colors with hover effects.
+
+**_title_**
+- **Value**: `"title text-xl font-medium text-black dark:text-white break-words z-20"`
+- **Description**: Applies medium-weight, large-sized text with black coloring (light mode) or white coloring (dark mode). Allows text wrapping for long words and is placed above other elements in the stack.
+
+**_subtitle_**
+- **Value**: `"subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20"`
+- **Description**: A thin, base-sized text style with neutral or gray coloring, a top margin, and wrapping for long words. Font weight adjusts for dark mode.
+
+**_text_**
+- **Value**: `"text font-light text-[1.1rem] mt-7 break-words z-20"`
+- **Description**: Default text style with medium size, top margin, and wrapping for long words. Positioned above other content.
+
+**_default_**
+- **Value**: `n/a`
+- **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
