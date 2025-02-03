@@ -25,7 +25,7 @@ Please check the OMA LwM2M Registry page to access the 2.0 Datamodel.
 ---
 cols: 4 # number of columns
 ---
-    :::ShCard 
+    :::ShMicroCard 
     ---
     ui:
         title: text-6xl text-center
@@ -41,7 +41,7 @@ cols: 4 # number of columns
     :::
 
 
-    :::ShCard
+    :::ShMicroCard
     ---
     ui:
         title: text-6xl text-center
@@ -56,7 +56,7 @@ cols: 4 # number of columns
     ---
     :::
 
-    :::ShCard
+    :::ShMicroCard
     ---
     ui:
         title: text-6xl text-center
@@ -71,7 +71,7 @@ cols: 4 # number of columns
     ---
     :::
 
-    :::ShCard
+    :::ShMicroCard
     ---
     ui:
         title: text-6xl text-center

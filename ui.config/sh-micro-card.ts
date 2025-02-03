@@ -8,7 +8,7 @@ export default {
   icon: "relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20", 
   title: "title text-xl font-medium text-black dark:text-white break-words z-20",
   subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
-  text: "text font-light text-[1.1rem] mt-7 break-words z-20",
+  text: "text font-light text-[1.05rem] mt-7 break-words z-20",
   default: {
   }
 }
