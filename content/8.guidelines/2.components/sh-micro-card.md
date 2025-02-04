@@ -159,7 +159,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
     </tr>
     <tr>
       <td><code>subtitle</code></td>
-      <td><code>config.defaukt.subtitle</code></br><code>config.flat.subtitle</code></td>
+      <td><code>config.default.subtitle</code></br><code>config.flat.subtitle</code></td>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
