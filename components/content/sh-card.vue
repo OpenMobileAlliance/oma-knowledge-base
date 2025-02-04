@@ -1,7 +1,10 @@
 <template>
   <div :class="ui.wrapper">
-    <img v-if="props.coverImage && !coverText" :src="props.coverImage" :class="[ui.coverImage, opacityClass]" />
-    <div v-if="coverText" :class="[ui.coverText, opacityClass]">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage" :class="[ui.coverImage, coverEffectClass]" />
+    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
+      <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
+    </div>
+    <div v-if="coverText && !coverImage && !coverIcon" :class="[ui.coverText, coverEffectClass]">
       <MDC :value="coverText" class="px-4" />
     </div>
     <div :class="ui.upperBase" :style="backgroundClass">
@@ -57,6 +60,7 @@ const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryConte
 const props = withDefaults(
   defineProps<{
     coverImage?: string;
+    coverIcon?: string;
     coverText?: string;
     opacity?: boolean;
     urlUpperBase?: string;
@@ -80,6 +84,7 @@ const props = withDefaults(
     ui: () => ({}),
     description: "",
     coverImage: "",
+    coverIcon: "",
     coverText: "",
     opacity: false,
     urlUpperBase: "",
@@ -109,8 +114,8 @@ const backgroundClass = computed(() => {
   }
 });
 
-const opacityClass = computed(() => {
-  if (props.opacity===true) {
+const coverEffectClass = computed(() => {
+  if (props.opacity === true) {
     return "transition-opacity duration-700 group-hover:opacity-0";
   }
   else {
