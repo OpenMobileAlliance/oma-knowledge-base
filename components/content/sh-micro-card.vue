@@ -1,22 +1,23 @@
 <template>
-  <div :class="[ui.wrapper]">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[ui.coverImage, coverEffectClass]" :src="props.coverImage" />
-    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
-      <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
+  <div :class="[uiLayout.wrapper]">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage, coverEffectClass]"
+      :src="props.coverImage" />
+    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper, coverEffectClass]">
+      <UIcon :name="props.coverIcon" :class="uiLayout.coverIcon" dynamic />
     </div>
-    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[ui.coverText, coverEffectClass]">
+    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[uiLayout.coverText, coverEffectClass]">
       <MDC :value="coverText" class="px-4" />
     </div>
     <NuxtLink :to="urlWrapper" class="not-prose" :target="target">
       <div class="relative group">
-        <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage" />
-        <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
+        <img v-if="urlImage" :src="urlImage" :class="uiLayout.image" :alt="altImage" />
+        <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="uiLayout.icon" />
         <div class="relative">
           <MDC v-if="title"
-            :class="[ui.title, 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard === true }]"
+            :class="[uiLayout.title, 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard === true }]"
             :value="title" />
-          <MDC v-if="subtitle" :class="[ui.subtitle, 'transition-opacity duration-300']" :value="subtitle" />
-          <MDC v-if="text" :class="[ui.text, 'transition-opacity duration-300']" :value="text" />
+          <MDC v-if="subtitle" :class="[uiLayout.subtitle, 'transition-opacity duration-300']" :value="subtitle" />
+          <MDC v-if="text" :class="[uiLayout.text, 'transition-opacity duration-300']" :value="text" />
         </div>
         <div v-if="clipboard"
           class="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
@@ -36,6 +37,7 @@ import { microCard as config } from '@/ui.config' // Importing the config file
 const props = withDefaults(
   defineProps<{
     description?: string;
+    layout?: string;
     opacity?: boolean;
     coverImage?: string;
     coverIcon?: string;
@@ -55,6 +57,7 @@ const props = withDefaults(
   {
     ui: () => ({}),
     description: "",
+    layout: "default",
     opacity: false,
     coverImage: "",
     coverIcon: "",
@@ -76,6 +79,11 @@ const { ui } = useUI(
   toRef(props, "ui"),
   config
 );
+
+const uiLayout = computed(() => {
+  return ui.value?.[props.layout] ?? ui.value?.default ?? {};
+});
+
 
 const toast = useToast()
 const colorName = ref(props.title);
