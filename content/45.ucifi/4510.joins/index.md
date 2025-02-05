@@ -1,7 +1,7 @@
 ---
 title: uCIFI Joins Forces with OMA
 description:
-layout: doc
+layout: web
 ---
 
 ::ShTextImg

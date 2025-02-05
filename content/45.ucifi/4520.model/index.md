@@ -1,7 +1,7 @@
 ---
 title: uCIFI® DATA MODEL
 description:
-layout: 
+layout: web
 ---
 
 ::ShTextImg
@@ -31,6 +31,7 @@ cols: 4 # number of columns
         title: text-6xl text-center
         subtitle: text-center
         text: text-center
+    layout: flat
     text: | 
         All the uCIFI® data model objects and their associated attributes are modelized using LwM2M formats so they can be applied across any constrained IoT network.
     title: |
@@ -47,6 +48,7 @@ cols: 4 # number of columns
         title: text-6xl text-center
         subtitle: text-center
         text: text-center
+    layout: flat        
     text: |
         All uCIFI® objects and attributes are described on the Open Mobile Alliance’s Lightweight M2M (LwM2M) registry. The uCIFI® data model can be implemented freely by any vendor in any product. However, only products using standardized IoT connectivity coupled with the uCIFI® data model can pass certification and be considered fully interoperable.
     title: |
@@ -62,6 +64,7 @@ cols: 4 # number of columns
         title: text-6xl text-center
         subtitle: text-center
         text: text-center
+    layout: flat    
     text: |
         The uCIFI® data model can be implemented on any standardized IoT network including Cellular (4g/5G, LTE, NB-IoT), LoRaWan and uCIFI® smart city stack on Wi-SUN (6LowPan) mesh. Thanks to the uCIFI® unified data model, no need to add data translators and software gateways between IoT networks and central applications.
     title: |
@@ -77,6 +80,7 @@ cols: 4 # number of columns
         title: text-6xl text-center
         subtitle: text-center
         text: text-center
+    layout: flat
     text: |
         The uCIFI® reference implementation is designed to be easy to implement and cost efficient, so that both end-customers and solution suppliers have no reason not to adopt uCIFI®.
     title: |
