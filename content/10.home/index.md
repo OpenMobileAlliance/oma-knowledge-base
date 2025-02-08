@@ -21,7 +21,7 @@ ui:
     alignText: left
     urlImage: /images//landing-hero/innovation1.jpeg
     title: |
-        Open Mobile Alliance (OMA)
+        **Open Mobile Alliance (OMA)**
     subtitle: |
         Enabling Global Interoperability for Mobile and IoT Standards
     text: |
@@ -45,7 +45,7 @@ ui:
     alignText: left
     urlImage: /images/landing-hero/inovation-idea.jpeg
     title: |
-        OMA, IPSO Alliance, and uCIFI
+        **OMA, IPSO Alliance, and uCIFI**
     subtitle: |
         Expanding IoT Interoperability with Key Alliances
     text: |
@@ -73,7 +73,7 @@ ui:
     alignText: left
     urlImage: /images/landing-hero/machine-learn.jpeg
     title: |
-        LightweightM2M and Wireless Innovation
+        **LightweightM2M and Wireless Innovation**
     subtitle: |
         Driving the Future of IoT Connectivity
     text: |
@@ -82,8 +82,5 @@ ui:
         By integrating the **IPSO Alliance**, OMA expands its role in developing **technical specifications, smart objects, and white papers**. These efforts promote **seamless interoperability** across fixed and mobile wireless networks, enabling **growth and efficiency** in the evolving IoT ecosystem.  
     ---
     ::
-
-
-
 
 ::
