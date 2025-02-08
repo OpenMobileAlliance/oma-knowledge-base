@@ -13,9 +13,9 @@ ui:
     ::ShTextImg
     ---
     ui:
-        title: text-4xl
+        title: text-5xl
         subtitle: text-3xl text-neutral-600
-        text: text-xl
+        text: text-2xl leading-loose
     positionText: left
     spanText: m
     alignText: left
@@ -25,47 +25,49 @@ ui:
     subtitle: |
         Enabling Global Interoperability for Mobile and IoT Standards
     text: |
-        The **Open Mobile Alliance (OMA**) is a leading industry forum dedicated to driving open, interoperable mobile service enablers and IoT standards. Founded to facilitate innovation and seamless communication across diverse ecosystems, OMA develops specifications that enable global interoperability for connected devices, applications, and services.
+        The **Open Mobile Alliance (OMA)** develops **global standards** that power mobile and IoT innovation. Our mission is to create **open, interoperable** solutions that connect devices, networks, and applications worldwide.
 
-        OMA plays a critical role in the standardization of protocols that power the Internet of Things (IoT), mobile networks, and industrial applications. With a focus on efficiency, security, and scalability, OMA’s specifications—such as the widely adopted LightweightM2M (LwM2M) protocol—serve as foundational elements for smart cities, industrial automation, utilities, and next-generation mobile services.
+        OMA’s specifications, including **LightweightM2M (LwM2M)**, enable **secure, scalable, and efficient** communication for **smart cities, industrial automation, utilities, and next-gen mobile services**. 
 
-        By fostering collaboration among industry leaders, technology providers, and enterprises, OMA ensures that emerging technologies remain accessible, adaptable, and aligned with evolving industry needs.
+        We bring together industry leaders and technology providers to ensure emerging technologies are **accessible, adaptable, and future-ready**. 
     ---
     ::
+
 
     ::ShTextImg
     ---
     ui:
-        title: text-4xl
+        title: text-5xl
         subtitle: text-3xl text-neutral-600
-        text: text-xl
+        text: text-2xl leading-loose
     positionText: right
     spanText: m
     alignText: left
     urlImage: /images/landing-hero/inovation-idea.jpeg
     title: |
-        OMA, IPSO Alliance and uCIFI
+        OMA, IPSO Alliance, and uCIFI
     subtitle: |
-        Strengthening IoT Interoperability Through Strategic Incorporations
+        Expanding IoT Interoperability with Key Alliances
     text: |
-        As part of its commitment to advancing IoT interoperability, OMA has expanded its ecosystem by incorporating two key organizations:
+        OMA is strengthening global IoT interoperability by incorporating two major alliances:  
 
-        ### IPSO Alliance (2018)
-        In 2018, OMA integrated the IPSO Alliance, a global organization focused on promoting smart object interoperability in IoT deployments. IPSO’s expertise in defining data models and semantic interoperability significantly enhanced OMA’s LwM2M framework, strengthening its capabilities in device management and data representation. The incorporation of IPSO allowed for more structured, scalable IoT solutions, benefiting sectors such as smart buildings, industrial automation, and energy management.
+        ### IPSO Alliance (2018)  
+        The integration of the **IPSO Alliance** enhanced OMA’s LwM2M framework by adding structured **data models** and **semantic interoperability**. This improved IoT device management across **smart buildings, industrial automation, and energy systems**.  
 
-        ### CIFI Alliance (2025)
-        In January 2025, OMA further broadened its reach by incorporating the uCIFI Alliance, a key industry player dedicated to open, unified data models for smart cities and utilities. uCIFI’s mission aligns with OMA’s goals of promoting vendor-neutral, standardized communication across diverse networks, including LoRaWAN, NB-IoT, and mesh technologies. By integrating uCIFI’s work, OMA strengthens its influence in smart infrastructure, providing a unified approach to managing and exchanging data across connected cities and utility networks.
+        ### uCIFI Alliance (2025)  
+        In 2025, OMA expanded further by integrating **uCIFI**, an alliance focused on **vendor-neutral** data models for **smart cities and utilities**. This strengthens **standardized communication** across **LoRaWAN, NB-IoT, and mesh networks**.  
 
-        Through these strategic incorporations, OMA continues to drive the evolution of IoT standards, ensuring a seamless, interoperable future for smart devices and connected ecosystems worldwide.
+        By uniting these efforts, OMA continues to **simplify IoT connectivity, enhance device interoperability, and drive smarter, scalable infrastructure** worldwide.  
     ---
     ::
+
 
     ::ShTextImg
     ---
     ui:
-        title: text-4xl
+        title: text-5xl
         subtitle: text-3xl text-neutral-600
-        text: text-xl
+        text: text-2xl leading-loose
     positionText: left
     spanText: m
     alignText: left
@@ -73,10 +75,15 @@ ui:
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |
-        Bringing Ideas to Life for IoT and More
+        Driving the Future of IoT Connectivity
     text: |
-        Home to the industry-leading LightweightM2M (LwM2M), OMA enables market-leading corporations and small start-up companies alike to come together to build the next generation of wireless.
-        The Open Mobile Alliance (OMA) absorved the IPSO Alliance with a new mission to build technical documents including specifications, smart objects, and white papers for a connected world, enabling interoperability across networks and growth in fixed and mobile wireless markets and the Internet of Things (IoT).
+        OMA’s **LightweightM2M (LwM2M)** is shaping the future of **wireless innovation**, connecting businesses of all sizes to **build the next generation of IoT solutions**.  
+
+        By integrating the **IPSO Alliance**, OMA expands its role in developing **technical specifications, smart objects, and white papers**. These efforts promote **seamless interoperability** across fixed and mobile wireless networks, enabling **growth and efficiency** in the evolving IoT ecosystem.  
     ---
     ::
+
+
+
+
 ::

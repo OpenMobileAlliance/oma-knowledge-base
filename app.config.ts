@@ -13,7 +13,7 @@ export default defineAppConfig({
   main: {
     font: {
       type: 'Arial',
-      size: '20px',
+      size: '23px',
     },
     h1: {
       font: {
