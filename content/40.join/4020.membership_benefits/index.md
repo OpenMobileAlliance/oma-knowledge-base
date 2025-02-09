@@ -3,18 +3,20 @@ title: Membership Benefits
 description:
 layout: doc
 ---
+::ShAlert
+At Open Mobile Alliance (OMA), there is a membership level right for all companies.
+::
 
-> At OMA SpecWorks, there is a membership level right for all companies.
+**At Open Mobile Alliance (OMA), there is a membership level suited for every company.**  
 
-As a member of OMA SpecWorks, your company will have the opportunity to participate directly in our standards-building process, which is driven by our diverse member community and supported by an experienced staff. You will have access, via our web-based members’ portal, to the most up-to-date information on OMA’s service enablers. In addition, you will join the world’s leading mobile operators, device manufacturers, infrastructure and IT vendors, and application developers in face-to-face conversations where the next generation of specifications for wireless services are debated and defined.  
+Becoming an OMA member provides **direct participation** in the standards development process, where industry leaders collaborate to shape the future of wireless communication. Members gain access to the **latest service enabler specifications** through OMA’s web-based portal and have the opportunity to engage with **mobile operators, device manufacturers, IT vendors, and developers** in face-to-face discussions that drive the next generation of mobile standards.  
 
-## Unveiling OMA's New Membership Structure for 2025
+### **Introducing OMA's 2025 Membership Structure**  
 
-Since its inception in 2002, the Open Mobile Alliance (OMA) has fostered industry collaboration and consensus-driven standards. Over the years, the membership structure has evolved to support active engagement and innovation across diverse sectors. Starting in 2025, OMA SpecWorks is excited to introduce a revamped membership framework that simplifies access and enhances member benefits.
+Since its founding in **2002**, OMA has championed **collaboration and consensus-driven standards**. To enhance engagement across diverse sectors, OMA is launching a **revamped membership framework in 2025**, designed to simplify access and maximize benefits.  
 
-OMA SpecWorks will offer three membership levels, each designed to cater to different levels of engagement:
+OMA will now offer **three membership levels**, each tailored to different participation needs, ensuring that companies of all sizes can effectively contribute and influence the industry’s future.
 
----
 
 ### **1. Strategic Membership**
 - **Board Representation**: Appoint a Delegate to the Board of Directors.
@@ -33,7 +35,6 @@ OMA SpecWorks will offer three membership levels, each designed to cater to diff
   - Badge shared in .png format for use on digital and print assets.
   - Full rights to post and use the badge across marketing channels.
 - **Annual membership fee**: $12,500
----
 
 ### **2. Essential Membership**
 - **Board Election Eligibility**: Eligible to run for election to the Board of Directors.
@@ -46,8 +47,6 @@ OMA SpecWorks will offer three membership levels, each designed to cater to diff
   - Full rights to post and use the badge across marketing channels.
 - **Annual membership fee**: $7,500
 
----
-
 ### **3. Associate Membership**
 - **Working Group Involvement**: Eligible to Vice-Chair a Working Group.
 - **Contribution Rights**: Full participation rights in Working Groups.
@@ -57,24 +56,68 @@ OMA SpecWorks will offer three membership levels, each designed to cater to diff
 
 ## Key Benefits of Joining OMA SpecWorks
 
-Our updated structure enhances the value for all members while supporting OMA’s ongoing contributions to industry standards. Key benefits include:
+::ShMultiColumn
+---
+cols: 4
+---
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: mdi:account-group
+  urlWrapper: /membership/engagement-options
+  title: |
+      Flexible Engagement Options
+  subtitle: |
+      Tailored Membership for Every Need
+  text: |
+      Choose a membership level that aligns with your company’s goals, whether you seek **strategic leadership** or active participation in working groups.
+  ---
+  :::
 
-- **Flexible Engagement Options**: Membership levels are designed to fit diverse engagement needs, from strategic leadership to working group participation.
-- **Public Recognition**: Members gain visibility through OMA’s marketing channels, showcasing their role in advancing OMA Specifications.
-- **Strong Industry Collaboration**: Opportunities to network, collaborate, and influence the direction of industry standards.
-- **Sustainable Growth**: Financial stability for OMA ensures we can continue delivering high-impact work and support for our members.
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: mdi:bullhorn
+  urlWrapper: /membership/public-recognition
+  title: |
+      Public Recognition
+  subtitle: |
+      Showcase Your Industry Leadership
+  text: |
+      Gain visibility through **OMA’s marketing channels**, highlighting your company’s contributions to advancing global specifications.
+  ---
+  :::
 
-## A Glimpse at OMA’s Legacy Membership Structure (2002–2024)
-For over two decades, OMA’s membership has enabled active participation and voting privileges within a structured framework. Membership distinctions were defined as follows:
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: mdi:handshake
+  urlWrapper: /membership/industry-collaboration
+  title: |
+      Strong Industry Collaboration
+  subtitle: |
+      Expand Your Network & Influence
+  text: |
+      Connect with **leading mobile operators, device manufacturers, and technology vendors** to shape the future of industry standards.
+  ---
+  :::
 
-- **Sponsor Members** hold a seat on the Board of Directors, possess the right to sponsor new work items, and have the ability to vote on technical matters in the Plenary and Working Groups.
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: mdi:chart-line
+  urlWrapper: /membership/sustainable-growth
+  title: |
+      Sustainable Growth
+  subtitle: |
+      Securing the Future of Standardization
+  text: |
+      OMA’s financial stability ensures continuous support for **high-impact projects**, benefiting all members and the broader industry.
+  ---
+  :::
 
-- **Full Members** enjoy the same rights as Sponsor Members but do not automatically hold a Board seat. However, they may stand for election to the Board.
+::
 
-- **Associate Members** have contribution rights and voting privileges within the Working Groups.
-
-- **Supporter Members** have contribution rights within the Working Groups but do not possess voting rights.
-
-As we transition to the updated framework in 2025, OMA SpecWorks remains committed to fostering collaboration, advancing standards, and delivering value to its members.
-
- > For more information, about [How to Join](/omaspecworks/membership/join), or exploring membership benefits, visit [OMA benefits](/omaspecworks/membership/benefits#key-benefits-of-joining-oma-specworks).
+ ::ShAlert
+ For more information, visit [How to Join](/join).
+ ::
