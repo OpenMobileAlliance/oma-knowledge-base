@@ -1,8 +1,9 @@
 ---
-title: IN THE NEWS
+title: In the News
 description:
 layout: web
 ---
+
 ::ShListCards
 ---
 ui:

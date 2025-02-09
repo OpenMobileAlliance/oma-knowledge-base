@@ -1,5 +1,5 @@
 ---
-title: NEWSLETTER
+title: Newsletters
 description:
 layout: web
 ---

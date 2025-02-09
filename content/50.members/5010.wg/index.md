@@ -1,7 +1,7 @@
 ---
 title: OMA Working Groups
 description:
-layout: doc
+layout: web
 ---
 
 ::ShTextImg

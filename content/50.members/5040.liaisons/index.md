@@ -1,7 +1,7 @@
 ---
 title: Liaison Agreements
 description:
-layout: doc
+layout: web
 ---
 
 Open Mobile Alliance (OMA) collaborates with **external organizations and standards bodies** to drive interoperability and industry-wide adoption of open standards. Recognizing the value of **partnerships**, Open Mobile Alliance engages with organizations that perform **complementary or related work**, ensuring **broader industry participation** and alignment.  
