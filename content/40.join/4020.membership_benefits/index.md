@@ -18,7 +18,7 @@ Since its founding in **2002**, OMA has championed **collaboration and consensus
 OMA will now offer **three membership levels**, each tailored to different participation needs, ensuring that companies of all sizes can effectively contribute and influence the industry’s future.
 
 
-### **1. Strategic Membership**
+### 1. Strategic Membership
 - **Board Representation**: Appoint a Delegate to the Board of Directors.
 - **Leadership Eligibility**: Eligible to Chair or Vice-Chair a Working Group.
 - **Propose and Vote on New Initiatives**: Drive OMA’s work by proposing and voting on new work items.
@@ -36,7 +36,7 @@ OMA will now offer **three membership levels**, each tailored to different parti
   - Full rights to post and use the badge across marketing channels.
 - **Annual membership fee**: $12,500
 
-### **2. Essential Membership**
+### 2. Essential Membership
 - **Board Election Eligibility**: Eligible to run for election to the Board of Directors.
 - **Working Group Leadership**: Eligible to Chair or Vice-Chair a Working Group.
 - **Propose and Vote on New Initiatives**: Collaborate by proposing and voting on new work items.
@@ -47,7 +47,7 @@ OMA will now offer **three membership levels**, each tailored to different parti
   - Full rights to post and use the badge across marketing channels.
 - **Annual membership fee**: $7,500
 
-### **3. Associate Membership**
+### 3. Associate Membership
 - **Working Group Involvement**: Eligible to Vice-Chair a Working Group.
 - **Contribution Rights**: Full participation rights in Working Groups.
 - **Propose and Vote on New Initiatives**: Engage actively in the OMA community.
@@ -64,7 +64,7 @@ cols: 4
   ---
   layout: flat
   icon: mdi:account-group
-  urlWrapper: /membership/engagement-options
+  urlWrapper:
   title: |
       Flexible Engagement Options
   subtitle: |
@@ -78,7 +78,7 @@ cols: 4
   ---
   layout: flat
   icon: mdi:bullhorn
-  urlWrapper: /membership/public-recognition
+  urlWrapper: 
   title: |
       Public Recognition
   subtitle: |
@@ -92,7 +92,7 @@ cols: 4
   ---
   layout: flat
   icon: mdi:handshake
-  urlWrapper: /membership/industry-collaboration
+  urlWrapper: 
   title: |
       Strong Industry Collaboration
   subtitle: |
@@ -105,14 +105,14 @@ cols: 4
   :::ShMicroCard
   ---
   layout: flat
-  icon: mdi:chart-line
-  urlWrapper: /membership/sustainable-growth
+  icon: mdi:scale-balance
+  urlWrapper: 
   title: |
-      Sustainable Growth
+      Influence Standards Development
   subtitle: |
-      Securing the Future of Standardization
+      Shape the Future of Industry Standards
   text: |
-      OMA’s financial stability ensures continuous support for **high-impact projects**, benefiting all members and the broader industry.
+      Play a key role in **developing and evolving OMA standards**, ensuring they align with industry needs and your organization’s goals.
   ---
   :::
 
