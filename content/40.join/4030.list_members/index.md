@@ -1,7 +1,7 @@
 ---
 title: List of Members
 description:
-layout: doc
+layout: web
 ---
 
 ### OMA 2025 Board of Directors Seats

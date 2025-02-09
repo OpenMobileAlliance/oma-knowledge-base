@@ -1,7 +1,7 @@
 ---
 title: Membership Packages
 description:
-layout: doc
+layout: web
 ---
 
 **Open Mobile Allliance (OMA)** is a premier **Standards Development Organization (SDO)** dedicated to creating and refining service-layer specifications that support billions of devices across **cellular and IoT networks**. With a proven track record in developing essential protocols like **OMA LightweightM2M (LwM2M)**, the organization ensures seamless machine-to-machine communication and interoperability.  

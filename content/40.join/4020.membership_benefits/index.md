@@ -1,7 +1,7 @@
 ---
 title: Membership Benefits
 description:
-layout: doc
+layout: web
 ---
 ::ShAlert
 At Open Mobile Alliance (OMA), there is a membership level right for all companies.
