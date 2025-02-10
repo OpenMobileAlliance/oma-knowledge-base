@@ -11,7 +11,7 @@ At Open Mobile Alliance (OMA), there is a membership level right for all compani
 
 Becoming an OMA member provides **direct participation** in the standards development process, where industry leaders collaborate to shape the future of wireless communication. Members gain access to the **latest service enabler specifications** through OMA’s web-based portal and have the opportunity to engage with **mobile operators, device manufacturers, IT vendors, and developers** in face-to-face discussions that drive the next generation of mobile standards.  
 
-### **Introducing OMA's 2025 Membership Structure**  
+### Introducing OMA's 2025 Membership Structure  
 
 Since its founding in **2002**, OMA has championed **collaboration and consensus-driven standards**. To enhance engagement across diverse sectors, OMA is launching a **revamped membership framework in 2025**, designed to simplify access and maximize benefits.  
 
