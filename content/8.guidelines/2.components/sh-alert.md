@@ -121,7 +121,7 @@ The <b>{{ $doc.constructorName }}</b> constructor creates a notification field w
       </tr>
     <tr>
       <td><code>icon</code></td>
-      <td><code>config.icon</code></td>
+      <td><code>config.icon[typeAlert]</code></br><code>config.icon.color[typeAlert]</code></td>
       <td>Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc.</td>
     </tr>
     <tr>
