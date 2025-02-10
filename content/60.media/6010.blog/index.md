@@ -1,7 +1,7 @@
 ---
 title: Blogs
 description:
-layout: 
+layout: web
 ---
 
 ::ShListCards
@@ -11,11 +11,12 @@ ui:
     gap: gap-6
 description: This constructor is standalone
 title: |
-    Open Mobile Alliance News & Articles 
+    Open Mobile Alliance Blogs 
 subtitle: |
     Use the tags to filter the news
 text: |
-    Welcome to the Open Mobile Alliance (OMA) News Page, the home of the LightweightM2M (LwM2M) protocol specifications. Stay updated with the latest news, announcements, and developments in LwM2M technology, driving innovations in device management and service enablement for the Internet of Things (IoT). Explore our press releases, articles, and event updates to learn how OMA is shaping the future of IoT through interoperability, security, and scalability. Join us on our journey to advance mobile communication standards and foster industry collaboration.
+    Explore **expert insights, industry trends,** and deep dives into the latest developments in **open standards and IoT**.   
+
 cols: 3
 cardID: [115, 105, 100, 95, 90, 85, 65, 40, 35, 10, 5]
 ---

@@ -1,16 +1,63 @@
 ---
 title: Liaison Agreements
 description:
-layout: doc
+layout: web
 ---
 
-OMA SpecWorks is not alone in its role of creating standards, and recognizes the importance of working with other organizations that perform similar or complementary activities. To assist in this effort, OMA SpecWorks has relationships with outside organizations and standards bodies to ensure broad industry participation.  
+Open Mobile Alliance (OMA) collaborates with **external organizations and standards bodies** to drive interoperability and industry-wide adoption of open standards. Recognizing the value of **partnerships**, Open Mobile Alliance engages with organizations that perform **complementary or related work**, ensuring **broader industry participation** and alignment.  
 
-Liaison agreements with OMA SpecWorks operate in one of three ways:
+Liaison agreements with Open Mobile Alliance follow three structured approaches:  
 
-- **Cooperation Framework (CF):** Provides a set of guidelines agreed (but not formally signed) by OMA SpecWorks and the external organization.
-- **Cooperation Agreement (CA):** Where there is a formal, signed agreement in place between the external organization and OMA SpecWorks.
-- **Memorandum of Understanding (MoU):** It signal a simple formal agreement between the external organization and OMA SpecWorks.  
+
+::ShMultiColumn
+---
+cols: 3
+---
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    icon: mdi:handshake-outline
+    urlWrapper: 
+    title: |
+        Cooperation Framework (CF)
+    subtitle: |
+        Flexible Collaboration Guidelines
+    text: |
+        The **Cooperation Framework (CF)** provides a set of **mutually agreed guidelines** between Open Mobile Alliance and external organizations, facilitating **collaboration without a formal contract**.
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    icon: mdi:contract-outline
+    urlWrapper:
+    title: |
+        Cooperation Agreement (CA)
+    subtitle: |
+        Formalized Industry Partnerships
+    text: |
+        A **Cooperation Agreement (CA)** is a **legally binding agreement** between Open Mobile Alliance and an external organization, ensuring a **structured and committed collaboration**.
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    icon: mdi:file-document-edit-outline
+    urlWrapper:
+    title: |
+        Memorandum of Understanding (MoU)
+    subtitle: |
+        Simplified Formal Agreement
+    text: |
+        The **Memorandum of Understanding (MoU)** represents a **basic formal agreement** between Open Mobile Alliance and an external organization, enabling **cooperation with minimal complexity**.
+    ---
+    :::
+
+
+::
 
 For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at <snewberry@omaorg.org>.
 

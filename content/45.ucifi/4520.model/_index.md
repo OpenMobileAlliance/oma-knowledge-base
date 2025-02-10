@@ -13,66 +13,81 @@ urlImage: /images/ucifi/Graph-uCIFI-Data-model-V2.png
 subtitle: |
   Smart Cities Embrace Open Wireless Networks
 text: |
-    Smart city vendors use proprietary data formats, leading to interoperability challenges and vendor lock-in. While IoT standards like **LoRaWAN, NB-IoT, and Wi-SUN** define the physical and messaging layers, they lack a standardized **data model** for smart city applications.
+  Every smart city vendor has its own data payload format. Existing IoT connectivity standards like LoRaWan, NB-IoT & Wi-SUN/6LowPan do not specify data model or payload for smart city & utility use cases. They only standardize the physical layer and the messaging protocol. This results in each smart city & utility solution provider using a specific proprietary data model preventing interoperability and generating vendor lock-in or expensive proprietary API integrations. 
 
-    **uCIFI® solves this issue** by introducing a **unified, open data model** that works across both proprietary and open IoT networks. **Version 2.0** already includes standardized reference objects, ensuring seamless communication between smart city devices while remaining extensible for future expansion.
+  uCIFI® tackles this interoperability issue by specifying a unified data model for all smart city objects, that can be communicated on any open and proprietary IoT network. The version 2.0 of the uCIFI® data model already define a series of different connected sensors and devices – called reference objects – and is extensible to cover even more in the future. 
 ---
 ::
+
+Please check the OMA LwM2M Registry page to access the 2.0 Datamodel.
 
 
 ::ShMultiColumn
 ---
 cols: 4 # number of columns
 ---
-    :::ShMicroCard
+    :::ShMicroCard 
     ---
+    ui:
+        title: text-6xl text-center
+        subtitle: text-center
+        text: text-center
     layout: flat
-    icon: mdi:format-list-bulleted-type
+    text: | 
+        All the uCIFI® data model objects and their associated attributes are modelized using LwM2M formats so they can be applied across any constrained IoT network.
     title: |
+        1
+    subtitle: |
         LwM2M Format
-    subtitle: |
-        Unified Data Representation
-    text: |
-        The **uCIFI® data model** follows the **LwM2M format**, ensuring seamless interoperability across constrained IoT networks.
     ---
     :::
 
+
     :::ShMicroCard
     ---
-    layout: flat
-    icon: mdi:source-branch
+    ui:
+        title: text-6xl text-center
+        subtitle: text-center
+        text: text-center
+    layout: flat        
+    text: |
+        All uCIFI® objects and attributes are described on the Open Mobile Alliance’s Lightweight M2M (LwM2M) registry. The uCIFI® data model can be implemented freely by any vendor in any product. However, only products using standardized IoT connectivity coupled with the uCIFI® data model can pass certification and be considered fully interoperable.
     title: |
+        2
+    subtitle: |
         Open Source
-    subtitle: |
-        Accessible & Standardized
-    text: |
-        The **uCIFI® data model** is openly documented in the **OMA LwM2M registry**, allowing **vendors to implement it freely** for full interoperability.
     ---
     :::
 
     :::ShMicroCard
     ---
-    layout: flat
-    icon: mdi:transit-connection
-    title: |
-        Multi-Transport
-    subtitle: |
-        Network-Agnostic Integration
+    ui:
+        title: text-6xl text-center
+        subtitle: text-center
+        text: text-center
+    layout: flat    
     text: |
-        Designed for **Cellular (4G/5G, NB-IoT), LoRaWAN, and Wi-SUN**, **uCIFI® eliminates the need** for data translators or additional software gateways.
+        The uCIFI® data model can be implemented on any standardized IoT network including Cellular (4g/5G, LTE, NB-IoT), LoRaWan and uCIFI® smart city stack on Wi-SUN (6LowPan) mesh. Thanks to the uCIFI® unified data model, no need to add data translators and software gateways between IoT networks and central applications.
+    title: |
+        3
+    subtitle: |
+        Multi-transport 
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        title: text-6xl text-center
+        subtitle: text-center
+        text: text-center
     layout: flat
-    icon: mdi:currency-usd-off
-    title: |
-        Cost Efficient
-    subtitle: |
-        Simplified & Scalable Adoption
     text: |
-        The **uCIFI® reference implementation** is designed to be **cost-effective**, encouraging **widespread adoption** by cities and solution providers.
+        The uCIFI® reference implementation is designed to be easy to implement and cost efficient, so that both end-customers and solution suppliers have no reason not to adopt uCIFI®.
+    title: |
+        4
+    subtitle: |
+        Cost efficient
     ---
     :::
 ::

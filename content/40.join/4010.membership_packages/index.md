@@ -1,14 +1,14 @@
 ---
 title: Membership Packages
 description:
-layout: doc
+layout: web
 ---
 
-OMA SpecWorks is a leading Standards Development Organization (SDO) that brings together an experienced body of wireless industry contributors dedicated to creating and refining essential specifications at the service layer. These specifications support billions of fixed and mobile terminals across a diverse range of networks, including traditional cellular and the rapidly expanding Internet of Things (IoT) networks. Notably, OMA SpecWorks has been instrumental in the development of key protocols like the OMA LightweightM2M (LwM2M), which is crucial for enabling seamless machine-to-machine communication. The organization prides itself on fostering a work environment that values input from companies of all sizes, ensuring transparency and equal opportunities for all members to shape the future of wireless communication.
+**Open Mobile Allliance (OMA)** is a premier **Standards Development Organization (SDO)** dedicated to creating and refining service-layer specifications that support billions of devices across **cellular and IoT networks**. With a proven track record in developing essential protocols like **OMA LightweightM2M (LwM2M)**, the organization ensures seamless machine-to-machine communication and interoperability.  
 
-Membership in OMA SpecWorks offers companies an unparalleled opportunity to contribute directly to ongoing working groups or to initiate new projects tailored to their strategic goals. With a streamlined process that effectively balances the need for industry consensus with the urgency of bringing products to market, OMA SpecWorks empowers members to complete work items efficiently. Whether your company is a large corporation or a start-up, OMA SpecWorks provides the tools and collaborative environment necessary to develop high-quality technical outputs, particularly in key areas like IoT device management through protocols such as LwM2M.  
+By joining Open Mobile Alliance, companies gain **direct access** to working groups, the ability to **initiate new projects**, and a collaborative environment that values **transparency and inclusivity**. Whether you're a **global corporation or a startup**, OMA provides the tools and streamlined processes necessary to **accelerate innovation and bring products to market efficiently**.  
 
-OMA SpecWorks offers several levels of membership to meet the needs of every organization.
+To accommodate organizations of all sizes, **OMA offers multiple membership levels**, each tailored to different participation needs.
 
 <table class="membership-table" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
@@ -146,7 +146,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
 > B - There is an open action to determine if quorum for a new WI should be changed.
 
 **Join OMA SpecWorks today and be part of the future of wireless communication**. 
-- Visit [Join OMA](/omaspecworks/membership/join) to learn more and start your membership journey.
+- Visit [Join OMA](/join) to learn more and start your membership journey.
 - To Get the latest updates Subscribe for Our [Newsletters](/newsletter)!
 
 

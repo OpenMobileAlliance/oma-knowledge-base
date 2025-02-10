@@ -1,47 +1,480 @@
 ---
 title: List of Members
 description:
-layout: doc
+layout: web
 ---
 
-We would like to thank all our member companies for their support. For a complete list of members, see the chart below. Companies that have been members for five or more and 10 or more years are indicated in the chart below with a 5+ or 10+.
+### OMA 2025 Board of Directors Seats
 
-### OMA 2023 Board of Directors Seats
+::ShMultiColumn
+---
+cols: 3
+---
 
-### Full
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.aetheros.com
+    target: _blank
+    title: |
+        Aetheros Inc.
+    subtitle: |
+        
+    text: |
 
-- <a href="http://www.aetheros.com" target="_blank">Aetheros Inc.*</a>
-- <a href="http://www.verizonwireless.com" target="_blank">Verizon</a>
-- <a href="http://www.ericsson.com/se/" target="_blank">Ericsson* (10+)</a>
-- <a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel Corporation (10+)</a>
-- <a href="http://www.rohde-schwarz.com/" target="_blank">Rohde & Schwarz (10+)</a>
-- <a href="http://www.t-mobile.com/" target="_blank">T-Mobile USA, Inc.* (5+)</a>
-- <a href="https://www.itron.com/" target="_blank">Itron* (5+)</a>
-- <a href="http://www.ioterop.com/" target="_blank">IoTerop* (5+)</a>
+    ---
+    :::
 
-### Supporter
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://www.avsystem.com/
+    target: _blank
+    title: |
+        AVSystem
+    subtitle: |
+        5+
+    text: |
 
-- <a href="http://www.landisgyr.com" target="_blank">Landis+Gyr Technology, Inc.</a>
-- <a href="http://www.polariswireless.com" target="_blank">Polaris Wireless</a>
-- <a href="http://www.swiftnav.com" target="_blank">Swift Navigation Inc.</a>
-- <a href="http://www.nokia.com/" target="_blank">Nokia (10+)</a>
-- <a href="http://www.friendly-tech.com/" target="_blank">Friendly Technologies (5+)</a>
-- <a href="http://www.smithmicro.com/" target="_blank">Smith Micro Software, Inc. (10+)</a>
-- <a href="http://www.iotecc.com" target="_blank">IOTECC</a>
-- <a href="http://www.softwareag.com" target="_blank">Cumulocity IoT</a>
-- <a href="http://www.bulktainertelematics.com" target="_blank">Bulk Tainer Telematics Ltd</a>
-- <a href="http://www.plou.cn/" target="_blank">Weihai Ploumeter Co., LTD</a>
-- <a href="http://www.hydroquebec.com" target="_blank">Hydro-Québec</a>
-- <a href="http://www.hmdglobal.com" target="_blank">HMD Global Oy</a>
-- <a href="http://www.motive.com" target="_blank">Motive Software Solutions Inc</a>
-- <a href="http://www.6dtech.co.in" target="_blank">Six Dee Telecom Solutions Private Limited</a>
+    ---
+    :::
 
-### Associate
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.ericsson.com/se/
+    target: _blank
+    title: |
+        Ericsson
+    subtitle: |
+        10+
+    text: |
 
-- <a href="https://www.avsystem.com/" target="_blank">AVSystem (5+)</a>
-- <a href="https://services.harman.com/solutions/ota-software-management" target="_blank">Red Bend Software, acquired by HARMAN (10+)</a>
-- <a href="http://www.spirent.com/" target="_blank">Spirent Communications Ltd. (10+)</a>
-- <a href="http://www.synap.se/" target="_blank">Synapse Mobile Networks s.a. (10+)</a>
-- <a href="http://www.vuzix.com/" target="_blank">Vuzix (5+)</a>
-- <a href="http://www.hubbell.com" target="_blank">Aclara Technologies</a>
+    ---
+    :::
 
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://www.itron.com/
+    target: _blank
+    title: |
+        Itron
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://www.schreder.com/
+    target: _blank
+    title: |
+        Schréder SA.
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.t-mobile.com/
+    target: _blank
+    title: |
+        T-Mobile USA, Inc.
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.trasna.io/
+    target: _blank
+    title: |
+        Trasna
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+::
+
+
+### Stategic Members
+
+:::ShMicroCard
+---
+layout: flat
+urlImage: 
+urlWrapper: https://www.schreder.com/
+title: |
+    Schréder
+subtitle: |
+
+text: |
+
+---
+:::
+
+### Essential Members
+
+::ShMultiColumn
+---
+cols: 4
+---
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.aetheros.com
+    target: _blank
+    title: |
+        Aetheros Inc.
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/8/81/AVSystem_logo.jpg
+    urlWrapper: https://www.avsystem.com/
+    target: _blank
+    title: |
+        AVSystem
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/5/5c/Ericsson_logo.svg
+    urlWrapper: http://www.ericsson.com/se/
+    target: _blank
+    title: |
+        Ericsson
+    subtitle: |
+        10+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg
+    urlWrapper: http://www.intel.com/content/www/us/en/homepage.html
+    target: _blank
+    title: |
+        Intel Corporation
+    subtitle: |
+        10+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/6/67/Itron_logo.svg
+    urlWrapper: https://www.itron.com/
+    target: _blank
+    title: |
+        Itron
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://www.pdxeng.ch/
+    target: _blank
+    title: |
+        Paradox Engineering
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/8/89/Rohde_%26_Schwarz_Logo.svg
+    urlWrapper: http://www.rohde-schwarz.com/
+    target: _blank
+    title: |
+        Rohde & Schwarz
+    subtitle: |
+        10+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/a/a7/T-Mobile_logo.svg
+    urlWrapper: http://www.t-mobile.com/
+    target: _blank
+    title: |
+        T-Mobile USA, Inc.
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.trasna.io/
+    target: _blank
+    title: |
+        Trasna
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlImage: https://upload.wikimedia.org/wikipedia/commons/5/53/Verizon_2015_logo_-vector.svg
+    urlWrapper: http://www.verizonwireless.com
+    target: _blank
+    title: |
+        Verizon
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+::
+
+### Associate Members
+
+::ShMultiColumn
+---
+cols: 4
+---
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.hubbell.com/
+    target: _blank
+    title: |
+        Aclara Technologies
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://www.cumulocity.com/
+    target: _blank
+    title: |
+        Cumulocity IoT
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://exegin.com/
+    target: _blank
+    title: |
+        Exegin Technologies
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.friendly-tech.com/
+    target: _blank
+    title: |
+        Friendly Technologies
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.hmdglobal.com
+    target: _blank
+    title: |
+        HMD Global Oy
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.hydroquebec.com
+    target: _blank
+    title: |
+        Hydro-Québec
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.landisgyr.com
+    target: _blank
+    title: |
+        Landis+Gyr Technology, Inc.
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.motive.com
+    target: _blank
+    title: |
+        Motive Software Solutions Inc
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: https://mquest-technologies.com/
+    target: _blank
+    title: |
+        Mquest Technologies
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.6dtech.co.in
+    target: _blank
+    title: |
+        Six Dee Telecom Solutions Private Limited
+    subtitle: |
+        
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.smithmicro.com/
+    target: _blank
+    title: |
+        Smith Micro Software, Inc.
+    subtitle: |
+        10+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.synap.se/
+    target: _blank
+    title: |
+        Synapse Mobile Networks s.a.
+    subtitle: |
+        10+
+    text: |
+
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    layout: flat
+    urlWrapper: http://www.vuzix.com/
+    target: _blank
+    title: |
+        Vuzix
+    subtitle: |
+        5+
+    text: |
+
+    ---
+    :::
+
+::
+
+::ShAlert
+We would like to thank all our member companies for their support. Companies that have been members for five or more and 10 or more years are indicated in the chart below with a 5+ or 10+.
+::
