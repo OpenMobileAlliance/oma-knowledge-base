@@ -20,13 +20,13 @@ cols: 4
     #opacity: true
     #coverIcon: 
     #coverText: Hello
-    coverImage: /images/members-logo/Aetheros_Logo.jpg
+    coverImage: /images/members-logo/aetheros-logo.jpg
     urlWrapper: http://www.aetheros.com
     target: _blank
     title: |
-        AETHEROS
+        Aetheros
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
@@ -43,9 +43,9 @@ cols: 4
     urlWrapper: https://www.avsystem.com/
     target: _blank
     title: |
-        AVSYSTEM
+        AVSystem
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
@@ -62,9 +62,9 @@ cols: 4
     urlWrapper: http://www.ericsson.com/se/
     target: _blank
     title: |
-        ERICSSON
+        Ericsson
     subtitle: |
-        Over 10 years in OMA
+        10 +
     ---
     :::
 
@@ -81,9 +81,9 @@ cols: 4
     urlWrapper: https://www.itron.com/
     target: _blank
     title: |
-        ITRON
+        Itron
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
@@ -100,7 +100,7 @@ cols: 4
     urlWrapper: https://www.schreder.com/en
     target: _blank
     title: |
-        SCHREDER
+        Schreder SA
     ---
     :::
 
@@ -117,9 +117,9 @@ cols: 4
     urlWrapper: http://www.t-mobile.com/
     target: _blank
     title: |
-        T-MOBILE
+        T-Mobile Inc.
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
@@ -136,14 +136,14 @@ cols: 4
     urlWrapper: http://www.trasna.io/
     target: _blank
     title: |
-        TRASNA
+        Trasna
     ---
     :::
 
 ::
 
-
 ### Stategic Members
+
 ::ShMultiColumn
 ---
 cols: 4
@@ -162,7 +162,7 @@ cols: 4
     urlWrapper: https://www.schreder.com/en
     target: _blank
     title: |
-        SCHREDER
+        Schreder SA
     ---
     :::
 ::
@@ -187,14 +187,17 @@ cols: 5
     urlWrapper: http://www.aetheros.com
     target: _blank
     title: |
-        AETHEROS
+        Aetheros
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -203,14 +206,17 @@ cols: 5
     urlWrapper: https://www.avsystem.com/
     target: _blank
     title: |
-        AVSYSTEM
+        AVSystem
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -219,14 +225,17 @@ cols: 5
     urlWrapper: http://www.ericsson.com/se/
     target: _blank
     title: |
-        ERICSSON
+        Ericsson
     subtitle: |
-        Over 10 years in OMA
+        10 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -237,12 +246,15 @@ cols: 5
     title: |
         Intel Corporation
     subtitle: |
-        Over 10 years in OMA
+        10 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -251,14 +263,17 @@ cols: 5
     urlWrapper: https://www.itron.com/
     target: _blank
     title: |
-        ITRON
+        Itron
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -273,6 +288,9 @@ cols: 5
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -281,14 +299,17 @@ cols: 5
     urlWrapper: http://www.rohde-schwarz.com/
     target: _blank
     title: |
-        Rohde & Schwarz
+        Rohde & Schwarz SA
     subtitle: |
-        Over 10 years in OMA
+        10 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -297,14 +318,17 @@ cols: 5
     urlWrapper: http://www.t-mobile.com/
     target: _blank
     title: |
-        T-Mobile USA, Inc.
+        T-Mobile Inc.
     subtitle: |
-        Over 5 years in OMA
+        5 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -319,6 +343,9 @@ cols: 5
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -337,11 +364,14 @@ cols: 5
 
 ::ShMultiColumn
 ---
-cols: 7
+cols: 5
 ---
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -356,6 +386,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -370,6 +403,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -384,6 +420,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -400,6 +439,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -414,6 +456,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -428,6 +473,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -442,6 +490,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -450,12 +501,15 @@ cols: 7
     urlWrapper: http://www.motive.com
     target: _blank
     title: |
-        Motive Software Solutions Inc
+        Motive Software Solutions Inc.
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -470,6 +524,9 @@ cols: 7
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -478,12 +535,15 @@ cols: 7
     urlWrapper: http://www.6dtech.co.in
     target: _blank
     title: |
-        Six Dee Telecom Solutions Private Limited
+        6D Telecom Solutions PL
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -494,12 +554,15 @@ cols: 7
     title: |
         Smith Micro Software, Inc.
     subtitle: |
-        10+
+        10 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -510,12 +573,15 @@ cols: 7
     title: |
         Synapse Mobile Networks s.a.
     subtitle: |
-        10+
+        10 +
     ---
     :::
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -526,7 +592,7 @@ cols: 7
     title: |
         Vuzix
     subtitle: |
-        5+
+        5 +
     ---
     :::
 
