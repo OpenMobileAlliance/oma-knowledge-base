@@ -13,6 +13,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -29,6 +32,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -45,6 +51,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -61,6 +70,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -77,6 +89,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -91,6 +106,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -107,6 +125,9 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -123,11 +144,16 @@ cols: 4
 
 
 ### Stategic Members
-
+::ShMultiColumn
+---
+cols: 4
+---
     :::ShMicroCard
     ---
     ui:
-      wrapper: min-h-32
+        flat:
+            coverImage: dark:bg-white bg-white overflow-hidden
+            wrapper: h-24
     layout: flat
     #opacity: true
     #coverIcon: 
@@ -139,7 +165,7 @@ cols: 4
         SCHREDER
     ---
     :::
-
+::
 
 ### Essential Members
 
@@ -150,6 +176,9 @@ cols: 5
 
     :::ShMicroCard
     ---
+    ui:
+        flat:
+            coverImage: dark:bg-white bg-white overflow-none
     layout: flat
     #opacity: true
     #coverIcon: 
