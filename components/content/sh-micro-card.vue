@@ -1,14 +1,14 @@
 <template>
-  <div :class="[uiLayout.wrapper]">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage, coverEffectClass]"
+  <NuxtLink :to="urlWrapper" class="not-prose" :target="target" :class="[uiLayout.wrapper]">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage]"
       :src="props.coverImage" />
-    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper, coverEffectClass]">
+    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper]">
       <UIcon :name="props.coverIcon" :class="uiLayout.coverIcon" dynamic />
     </div>
-    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[uiLayout.coverText, coverEffectClass]">
+    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[uiLayout.coverText]">
       <MDC :value="coverText" class="px-4" />
     </div>
-    <NuxtLink :to="urlWrapper" class="not-prose" :target="target">
+    <div>
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="uiLayout.image" :alt="altImage" />
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="uiLayout.icon" />
@@ -27,8 +27,8 @@
           </button>
         </div>
       </div>
-    </NuxtLink>
-  </div>
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -38,7 +38,6 @@ const props = withDefaults(
   defineProps<{
     description?: string;
     layout?: string;
-    opacity?: boolean;
     coverImage?: string;
     coverIcon?: string;
     coverText?: string;
@@ -58,7 +57,6 @@ const props = withDefaults(
     ui: () => ({}),
     description: "",
     layout: "default",
-    opacity: false,
     coverImage: "",
     coverIcon: "",
     coverText: "",
@@ -95,15 +93,6 @@ const copyToClipboard = () => {
 function onClick() {
   alert('Currently copied: ' + colorName.value);
 }
-
-const coverEffectClass = computed(() => {
-  if (props.opacity === true) {
-    return "transition-opacity duration-700 group-hover:opacity-0";
-  }
-  else {
-    return "transition-transform duration-700 group-hover:-translate-y-full";
-  }
-});
 </script>
 
 <style scoped>
