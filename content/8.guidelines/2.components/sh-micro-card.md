@@ -59,10 +59,11 @@ text: |
 
 <b>{{ $doc.constructorName }}</b> constructor also comes with a `layout` option:
 
-::ShSegment
+::ShMultiColumn
 ---
 ui:
-  wrapper: p-10
+  wrapper: p-10 flex-col
+cols: 2
 ---
   :::ShMicroCard
   ---
@@ -77,8 +78,28 @@ ui:
       This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
   ---
   :::
+
+  :::ShMicroCard
+  ---
+  layout: teaser
+  coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
+  #coverIcon: logos:microsoft-icon
+  icon: i-line-md:clipboard-arrow
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+  :::
 ::
 
+::ShMultiColumn
+---
+cols: 2
+---
 ```mdc
 ::ShMicroCard
 ---
@@ -94,6 +115,25 @@ text: |
 ---
 ::
 ```
+
+```mdc
+::ShMicroCard
+  ---
+  layout: teaser
+  coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
+  #coverIcon: logos:microsoft-icon
+  icon: i-line-md:clipboard-arrow
+  urlWrapper: https://www.axios.com/
+  title: |
+      Microsoft sets non-profit to cut software related carbon emissions. 
+  subtitle: |
+      Axios gets you smarter, faster on what matters.
+  text: |
+      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  ---
+::
+```
+::
 
 ### Props
 These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
@@ -173,7 +213,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td><code>layout</code></td>
       <td>n/a</td>
       <td><code>default</code></td>
-      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code> & <code>flat</code></td>
+      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code> & <code>teaser</code></td>
     </tr>
     <tr>
       <td><code>urlWrapper</code></td>
@@ -321,6 +361,7 @@ cols: 3
   #opacity: true
   #coverIcon: fluent:cursor-hover-16-regular
   #coverText: Hello
+  transition: false
   coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
   urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
   urlWrapper: https://www.axios.com/

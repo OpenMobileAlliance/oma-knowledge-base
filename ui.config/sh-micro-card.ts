@@ -18,9 +18,21 @@ export default {
     coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
-    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[6rem] z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[4rem] z-20",
     title: "title text-2xl font-medium text-black dark:text-white break-words z-20",
     subtitle: "subtitle text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
     text: "text font-light text-[1.3rem] mt-7 break-words z-20",
-  }
+  },
+  teaser: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+    coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 z-10",
+    coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 duration-500 z-0",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[4rem] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+    title: "title text-2xl font-medium text-black dark:text-white break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+    subtitle: "subtitle opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
+    text: "text opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out font-light text-[1.3rem] mt-7 break-words z-20",
+  } 
 }

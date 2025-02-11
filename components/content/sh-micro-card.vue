@@ -1,5 +1,5 @@
 <template>
-  <div :class="[uiLayout.wrapper]">
+  <NuxtLink :to="urlWrapper" class="not-prose" :target="target" :class="[uiLayout.wrapper]">
     <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage, coverEffectClass]"
       :src="props.coverImage" />
     <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper, coverEffectClass]">
@@ -8,7 +8,7 @@
     <div v-if="props.coverText && !coverImage && !coverIcon" :class="[uiLayout.coverText, coverEffectClass]">
       <MDC :value="coverText" class="px-4" />
     </div>
-    <NuxtLink :to="urlWrapper" class="not-prose" :target="target">
+    <div>
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="uiLayout.image" :alt="altImage" />
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="uiLayout.icon" />
@@ -27,8 +27,8 @@
           </button>
         </div>
       </div>
-    </NuxtLink>
-  </div>
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -39,6 +39,7 @@ const props = withDefaults(
     description?: string;
     layout?: string;
     opacity?: boolean;
+    //transition?: boolean;
     coverImage?: string;
     coverIcon?: string;
     coverText?: string;
@@ -59,6 +60,7 @@ const props = withDefaults(
     description: "",
     layout: "default",
     opacity: false,
+    //transition: true,
     coverImage: "",
     coverIcon: "",
     coverText: "",
@@ -100,8 +102,14 @@ const coverEffectClass = computed(() => {
   if (props.opacity === true) {
     return "transition-opacity duration-700 group-hover:opacity-0";
   }
+  else if (props.layout === 'teaser'){
+    return ""
+  }
+  // else if(props.transition !== false ) {
+  //   return "";
+  // }
   else {
-    return "transition-transform duration-700 group-hover:-translate-y-full";
+  return "transition-transform duration-700 group-hover:-translate-y-full";
   }
 });
 </script>
