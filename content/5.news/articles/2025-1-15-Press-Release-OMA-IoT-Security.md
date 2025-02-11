@@ -9,7 +9,7 @@ rightLabel: OMA
 cardID: 125
 tags: 
     - news
-    - workshop
+    - security
 ---
 The rapid proliferation of Internet of Things (IoT) devices across industries has brought tremendous benefits, from enhanced operational efficiencies to improved customer experiences. However, this interconnected ecosystem also introduces significant security challenges. Ensuring robust IoT device security is crucial for protecting assets, monitoring security effectively, and mitigating risks in an increasingly connected world.  
 The industrial sector, including manufacturing and utilities industries, has faced several significant IoT security breaches in recent years, underscoring the vulnerabilities inherent in connected devices and systems. Notable incidents include:
