@@ -17,7 +17,7 @@ cols: 4
     #opacity: true
     #coverIcon: 
     #coverText: Hello
-    coverImage: /images/members-logo/aetheros-logo.jpg
+    coverImage: /images/members-logo/Aetheros_Logo.jpg
     urlWrapper: http://www.aetheros.com
     target: _blank
     title: |
@@ -126,6 +126,8 @@ cols: 4
 
     :::ShMicroCard
     ---
+    ui:
+      wrapper: min-h-32
     layout: flat
     #opacity: true
     #coverIcon: 
