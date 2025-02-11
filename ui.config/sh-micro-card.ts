@@ -13,7 +13,7 @@ export default {
   },
   flat: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent",
-    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
+    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-contain opacity-100 ease-in-out z-40",
     coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
     coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
