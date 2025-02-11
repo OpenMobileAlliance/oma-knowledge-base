@@ -28,14 +28,14 @@ ui:
 ---
   :::ShMicroCard
   ---
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
+  urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  urlWrapper: https://www.nasa.gov/
   title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
+      NASA 
   subtitle: |
-      Axios gets you smarter, faster on what matters.
+      Explore the Universe
   text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+      NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
   ---
   :::
 ::
@@ -45,19 +45,107 @@ This is how it is constructed
 ```mdc
 ::ShMicroCard
 ---
-urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-urlWrapper: https://www.axios.com/
+urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlWrapper: https://www.nasa.gov/
 title: |
-    Microsoft sets non-profit to cut software related carbon emissions. 
+  NASA 
 subtitle: |
-    Axios gets you smarter, faster on what matters.
+  Explore the Universe
 text: |
-    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
 ---
 ::
 ```
 
 <b>{{ $doc.constructorName }}</b> constructor also comes with a `layout` option:
+
+<!--First Two Layouts-->
+::ShMultiColumn
+---
+ui:
+  wrapper: p-10 flex-col
+cols: 2
+---
+  :::ShMicroCard
+  ---
+  layout: translate
+  coverImage: https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Merecury
+  icon: game-icons:planet-core
+  urlWrapper: https://science.nasa.gov/mercury/
+  title: |
+      Mercury
+  subtitle: |
+      God of Translators and Interpreters
+  text: |
+      The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. 
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: opacity
+  coverImage: https://science.nasa.gov/wp-content/uploads/2023/05/venus-single.png?w=398
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Venus
+  icon: fa6-solid:user-astronaut
+  urlWrapper: https://science.nasa.gov/venus/
+  title: |
+      Venus 
+  subtitle: |
+      How hot is too hot?
+  text: |
+      Venus is the second planet from the Sun, and the sixth largest planet. It’s the hottest planet in our solar system.
+  ---
+  :::
+::
+
+<!--How to construct them-->
+::ShMultiColumn
+---
+cols: 2
+---
+```mdc
+::ShMicroCard
+---
+layout: translate
+coverImage: https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg
+#coverIcon: lineicons:nasa
+#coverText: NASA Mercury
+icon: game-icons:planet-core
+urlWrapper: https://science.nasa.gov/mercury/
+title: |
+  Mercury
+subtitle: |
+  God of Translators and Interpreters
+text: |
+  The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. 
+---
+::
+```
+
+```mdc
+::ShMicroCard
+---
+layout: opacity
+coverImage: https://science.nasa.gov/wp-content/uploads/2023/05/venus-single.png?w=398
+#coverIcon: lineicons:nasa
+#coverText: NASA Venus
+icon: fa6-solid:user-astronaut
+urlWrapper: https://science.nasa.gov/venus/
+title: |
+  Venus 
+subtitle: |
+  How hot is too hot?
+text: |
+  Venus is the second planet from the Sun, and the sixth largest planet. It’s the hottest planet in our solar system.
+---
+::
+```
+::
+
+<!--Second Two Layouts-->
 
 ::ShMultiColumn
 ---
@@ -68,14 +156,14 @@ cols: 2
   :::ShMicroCard
   ---
   layout: flat
-  icon: logos:microsoft-icon
-  urlWrapper: https://www.axios.com/
+  icon: gis:earth-euro-africa-o
+  urlWrapper: https://science.nasa.gov/earth/facts/
   title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
+      Earth 
   subtitle: |
-      Axios gets you smarter, faster on what matters.
+      The Blue Marble
   text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+      Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.
   ---
   :::
 
@@ -83,19 +171,21 @@ cols: 2
   ---
   layout: teaser
   coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
-  #coverIcon: logos:microsoft-icon
-  icon: i-line-md:clipboard-arrow
-  urlWrapper: https://www.axios.com/
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Mars
+  icon: token-branded:safemars
+  urlWrapper: https://science.nasa.gov/mars/
   title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
+      Mars 
   subtitle: |
-      Axios gets you smarter, faster on what matters.
+      Meet the neighbour
   text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+      Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots
   ---
   :::
 ::
 
+<!--How to construct them-->
 ::ShMultiColumn
 ---
 cols: 2
@@ -104,33 +194,34 @@ cols: 2
 ::ShMicroCard
 ---
 layout: flat
-icon: logos:microsoft-icon
-urlWrapper: https://www.axios.com/
+icon: gis:earth-euro-africa-o
+urlWrapper: https://science.nasa.gov/earth/facts/
 title: |
-  Microsoft sets non-profit to cut software related carbon emissions. 
+  Earth 
 subtitle: |
-  Axios gets you smarter, faster on what matters.
+  The Blue Marble
 text: |
-  This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.
 ---
 ::
 ```
 
 ```mdc
 ::ShMicroCard
-  ---
-  layout: teaser
-  coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
-  #coverIcon: logos:microsoft-icon
-  icon: i-line-md:clipboard-arrow
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
+---
+layout: teaser
+coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
+#coverIcon: lineicons:nasa
+#coverText: NASA Mars
+icon: token-branded:safemars
+urlWrapper: https://science.nasa.gov/mars/
+title: |
+  Mars 
+subtitle: |
+  Meet the neighbour
+text: |
+  Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots
+---
 ::
 ```
 ::
@@ -159,52 +250,52 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td><code>config.default.wrapper</code></br><code>config.flat.wrapper</code></td>
+      <td><code>config[layout]wrapper</code>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
       <td><code>coverImage</code></td>
-      <td><code>config.default.coverImage</code></br><code>config.flat.coverImage</code></td>
+      <td><code>config[layout]coverImage</code>
       <td>Defines the styling for the cover image that spans across the whole constructor</td>
     </tr>
     <tr>
       <td><code>coverText</code></td>
-      <td><code>config.default.coverText</code></br><code>config.flat.coverText</code></td>
+      <td><code>config[layout]coverText</code>
       <td>Defines the styling for the cover text (including the color of the background) that spans across the whole constructor</td>
     </tr>
     <tr>
       <td><code>coverIconWrapper</code></td>
-      <td><code>config.default.coverIconWrapper</code></br><code>config.flat.coverIconWrapper</code></td>
+      <td><code>config[layout]coverIconWrapper</code>
       <td>Defines the styling for the wrapper of the <code>coverIcon</code> component</td>
     </tr>
     <tr>
       <td><code>coverIcon</code></td>
-      <td><code>config.default.coverIcon</code></br><code>config.flat.coverIcon</code></td>
+      <td><code>config[layout]coverIcon</code>
       <td>Defines the styling for the icon used for covering the constructor</td>
     </tr>
     <tr>
       <td><code>image</code></td>
-      <td><code>config.default.image</code></br><code>config.flat.image</code></td>
+      <td><code>config[layout]image</code>
       <td>Styles applied to the image element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
-      <td><code>config.default.icon</code></br><code>config.flat.icon</code></td>
+      <td><code>config[layout]icon</code>
       <td>Styles applied to the icon element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
-      <td><code>config.default.title</code></br><code>config.flat.title</code></td>
+      <td><code>config[layout]title</code>
       <td>Styles applied to the title text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
-      <td><code>config.default.subtitle</code></br><code>config.flat.subtitle</code></td>
+      <td><code>config[layout]subtitle</code>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
-      <td><code>config.default.text</code></br><code>config.flat.text</code></td>
+      <td><code>config[layout]text</code>
       <td>Styles applied to the text content, such as font size and color.</td>
     </tr>
   </tbody>
@@ -213,7 +304,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td><code>layout</code></td>
       <td>n/a</td>
       <td><code>default</code></td>
-      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code> & <code>teaser</code></td>
+      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code>, <code>teaser</code>, <code>translate</code> & <code>opacity</code></td>
     </tr>
     <tr>
       <td><code>urlWrapper</code></td>
@@ -244,12 +335,6 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td>n/a</td>
       <td>n/a</td>
       <td>Inscription that will be presented as a cover across the whole constructor (full Markdown support)</td>
-    </tr>
-    <tr>
-      <td><code>opacity</code></td>
-      <td>n/a</td>
-      <td><code>false</code></td>
-      <td>Setting this to true will trigger fadeaway effect on <code>coverImage</code>, <code>coverIcon</code> or <code>coverText</code>. Default state triggers the transition effect</td>
     </tr>
     <tr>
       <td><code>urlImage</code></td>
@@ -314,7 +399,7 @@ ui:
   :::ShMicroCard
   ---
   ui:
-      wrapper: shadow-xl bg-slate-200 #comments are allowed inline
+    default: 
       title: text-red-500
       text: text-oma-purple-300
   urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
@@ -335,158 +420,20 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShMicroCard
 ---
 ui:
-    wrapper: shadow-xl bg-slate-200 #comments are allowed inline
+  default: #if other layout is selected, then its name must be here
     title: text-red-500
     text: text-oma-purple-300
 urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
 urlWrapper: https://www.axios.com/
 title: |
-    Microsoft sets non-profit to cut software related carbon emissions. 
+  Microsoft sets non-profit to cut software related carbon emissions. 
 subtitle: |
-    Axios gets you smarter, faster on what matters.
+  Axios gets you smarter, faster on what matters.
 text: |
-    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+  This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 ```
-
-The following example will showcase an options on <b>{{ $doc.constructorName }}</b> and how to hidde its content:
-
-::ShMultiColumn
----
-cols: 3
----
-  :::ShMicroCard
-  ---
-  #opacity: true
-  #coverIcon: fluent:cursor-hover-16-regular
-  #coverText: Hello
-  transition: false
-  coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  :::
-
-  :::ShMicroCard
-  ---
-  opacity: true
-  #coverIcon: fluent:cursor-hover-16-regular
-  coverText: Three options for hidding content
-  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  :::
-
-  :::ShMicroCard
-  ---
-  opacity: true
-  coverIcon: fluent:cursor-hover-16-regular
-  #coverText: Hello
-  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  :::
-::
-
-This is how these examples are written (hover over for full view):
-
-::ShMultiColumn
----
-cols: 3
----
-  ::ShColumn
-  ---
-  class: 
-  ---
-  ```mdc
-  ::ShMicroCard
-  ---
-  #opacity: true
-  #coverIcon: fluent:cursor-hover-16-regular
-  #coverText: Hello
-  coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  ::
-  ```
-  ::
-
-  ::ShColumn
-  ---
-  class: 
-  ---
-  ```mdc
-  ::ShMicroCard
-  ---
-  opacity: true
-  #coverIcon: fluent:cursor-hover-16-regular
-  coverText: Three options for hidding content
-  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  ::
-  ```
-  ::
-
-  ::ShColumn
-  ---
-  class: 
-  ---
-  ```mdc
-  ::ShMicroCard
-  ---
-  opacity: true
-  coverIcon: fluent:cursor-hover-16-regular
-  #coverText: Hello
-  #coverImage: https://live.staticflickr.com/65535/54027120022_596f5ffdf3_4k.jpg
-  urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
-  urlWrapper: https://www.axios.com/
-  title: |
-      Microsoft sets non-profit to cut software related carbon emissions. 
-  subtitle: |
-      Axios gets you smarter, faster on what matters.
-  text: |
-      This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
-  ---
-  ::
-  ```
-  ::
-::
 
 ### Config
 These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
@@ -494,28 +441,64 @@ These style properties can be modified via `ui` and are stored in the <code><b>{
 ```ts
 export default {
   default: {
-    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-4 pr-4 pb-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
     coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
     coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
     coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
-    icon: "relative sm:mt-4 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
+    icon: "relative sm:mt-4 flex shrink-0 mx-auto text-[3rem] mb-8 text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
+    title: "title text-2xl font-medium text-black dark:text-white break-words z-20",
+    subtitle: "subtitle text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    text: "text font-light text-[1.3rem] mt-7 break-words z-20",
+  },
+  flat: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent",
+    //coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
+    //coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
+    //coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
+    //coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[4rem] z-20",
+    title: "title text-2xl font-medium text-black dark:text-white break-words z-20",
+    subtitle: "subtitle text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
+    text: "text font-light text-[1.3rem] mt-7 break-words z-20",
+  },
+  teaser: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+    coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 z-10",
+    coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 duration-500 z-0",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+    title: "title text-2xl font-medium text-black dark:text-white break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+    subtitle: "subtitle opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
+    text: "text opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out font-light text-[1.3rem] mt-7 break-words z-20",
+  },
+  translate: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
+    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverText: "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 text-[4rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
     title: "title text-xl font-medium text-black dark:text-white break-words z-20",
     subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   },
-  flat: {
-    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent",
-    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
-    coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
-    coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
+  opacity: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
+    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
+    coverText: "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
+    coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
-    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[6rem] z-20",
+    icon: "relative sm:mt-4 mb-8 text-[4rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
     title: "title text-xl font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
-    text: "text font-light text-[1rem] mt-7 break-words z-20",
+    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   }
 }
 ```
