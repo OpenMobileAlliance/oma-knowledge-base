@@ -28,8 +28,10 @@ ui:
 ---
   :::ShMicroCard
   ---
-  urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  #urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  icon: lineicons:nasa
   urlWrapper: https://www.nasa.gov/
+  target: _blank
   title: |
       NASA 
   subtitle: |
@@ -45,8 +47,9 @@ This is how it is constructed
 ```mdc
 ::ShMicroCard
 ---
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
 urlWrapper: https://www.nasa.gov/
+target: _blank
+icon: lineicons:nasa
 title: |
   NASA 
 subtitle: |
@@ -59,13 +62,12 @@ text: |
 
 <b>{{ $doc.constructorName }}</b> constructor also comes with a `layout` option:
 
-<!--First Two Layouts-->
-::ShMultiColumn
+::ShTwoColumns
 ---
 ui:
-  wrapper: p-10 flex-col
-cols: 2
+  wrapper: bg-inherit dark:bg-inherit shadow-none
 ---
+  <!--First Two Layouts-->
   :::ShMicroCard
   ---
   layout: translate
@@ -99,60 +101,47 @@ cols: 2
       Venus is the second planet from the Sun, and the sixth largest planet. It’s the hottest planet in our solar system.
   ---
   :::
-::
 
-<!--How to construct them-->
-::ShMultiColumn
----
-cols: 2
----
-```mdc
-::ShMicroCard
----
-layout: translate
-coverImage: https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg
-#coverIcon: lineicons:nasa
-#coverText: NASA Mercury
-icon: game-icons:planet-core
-urlWrapper: https://science.nasa.gov/mercury/
-title: |
-  Mercury
-subtitle: |
-  God of Translators and Interpreters
-text: |
-  The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. 
----
-::
-```
+  <!--How to construct them-->
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: translate
+  coverImage: https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Mercury
+  icon: game-icons:planet-core
+  urlWrapper: https://science.nasa.gov/mercury/
+  title: |
+    Mercury
+  subtitle: |
+    God of Translators and Interpreters
+  text: |
+    The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. 
+  ---
+  ::
+  ```
 
-```mdc
-::ShMicroCard
----
-layout: opacity
-coverImage: https://science.nasa.gov/wp-content/uploads/2023/05/venus-single.png?w=398
-#coverIcon: lineicons:nasa
-#coverText: NASA Venus
-icon: fa6-solid:user-astronaut
-urlWrapper: https://science.nasa.gov/venus/
-title: |
-  Venus 
-subtitle: |
-  How hot is too hot?
-text: |
-  Venus is the second planet from the Sun, and the sixth largest planet. It’s the hottest planet in our solar system.
----
-::
-```
-::
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: opacity
+  coverImage: https://science.nasa.gov/wp-content/uploads/2023/05/venus-single.png?w=398
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Venus
+  icon: fa6-solid:user-astronaut
+  urlWrapper: https://science.nasa.gov/venus/
+  title: |
+    Venus 
+  subtitle: |
+    How hot is too hot?
+  text: |
+    Venus is the second planet from the Sun, and the sixth largest planet. It’s the hottest planet in our solar system.
+  ---
+  ::
+  ```
 
-<!--Second Two Layouts-->
-
-::ShMultiColumn
----
-ui:
-  wrapper: p-10 flex-col
-cols: 2
----
+  <!--Second Two Layouts-->
   :::ShMicroCard
   ---
   layout: flat
@@ -183,47 +172,101 @@ cols: 2
       Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots
   ---
   :::
-::
 
-<!--How to construct them-->
-::ShMultiColumn
----
-cols: 2
----
-```mdc
-::ShMicroCard
----
-layout: flat
-icon: gis:earth-euro-africa-o
-urlWrapper: https://science.nasa.gov/earth/facts/
-title: |
-  Earth 
-subtitle: |
-  The Blue Marble
-text: |
-  Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.
----
-::
-```
+  <!--How to construct them-->
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: flat
+  icon: gis:earth-euro-africa-o
+  urlWrapper: https://science.nasa.gov/earth/facts/
+  title: |
+    Earth 
+  subtitle: |
+    The Blue Marble
+  text: |
+    Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.
+  ---
+  ::
+  ```
 
-```mdc
-::ShMicroCard
----
-layout: teaser
-coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
-#coverIcon: lineicons:nasa
-#coverText: NASA Mars
-icon: token-branded:safemars
-urlWrapper: https://science.nasa.gov/mars/
-title: |
-  Mars 
-subtitle: |
-  Meet the neighbour
-text: |
-  Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots
----
-::
-```
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: teaser
+  coverImage: https://scx2.b-cdn.net/gfx/news/hires/2015/interestingf.jpg
+  #coverIcon: lineicons:nasa
+  #coverText: NASA Mars
+  icon: token-branded:safemars
+  urlWrapper: https://science.nasa.gov/mars/
+  title: |
+    Mars 
+  subtitle: |
+    Meet the neighbour
+  text: |
+    Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots
+  ---
+  ::
+  ```
+
+  :::ShMicroCard
+  ---
+  layout: cta
+  coverImage: https://moon.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczBEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5cd8ec175a88e67be34ecfc8fe179be81b0a7561/176_moon_2018-04-23-Tom_Campbell_1600.jpg
+  #coverIcon: lineicons:nasa
+  #coverText: NASA The Moon
+  icon: streamline-emojis:new-moon
+  urlButton: https://science.nasa.gov/moon/
+  target: _blank
+  title: |
+    The Moon
+  subtitle: |
+    Earth`s Companion
+  text: |
+    From lighting up our skies to maintaining a geological record of our solar system’s history, Earth’s closest celestial neighbor plays a pivotal role in the study of our planet and our solar system. 
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  #layout: logo
+  coverImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  #coverIcon: lineicons:nasa
+  #coverText: NASA The Moon
+  icon: lineicons:nasa
+  urlButton: https://science.nasa.gov/moon/
+  target: _blank
+  title: |
+    The Moon
+  subtitle: |
+    Earth`s Companion
+  text: |
+    From lighting up our skies to maintaining a geological record of our solar system’s history, Earth’s closest celestial neighbor plays a pivotal role in the study of our planet and our solar system. 
+  ---
+  :::
+
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: cta #short from Call To Action
+  coverImage: https://moon.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczBEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5cd8ec175a88e67be34ecfc8fe179be81b0a7561/176_moon_2018-04-23-Tom_Campbell_1600.jpg
+  #coverIcon: lineicons:nasa
+  #coverText: NASA The Moon
+  icon: streamline-emojis:new-moon
+  urlButton: https://science.nasa.gov/moon/
+  target: _blank
+  title: |
+    The Moon
+  subtitle: |
+    Earth`s Companion
+  text: |
+    From lighting up our skies to maintaining a geological record of our solar system’s history, Earth’s closest celestial neighbor plays a pivotal role in the study of our planet and our solar system. 
+  ---
+  ::
+  ```
+
+  ```mdc
+  ```
 ::
 
 ### Props

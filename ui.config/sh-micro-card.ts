@@ -58,5 +58,18 @@ export default {
     title: "title text-xl font-medium text-black dark:text-white break-words z-20",
     subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
-  }
+  },
+  cta: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 bg-golden/[0.4] border-golden/[0.6]",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-60 z-0",
+    coverText: "absolute inset-0 flex items-center justify-center text-center opacity-60 z-0",
+    coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative text-start sm:mt-4 mb-8 flex shrink-0 text-[3rem] z-20",
+    title: "title text-4xl text-start font-medium text-black dark:text-white break-words z-20",
+    subtitle: "subtitle text-2xl text-start font-thin dark:font-thin text-neutral-900 dark:text-neutral-300 mt-1 break-words z-20",
+    underline: "underline underline-offset-[1.5rem] decoration-2 decoration-gray-700 dark:decoration-golden/[0.4]",
+    text: "text mt-8 font-light text-[1.1rem] text-start text-neutral-800 dark:text-golden break-words z-20",
+  },
 }
