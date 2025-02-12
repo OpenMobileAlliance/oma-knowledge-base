@@ -62,12 +62,26 @@ text: |
 
 <b>{{ $doc.constructorName }}</b> constructor also comes with a `layout` option:
 
+::ShAlert
+---
+typeAlert: warning
+---
+The layout: `flat` does **NOT** support `coverImage`, `coverIcon` nor `coverText` props. 
+::
+
+::ShAlert
+---
+typeAlert: warning
+---
+The layout: `cta` does **NOT** have a `urlWrapper`. Instead, use `urlButton` 
+::
+
 ::ShTwoColumns
 ---
 ui:
   wrapper: bg-inherit dark:bg-inherit shadow-none
 ---
-  <!--First Two Layouts-->
+  <!--1st row-->
   :::ShMicroCard
   ---
   layout: translate
@@ -102,7 +116,7 @@ ui:
   ---
   :::
 
-  <!--How to construct them-->
+  <!--2nd row-->
   ```mdc
   ::ShMicroCard
   ---
@@ -141,7 +155,7 @@ ui:
   ::
   ```
 
-  <!--Second Two Layouts-->
+  <!--3rd row-->
   :::ShMicroCard
   ---
   layout: flat
@@ -173,7 +187,7 @@ ui:
   ---
   :::
 
-  <!--How to construct them-->
+  <!--4th row-->
   ```mdc
   ::ShMicroCard
   ---
@@ -209,6 +223,7 @@ ui:
   ::
   ```
 
+  <!--5th row-->
   :::ShMicroCard
   ---
   layout: cta
@@ -243,6 +258,7 @@ ui:
   ---
   :::
 
+  <!--6th row-->
   ```mdc
   ::ShMicroCard
   ---
