@@ -229,7 +229,7 @@ ui:
 
   :::ShMicroCard
   ---
-  #layout: logo
+  layout: logo
   coverImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
   #coverIcon: lineicons:nasa
   #coverText: NASA The Moon
