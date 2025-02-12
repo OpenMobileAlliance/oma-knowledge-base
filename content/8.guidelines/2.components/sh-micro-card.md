@@ -234,14 +234,12 @@ ui:
   #coverIcon: lineicons:nasa
   #coverText: NASA The Moon
   icon: lineicons:nasa
-  urlButton: https://science.nasa.gov/moon/
+  urlButton: https://www.nasa.gov/
   target: _blank
   title: |
-    The Moon
+    NASA
   subtitle: |
-    Earth`s Companion
-  text: |
-    From lighting up our skies to maintaining a geological record of our solar system’s history, Earth’s closest celestial neighbor plays a pivotal role in the study of our planet and our solar system. 
+    Beyond the Frontier 
   ---
   :::
 
@@ -266,6 +264,21 @@ ui:
   ```
 
   ```mdc
+  ::ShMicroCard
+  ---
+  layout: logo
+  coverImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  #coverIcon: lineicons:nasa
+  #coverText: NASA The Moon
+  icon: lineicons:nasa
+  urlButton: https://www.nasa.gov/
+  target: _blank
+  title: |
+    NASA
+  subtitle: |
+    Beyond the Frontier 
+  ---
+  ::
   ```
 ::
 
@@ -347,7 +360,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td><code>layout</code></td>
       <td>n/a</td>
       <td><code>default</code></td>
-      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code>, <code>teaser</code>, <code>translate</code> & <code>opacity</code></td>
+      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code>, <code>teaser</code>, <code>translate</code>, <code>opacity</code>, <code>cta</code> & <code>logo</code></td>
     </tr>
     <tr>
       <td><code>urlWrapper</code></td>
@@ -484,7 +497,7 @@ These style properties can be modified via `ui` and are stored in the <code><b>{
 ```ts
 export default {
   default: {
-    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-4 pr-4 pb-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-4 pr-4 pb-4 pt-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
     coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
     coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
     coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
@@ -497,10 +510,6 @@ export default {
   },
   flat: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent",
-    //coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40",
-    //coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40",
-    //coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
-    //coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[4rem] z-20",
     title: "title text-2xl font-medium text-black dark:text-white break-words z-20",
@@ -542,98 +551,35 @@ export default {
     title: "title text-xl font-medium text-black dark:text-white break-words z-20",
     subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
+  },
+  cta: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 bg-golden/[0.4] border-golden/[0.6]",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-60 z-0",
+    coverText: "absolute inset-0 flex items-center justify-center text-center opacity-60 z-0",
+    coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative text-start sm:mt-4 mb-8 flex shrink-0 text-[3rem] z-20",
+    title: "title text-4xl text-start font-medium text-black dark:text-white break-words z-20",
+    subtitle: "subtitle text-2xl text-start font-thin dark:font-thin text-neutral-900 dark:text-neutral-300 mt-1 break-words z-20",
+    underline: "underline underline-offset-[1.5rem] decoration-2 decoration-gray-700 dark:decoration-golden/[0.4]",
+    text: "text mt-8 font-light text-[1.1rem] text-start text-neutral-800 dark:text-golden break-words z-20",
+  },
+  logo: {
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
+    coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-contain bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverText: "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+    image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 text-[8rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
+    title: "title text-xl font-medium text-black dark:text-white break-words z-20",
+    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   }
 }
 ```
 
 #### Class Descriptions
 
-These class values are used in the <b>{{ $doc.constructorName }}</b> component. The values are customizable and can be adjusted through the `ui` properties' attributes.
-
-</br>
-
-- <code>default:</code></br>
-
-  **_wrapper_**
-  - **Value**: `"container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden"`
-  - **Description**: A flexible container with a column layout, rounded corners, padding, centered alignment, and a maximum width of medium size. Includes hover effects for scaling, shadow, and border color changes. The component adapts to both light and dark modes with respective background and border styles.
-
-  **_coverImage_**
-  - **Value**: `"absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40"`
-  - **Description**: Positions the cover image absolutely at the bottom left, stretching it across the full width and height. The image will fill the container and maintain full opacity with smooth transition effects.
-
-  **_coverText_**
-  - **Value**: `"absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40"`
-  - **Description**: Centers the cover text within the container, positioning it absolutely across the entire area. The text is centered both vertically and horizontally with smooth transition effects. The background color changes for light and dark modes.
-
-  **_coverIconWrapper_**
-  - **Value**: `"bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40"`
-  - **Description**: A wrapper for the cover icon, positioned absolutely across the entire area. It has a background that adapts to light and dark modes and covers the container's full size.
-
-  **_coverIcon_**
-  - **Value**: `"absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40"`
-  - **Description**: Positions the cover icon absolutely across the container, ensuring it covers the entire area. The icon has full opacity and is contained within the wrapper with smooth transition effects.
-
-  **_image_**
-  - **Value**: `"relative mt-4 w-full h-auto flex shrink mx-auto z-20"`
-  - **Description**: Positions the image relatively with a top margin, full width, and automatic height. The image is centered horizontally with flexible shrinking behavior and placed in front of the cover elements.
-
-  **_icon_**
-  - **Value**: `"relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20"`
-  - **Description**: A small icon with relative positioning, flexible behavior, centered alignment, and responsive top margin. It includes light and dark mode blue text colors with hover effects.
-
-  **_title_**
-  - **Value**: `"title text-xl font-medium text-black dark:text-white break-words z-20"`
-  - **Description**: Applies medium-weight, large-sized text with black coloring (light mode) or white coloring (dark mode). Allows text wrapping for long words and is placed above other elements in the stack.
-
-  **_subtitle_**
-  - **Value**: `"subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20"`
-  - **Description**: A thin, base-sized text style with neutral or gray coloring, a top margin, and wrapping for long words. Font weight adjusts for dark mode.
-
-  **_text_**
-  - **Value**: `"text font-light text-[1.1rem] mt-7 break-words z-20"`
-  - **Description**: Default text style with medium size, top margin, and wrapping for long words. Positioned above other content.
-
-<hr>
-
-- <code>flat:</code></br>
-
-  **_wrapper_**
-  - **Value**: `"container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent"`
-  - **Description**: A flexible container with a column layout and rounded corners. It includes padding, centers its content both vertically and horizontally, and adapts to different screen sizes with a maximum width of medium size. The background is transparent in both light and dark modes.
-
-  **_coverImage_**
-  - **Value**: `"absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40"`
-  - **Description**: Positions the cover image absolutely at the bottom left, stretching it across the full width and height. The image will fill the container and maintain full opacity with smooth transition effects.
-
-  **_coverText_**
-  - **Value**: `"absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40"`
-  - **Description**: Centers the cover text within the container, positioning it absolutely across the entire area. The text is centered both vertically and horizontally with smooth transition effects. The background color changes for light and dark modes.
-
-  **_coverIconWrapper_**
-  - **Value**: `"bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40"`
-  - **Description**: A wrapper for the cover icon, positioned absolutely across the entire area. It has a background that adapts to light and dark modes and covers the container's full size.
-
-  **_coverIcon_**
-  - **Value**: `"absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40"`
-  - **Description**: Positions the cover icon absolutely across the container, ensuring it covers the entire area. The icon has full opacity and is contained within the wrapper with smooth transition effects.
-
-  **_image_**
-  - **Value**: `"relative mt-4 w-full h-auto flex shrink mx-auto z-20"`
-  - **Description**: Positions the image relatively with a top margin, full width, and automatic height. The image is centered horizontally with flexible shrinking behavior and placed in front of the cover elements.
-
-  **_icon_**
-  - **Value**: `"relative sm:mt-4 w-10 h-10 flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20"`
-  - **Description**: A small icon with relative positioning, flexible behavior, centered alignment, and responsive top margin. It includes light and dark mode blue text colors with hover effects.
-
-  **_title_**
-  - **Value**: `"title text-xl font-medium text-black dark:text-white break-words z-20"`
-  - **Description**: Applies medium-weight, large-sized text with black coloring (light mode) or white coloring (dark mode). Allows text wrapping for long words and is placed above other elements in the stack.
-
-  **_subtitle_**
-  - **Value**: `"subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20"`
-  - **Description**: A thin, base-sized text style with neutral or gray coloring, a top margin, and wrapping for long words. Font weight adjusts for dark mode.
-
-  **_text_**
-  - **Value**: `"text font-light text-[1.1rem] mt-7 break-words z-20"`
-  - **Description**: Default text style with medium size, top margin, and wrapping for long words. Positioned above other content.
+This constructor has many classes in many layouts, so this description section would be exagerated with information about each class. Checkout the official [TailwindCSS](https://v3.tailwindcss.com/) documentation.
