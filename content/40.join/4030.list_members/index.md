@@ -14,9 +14,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -33,9 +34,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -52,9 +54,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -71,9 +74,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -90,9 +94,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -107,9 +112,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -126,9 +132,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -151,10 +158,10 @@ cols: 4
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-hidden
-            wrapper: h-24
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -177,9 +184,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -196,9 +204,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -215,9 +224,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -234,9 +244,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -253,9 +264,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -272,9 +284,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -289,9 +302,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -308,9 +322,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -327,9 +342,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -344,9 +360,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -370,9 +387,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -387,9 +405,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -404,9 +423,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -421,9 +441,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -440,9 +461,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -457,9 +479,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -474,9 +497,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -491,9 +515,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -508,9 +533,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -525,9 +551,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -542,9 +569,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -561,9 +589,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
@@ -580,9 +609,10 @@ cols: 5
     :::ShMicroCard
     ---
     ui:
-        flat:
-            coverImage: dark:bg-white bg-white overflow-none
-    layout: flat
+        logo:
+            wrapper: h-32
+            title: flex justify-center mt-8
+    layout: logo
     #opacity: true
     #coverIcon: 
     #coverText: Hello
