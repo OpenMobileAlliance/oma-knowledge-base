@@ -7,8 +7,8 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 flex shrink-0 mx-auto text-[3rem] mb-8 text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
-    title: "title text-2xl font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    title: "title text-2xl font-extrabold dark:saturate-[300%] break-words z-20",
+    subtitle: "subtitle text-lg font-bold dark:saturate-[180%] mt-3 break-words z-20",
     text: "text font-light text-[1.3rem] mt-7 break-words z-20",
   },
   flat: {
