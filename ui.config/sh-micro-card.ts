@@ -31,8 +31,8 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 duration-500 z-0",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
-    title: "title text-2xl font-medium text-black dark:text-white break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
-    subtitle: "subtitle opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-lg font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-1 break-words z-20",
+    title: "title text-2xl font-extrabold dark:saturate-[300%] break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+    subtitle: "subtitle text-lg font-bold dark:saturate-[180%] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20",
     text: "text opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out font-light text-[1.3rem] mt-7 break-words z-20",
   },
   translate: {
@@ -43,8 +43,8 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 text-[4rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
-    title: "title text-xl font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    title: "title text-xl font-extrabold dark:saturate-[300%] break-words z-20",
+    subtitle: "subtitle text-base font-bold dark:saturate-[180%] mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   },
   opacity: {
@@ -55,8 +55,8 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 text-[4rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
-    title: "title text-xl font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    title: "title text-xl font-extrabold dark:saturate-[300%] break-words z-20",
+    subtitle: "subtitle text-base font-bold dark:saturate-[180%] mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   },
   cta: {
@@ -67,9 +67,9 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative text-start sm:mt-4 mb-8 flex shrink-0 text-[3rem] z-20",
-    title: "title text-4xl text-start font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-2xl text-start font-thin dark:font-thin text-neutral-900 dark:text-neutral-300 mt-1 break-words z-20",
-    underline: "underline underline-offset-[1.5rem] decoration-2 decoration-gray-700 dark:decoration-golden/[0.4]",
+    title: "title text-4xl text-start font-extrabold dark:saturate-[300%] text-black dark:text-golden break-words z-20",
+    subtitle: "subtitle text-2xl text-start font-bold dark:saturate-[180%] text-black dark:text-golden mt-1 break-words z-20",
+    underline: "underline underline-offset-[1.5rem] decoration-2 dark:decoration-golden/[0.4]",
     text: "text mt-8 font-light text-[1.1rem] text-start text-neutral-800 dark:text-golden break-words z-20",
   },
   logo: {
@@ -80,8 +80,8 @@ export default {
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 text-[8rem] flex shrink-0 mx-auto text-oma-blue-900/[0.7] hover:text-oma-blue-600 dark:text-oma-blue-200 z-20",
-    title: "title text-xl font-medium text-black dark:text-white break-words z-20",
-    subtitle: "subtitle text-base font-thin dark:font-thin text-neutral-500 dark:text-gray-400 mt-3 break-words z-20",
+    title: "title text-xl font-extrabold dark:saturate-[300%] break-words z-20",
+    subtitle: "subtitle text-base font-bold dark:saturate-[180%] mt-3 break-words z-20",
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   }
 }
