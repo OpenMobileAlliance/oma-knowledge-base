@@ -1,8 +1,8 @@
 <template>
   <div :class="[ui.wrapper, Status]">
-    <div v-if="urlImage" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-8 items-center">
+    <div v-if="urlImage" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-8">
       <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
-      <div :class="[positionTextClass, spanTextClass, alignTextClass]">
+      <div :class="[positionTextClass, spanTextClass, alignTextClass, 'content-start']">
         <MDC v-if="title" :class="ui.title" :value="title" />
         <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
         <MDC v-if="text" :class="ui.text" :value="text" />
@@ -19,7 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, toRef, computed } from 'vue'
 import { textImg as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
