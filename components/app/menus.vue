@@ -11,7 +11,7 @@
                 <span class="flex items-center space-x-2">
                     <!-- <UIcon v-if="iconsMap[item.label]" :name="iconsMap[item.label]" dynamic :class="ui.contentIcon" /> -->
                     <span :class="[ui.rootMenuLabel,
-                        isActive(item) ? ui.rootActive : '']">
+                    isActive(item) ? ui.rootActive : '']">
                         {{ item.label }}
                     </span>
                 </span>
@@ -21,8 +21,7 @@
             <!-- Submenu -->
             <ul v-if="item.children" :class="[ui.submenuUl, 'hidden group-hover/item:flex']">
                 <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
-                    <button @click="child.onClick" :class="[
-                        child.children ? 'cursor-default' : 'cursor-pointer',
+                    <button @click="child.onClick" :class="['cursor-pointer',
                         ui.button,
                         isActive(child) ? ui.submenuActive : ''
                     ]">
@@ -30,11 +29,11 @@
                         <span :class="ui.label">
                             {{ child.label }}
                         </span>
-                        <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" />
+                        <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
                     </button>
 
                     <!-- Recursive Submenu -->
-                    <ul v-if="child.children" :class="[ui.ul, 'hidden group-hover/sub:flex']">
+                    <!-- <ul v-if="child.children" :class="[ui.ul, 'hidden group-hover/sub:flex']">
                         <li v-for="(subChild, subChildIndex) in child.children" :key="subChildIndex"
                             class="group/subsub relative">
                             <button @click="subChild.onClick" :class="[
@@ -42,14 +41,12 @@
                                 ui.button,
                                 isActive(subChild) ? ui.submenuActive : ''
                             ]">
-                                <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
                                 <span :class="ui.label">
                                     {{ subChild.label }}
                                 </span>
                                 <UIcon v-if="subChild.children" name="mdi:chevron-right" :class="ui.chevronIcon" />
                             </button>
 
-                            <!-- Recursive deeper submenus -->
                             <ul v-if="subChild.children" :class="[ui.ul, 'hidden group-hover/subsub:flex']">
                                 <li v-for="(deepChild, deepChildIndex) in subChild.children" :key="deepChildIndex"
                                     class="group/deeper relative">
@@ -58,7 +55,6 @@
                                         ui.button,
                                         isActive(deepChild) ? ui.submenuActive : ''
                                     ]">
-                                        <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
                                         <span :class="ui.label">
                                             {{ deepChild.label }}
                                         </span>
@@ -66,7 +62,6 @@
                                             :class="ui.chevronIcon" />
                                     </button>
 
-                                    <!-- 5th Level (and more if needed) -->
                                     <ul v-if="deepChild.children" :class="[ui.ul, 'hidden group-hover/deeper:flex']">
                                         <li v-for="(fifthChild, fifthChildIndex) in deepChild.children"
                                             :key="fifthChildIndex" class="relative">
@@ -75,7 +70,6 @@
                                                 ui.button,
                                                 isActive(fifthChild) ? ui.submenuActive : ''
                                             ]">
-                                                <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
                                                 <span :class="ui.label">
                                                     {{ fifthChild.label }}
                                                 </span>
@@ -87,7 +81,8 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
+
                 </li>
             </ul>
         </li>
@@ -166,22 +161,22 @@ interface MenuItem {
     children?: MenuItem[] | null
 }
 
-const processNavigationItem = (navItem: any): MenuItem => {
+const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
     if (navItem.children?.length === 1) {
-        const singleChild = navItem.children[0]
+        const singleChild = navItem.children[0];
         return {
             label: navItem.title,
             path: singleChild._path,
             onClick: () => router.push(singleChild._path)
-        }
+        };
     }
     return {
         label: navItem.title,
-        path: navItem._path, // include the path for active-checking
-        children: navItem.children?.map((child: any) => processNavigationItem(child)) || null,
-        onClick: navItem.children ? undefined : () => router.push(navItem._path)
-    }
-}
+        path: navItem._path, // Keep the index path for active-checking
+        children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null,
+        onClick: isRoot ? undefined : () => router.push(navItem._path) // Only make level 2+ clickable
+    };
+};
 
 const menuData = computed(() => ({
     items: filteredNavigation.value?.map((navItem: any) => processNavigationItem(navItem))
