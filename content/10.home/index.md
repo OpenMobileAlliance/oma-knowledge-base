@@ -1,5 +1,5 @@
 ---
-title: What is OMA
+title: 
 description: Welcome to OMASpecWorks Home Page
 layout: web
 icon: line-md:home-twotone
