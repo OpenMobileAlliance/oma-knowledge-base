@@ -598,4 +598,4 @@ export default {
 
 #### Class Descriptions
 
-This constructor has many classes in many layouts, so this description section would be exagerated with information about each class. Checkout the official [TailwindCSS](https://v3.tailwindcss.com/) documentation.
+This constructor has many classes in many layouts, so this description section would be exagerated with information about each class. Checkout the official <a href="https://v3.tailwindcss.com/" target="_blank">TailwindCSS</a> documentation.
