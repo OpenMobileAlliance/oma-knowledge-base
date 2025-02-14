@@ -1,7 +1,8 @@
 <template>
-  <NuxtLink :to="urlWrapper" class="not-prose" :target="target" :class="[uiLayout.wrapper]">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage]"
-      :src="props.coverImage" />
+  <component :is="layout === 'cta' ? 'div' : NuxtLinkComponent"
+    v-bind="layout === 'cta' ? {} : { to: props.urlWrapper, target: props.target }"
+    :class="['not-prose', uiLayout.wrapper]" :target="layout === 'cta' ? undefined : props.target">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage]" :src="props.coverImage" />
     <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper]">
       <UIcon :name="props.coverIcon" :class="uiLayout.coverIcon" dynamic />
     </div>
@@ -14,10 +15,18 @@
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="uiLayout.icon" />
         <div class="relative">
           <MDC v-if="title"
-            :class="[uiLayout.title, 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard === true }]"
+            :class="[uiLayout.title, layout === 'cta' && title && !subtitle ? uiLayout.underline : '', 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard === true }]"
             :value="title" />
-          <MDC v-if="subtitle" :class="[uiLayout.subtitle, 'transition-opacity duration-300']" :value="subtitle" />
+          <MDC v-if="subtitle"
+            :class="[uiLayout.subtitle, layout === 'cta' && subtitle ? uiLayout.underline : '', 'transition-opacity duration-300']"
+            :value="subtitle" />
           <MDC v-if="text" :class="[uiLayout.text, 'transition-opacity duration-300']" :value="text" />
+          <div v-if="layout === 'cta'" class="flex justify-start">
+            <NuxtLink :to="urlButton" :target="target" class="inline-block">
+              <UIcon name="line-md:chevron-right-circle"
+                class="mt-24 mb-4 text-6xl hover:scale-105 duration-300 text-neutral-900 dark:text-golden" />
+            </NuxtLink>
+          </div>
         </div>
         <div v-if="clipboard"
           class="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
@@ -28,11 +37,12 @@
         </div>
       </div>
     </div>
-  </NuxtLink>
+  </component>
 </template>
 
 <script setup lang="ts">
 import { microCard as config } from '@/ui.config' // Importing the config file
+const NuxtLinkComponent = resolveComponent("NuxtLink"); //dynamically resolving the NuxtLink component to avoid build errors
 
 const props = withDefaults(
   defineProps<{
@@ -42,6 +52,7 @@ const props = withDefaults(
     coverIcon?: string;
     coverText?: string;
     urlWrapper?: string;
+    urlButton?: string;
     target?: string;
     urlImage?: string;
     altImage?: string;
@@ -61,6 +72,7 @@ const props = withDefaults(
     coverIcon: "",
     coverText: "",
     urlWrapper: "",
+    urlButton: "",
     target: "_self",
     urlImage: "",
     altImage: "",
