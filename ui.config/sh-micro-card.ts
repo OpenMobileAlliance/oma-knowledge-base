@@ -24,7 +24,7 @@ export default {
     text: "text font-light text-[1.3rem] mt-9 break-words z-20",
   },
   teaser: {
-    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
     coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
     coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 z-10",
     coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
