@@ -8,7 +8,7 @@
                 <template #header>
                     <div class="flex h-8 justify-between items-center">
                         <AppSocialLinks class="text-2xl space-x-1" />
-                        <ColorMode class="mt-4" />
+                        <ColorMode class="" />
                     </div>
                 </template>
 
