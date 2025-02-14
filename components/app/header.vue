@@ -40,7 +40,7 @@
               </slot>
             </div>
           </div>
-          <AppMenus class="z-50"/>
+          <AppMenus class="hidden 2xl:flex z-50"/>
           <!-- 
           <ul class="hidden 2xl:flex gap-1.5">
             <li v-for="link in topLinks" :key="link.path" class="ml-4 group relative"
@@ -67,7 +67,7 @@
           </ul> -->
 
           <!-- Dropdown for smaller screens -->
-          <div class="2xl:hidden lg:mx-0 order-first">
+          <div class="2xl:hidden lg:mx-0 order-first z-50">
             <UDropdown mode="click" :popper="{ placement: 'bottom-start' }">
               <button @click="toggleDropdownAndRotation"
                 class="bg-inherit hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 text-xl lg:text-2xl text-black dark:text-golden p-2 pl-2 pr-2 rounded-2xl">
