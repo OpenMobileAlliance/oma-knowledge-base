@@ -5,7 +5,7 @@
             <button @click="item.onClick" :class="[
                 item.label === 'HOME'
                     ? 'hover:rounded-lg cursor-pointer'
-                    : 'hover:rounded-t-lg cursor-default',
+                    : 'hover:rounded-t-lg cursor-pointer',
                 ui.rootMenuButton
             ]">
                 <span class="flex items-center space-x-2">
@@ -174,7 +174,7 @@ const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
         label: navItem.title,
         path: navItem._path, // Keep the index path for active-checking
         children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null,
-        onClick: isRoot ? undefined : () => router.push(navItem._path) // Only make level 2+ clickable
+        onClick: () => router.push(navItem._path) 
     };
 };
 
