@@ -222,10 +222,10 @@ This is the content inside of the <code><b>{{ $doc.constructorName }}</b><b>.ts<
 
 ```ts
 export default {
-  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-300 dark:border-neutral-500 rounded-2xl shadow-2xl p-5",
-  title: "font-bold text-3xl dark:text-white",
-  subtitle: "font-semibold text-2xl -mt-6 dark:text-neutral-400",
-  text: "dark:text-neutral-500 not-prose",
+  wrapper: "bg-gray-50 dark:bg-inherit border-neutral-200 dark:border-neutral-500 rounded-2xl shadow-lg dark:shadow-none p-3 sm:p-5 mb-12",
+  title: "title font-extrabold text-xl dark:saturate-[300%] sm:text-3xl md:text-4xl lg:text-5xl",
+  subtitle: "subtitle font-semibold dark:saturate-[180%] text-lg sm:text-xl md:text-2xl lg:text-3xl break-words -mt-9",
+  text: "not-prose text-lg sm:text-md md:text-lg lg:text-xl leading-loose break-words mt-16",
   image: "mx-auto rounded-xl",
   status: "",
   // Default Tailwind CSS values

@@ -13,7 +13,7 @@ icon: line-md:home-twotone
     alignText: left
     urlImage: /images//landing-hero/innovation1.jpeg
     title: |
-        **Open Mobile Alliance (OMA)**
+        Open Mobile Alliance (OMA)
     subtitle: |
         Enabling Global Interoperability for Mobile and IoT Standards
     text: |
@@ -28,7 +28,7 @@ icon: line-md:home-twotone
     alignText: left
     urlImage: /images/landing-hero/inovation-idea.jpeg
     title: |
-        **OMA, IPSO Alliance, and uCIFI**
+        OMA, IPSO Alliance, and uCIFI
     subtitle: |
         Expanding IoT Interoperability with Key Alliances
     text: |
@@ -44,7 +44,7 @@ icon: line-md:home-twotone
     alignText: left
     urlImage: /images/landing-hero/machine-learn.jpeg
     title: |
-        **LightweightM2M and Wireless Innovation**
+        LightweightM2M and Wireless Innovation
     subtitle: |
         Driving the Future of IoT Connectivity
     text: |
