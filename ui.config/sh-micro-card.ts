@@ -41,7 +41,7 @@ export default {
     coverText: "absolute inset-0 flex items-center justify-center text-center text-2xl font-extrabold opacity-30 scale-100 transition-all duration-700 ease-in-out group-hover:translate-y-[45%] group-hover:scale-[0.8] group-hover:opacity-100 group-hover:dark:saturate-[180%] z-10",
     coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-between z-0 overflow-hidden",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-30 scale-100 transition-all duration-700 ease-in-out group-hover:-translate-y-[6rem] group-hover:scale-[0.2] group-hover:opacity-100 group-hover:dark:saturate-[300%] group-hover:-mt-9 z-0",
-    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] dark:saturate-[300%] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] dark:saturate-[300%] transition-transform duration-500 ease-in-out group-hover:opacity-0 group-hover:transition-opacity group-hover:duration-500 transform z-20",
     title: "title mt-32 text-center text-2xl font-extrabold dark:saturate-[300%] break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
     subtitle: "subtitle text-center font-bold dark:saturate-[180%] text-[1.3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
     text: "text text-center text-[1.1rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 ease-in-out font-medium mt-2 mb-5 break-words z-20",
