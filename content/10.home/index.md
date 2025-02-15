@@ -9,7 +9,7 @@ icon: line-md:home-twotone
     :::ShTextImg
     ---
     positionText: left
-    spanText: m
+    spanText: l
     alignText: left
     urlImage: /images//landing-hero/innovation1.jpeg
     title: |
