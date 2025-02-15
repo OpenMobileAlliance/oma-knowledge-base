@@ -296,6 +296,48 @@ ui:
   ---
   ::
   ```
+
+  <!--7th row-->
+  :::ShMicroCard
+  ---
+  layout: snap
+  #coverImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  coverIcon: simple-icons:saturn
+  #coverText: NASA The Moon
+  icon: lineicons:nasa
+  target: _blank
+  title: |
+    Saturn
+  subtitle: |
+    Ring Of Power
+  text: |
+    Saturn is the sixth planet from the Sun, and the second largest in the solar system. It’s surrounded by beautiful rings.
+  ---
+  :::
+
+  :::ShSegment
+  :::
+
+  <!--8th row-->
+
+  ```mdc
+  ::ShMicroCard
+  ---
+  layout: snap
+  #coverImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+  coverIcon: simple-icons:saturn
+  #coverText: NASA The Moon
+  icon: lineicons:nasa
+  target: _blank
+  title: |
+    Saturn
+  subtitle: |
+    Ring Of Power
+  text: |
+    Saturn is the sixth planet from the Sun, and the second largest in the solar system. It’s surrounded by beautiful rings.
+  ---
+  ::
+  ```
 ::
 
 ### Props
@@ -376,7 +418,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td><code>layout</code></td>
       <td>n/a</td>
       <td><code>default</code></td>
-      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code>, <code>teaser</code>, <code>translate</code>, <code>opacity</code>, <code>cta</code> & <code>logo</code></td>
+      <td>This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. <b>Options:</b> <code>default</code>, <code>flat</code>, <code>teaser</code>, <code>snap</code>, <code>translate</code>, <code>opacity</code>, <code>cta</code> & <code>logo</code></td>
     </tr>
     <tr>
       <td><code>urlWrapper</code></td>
