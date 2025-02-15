@@ -249,7 +249,7 @@ ui:
   #coverIcon: lineicons:nasa
   #coverText: NASA The Moon
   icon: lineicons:nasa
-  urlButton: https://www.nasa.gov/
+  urlWrapper: https://www.nasa.gov/
   target: _blank
   title: |
     NASA
@@ -287,7 +287,7 @@ ui:
   #coverIcon: lineicons:nasa
   #coverText: NASA The Moon
   icon: lineicons:nasa
-  urlButton: https://www.nasa.gov/
+  urlWrapper: https://www.nasa.gov/
   target: _blank
   title: |
     NASA
