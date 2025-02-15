@@ -71,11 +71,11 @@
           <!-- Main Content -->
           <section :class="contentClass"
             class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-12 w-full lg:w-full overflow-auto">
-            <h1 class="pl-4 pr-4 sm:pl-8 sm:pr-8 md:pl-12 md:pr-12 lg:pl-24 lg:pr-24 xl:pl-36 xl:pr-36">
+            <!-- <h1 class="pl-4 pr-4 sm:pl-8 sm:pr-8 md:pl-12 md:pr-12 lg:pl-24 lg:pr-24 xl:pl-36 xl:pr-36">
               {{ page.title }}
-            </h1>
+            </h1> -->
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
-              class="par mt-8 pb-10 pl-4 pr-4 sm:pl-8 sm:pr-8 2xl:pl-36 2xl:pr-36">
+              class="par pb-10 pl-4 pr-4 sm:pl-8 sm:pr-8 2xl:pl-36 2xl:pr-36">
               <!--par is custom class for paragraph-->
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
