@@ -5,6 +5,8 @@ layout: web
 icon: line-md:home-twotone
 ---
 
+# WELCOME to OMA!
+
 ::ShSegment
     :::ShTextImg
     ---
