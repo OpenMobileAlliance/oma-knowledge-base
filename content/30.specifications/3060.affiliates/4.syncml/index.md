@@ -1,9 +1,10 @@
 ---
 title: SyncML
 description:
-layout: doc
+layout: web
 ---
-## Material from Affiliates - SyncML
+# SyncML
+## Material from Affiliates
 
 The SyncML initiative recently consolidated into the Open Mobile Alliance (OMA), contributing their technical work to the OMA technical Working Groups: [Public Available Documents](/specifications/search/public-docs).
 

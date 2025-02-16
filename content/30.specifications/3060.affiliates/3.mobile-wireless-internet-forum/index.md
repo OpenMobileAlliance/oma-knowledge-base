@@ -1,11 +1,13 @@
 ---
 title: Mobile Wireless Internet Forum
 description:
-layout: 
+layout: web
 ---
 
+# MOBILE WIRELESS INTERNET FORUM (MWIF)
+## Material from Affiliates
+
 <div>
-    <h2>Material from Affiliates- Mobile Wireless Internet Forum (MWIF)</h2>
     <p>The Mobile Wireless Internet Forum has consolidated into the Open Mobile Alliance and no longer exists as a separate entity. Following are the archived documents from MWIF.</p>
     <p><a target="_blank" href="/omaspecworks/about/policies-terms/use-agreement">Click here to view Use Agreement</a></p>
     <div class="head">MWIF Archived Documents</div>

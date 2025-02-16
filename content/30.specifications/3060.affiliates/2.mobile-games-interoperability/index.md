@@ -1,10 +1,10 @@
 ---
 title: Mobile Games Interoperability
 description:
-layout: 
+layout: web
 ---
-
-### [Material from Affiliates - Mobile Games Interoperability Forum (MGIF)]{.heading}
+# MOBILE GAMES INTEROPERABILITY FORUM (MGIF)
+## Material from Affiliates
 
 The Mobile Games Interoperability forum recently consolidated into the Open Mobile Alliance (OMA), contributing their technical work to the OMA technical Working Groups: <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/mgif/">Mobile Games Services</a>.  
 Following are the archived documents from MGIF.
