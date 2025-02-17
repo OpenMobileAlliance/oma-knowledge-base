@@ -59,7 +59,7 @@ export default {
     text: "text font-light text-[1.1rem] mt-7 break-words z-20",
   },
   opacity: {
-    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
+    wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 pt-5 pb-7 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
     coverImage: "absolute mb-0 bottom-0 left-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
     coverText: "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
     coverIconWrapper: "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
