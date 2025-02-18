@@ -5,7 +5,7 @@
         <UIcon :name="iconHome" dynamic class="mt-[1px]" />
         HOME
       </NuxtLink>
-      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="flex text-primary/[0.6] dark:text-primary/[0.8]">
+      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="flex text-primary/[0.7] dark:text-primary/[0.8]">
         <div v-if="route.path !== '/home'">&nbsp; > &nbsp;</div>
         <NuxtLink v-if="crumb.to != route.path" :to="crumb.to"
           :class="{ [ui.linkCrumb]: isBreadcrumbActive(crumb, index) }">
@@ -26,8 +26,8 @@
 <script setup lang="ts">
 
 const config = {
-  linkCrumb: 'text-primary/[0.7] hover:text-primary contrast-125 dark:text-primary/[0.8] dark:hover:text-primary',
-  activeCrumb: 'text-primary dark:text-primary contrast-125'
+  linkCrumb: 'text-[15px] text-primary/[0.7] hover:text-black dark:text-primary/[0.8] dark:hover:text-white',
+  activeCrumb: 'text-[15px] text-black dark:text-white',
 };
 
 const props = withDefaults(

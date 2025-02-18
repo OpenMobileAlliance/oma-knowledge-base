@@ -1,15 +1,17 @@
 ---
-title: What is OMA
+title: 
 description: Welcome to OMASpecWorks Home Page
 layout: web
 icon: line-md:home-twotone
 ---
 
+# WELCOME to OMA!
+
 ::ShSegment
     :::ShTextImg
     ---
     positionText: left
-    spanText: m
+    spanText: l
     alignText: left
     urlImage: /images//landing-hero/innovation1.jpeg
     title: |

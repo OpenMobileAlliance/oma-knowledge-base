@@ -1,10 +1,10 @@
 ---
 title: Location Interoperatility
 description:
-layout: 
+layout: web
 ---
-
-### Material from Affiliates - Location Interoperability Forum (LIF)
+# LOCATION INTEROPERABIILTY FORUM (LIF)
+## Material from Affiliates  
         
 The 'Location Interoperability Forum' (LIF), has consolidated into the Open Mobile Alliance (OMA), and no longer exists as an independent organization. The OMA Location Working Group (LOC) continues the work originated in the former Location Interoperability Forum (LIF) and Location Drafting Committee of the former WAP Forum. You will find below the archived documents from LIF.
 
