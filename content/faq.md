@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 description:
-layout: web
+layout: doc
 ---
 
 ::ShTwoColumns
