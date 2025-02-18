@@ -3,6 +3,7 @@ title: Liaison Agreements
 description:
 layout: web
 ---
+# LIAISON AGREEMENTS
 
 Open Mobile Alliance (OMA) collaborates with **external organizations and standards bodies** to drive interoperability and industry-wide adoption of open standards. Recognizing the value of **partnerships**, Open Mobile Alliance engages with organizations that perform **complementary or related work**, ensuring **broader industry participation** and alignment.  
 
@@ -61,7 +62,7 @@ cols: 3
 
 For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at <snewberry@omaorg.org>.
 
-### OMA Liaisons with other Organizations
+## OMA LIAISONS WITH OTHER ORGANIZATIONS
 OMA currently holds liaison agreements with the following organizations:
 * 3GPP (Third Generation Partnership Project)
 * 3GPP2 (Second Generation Partnership Project)

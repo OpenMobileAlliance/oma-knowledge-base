@@ -1,8 +1,9 @@
 ---
 title: "Frequently Asked Questions"
 description:
-layout: doc
+layout: web
 ---
+# FREQUENTLY ASKED QUESTIONS
 
 ::ShTwoColumns
 ---
@@ -106,7 +107,7 @@ qas:
 ---
 ::
 
-## Test Events
+## TEST EVENTS
 
 This section aims to provide an overview of what is an OMA Test Events, and what you can expect out of the Event.
 
@@ -137,7 +138,7 @@ qas:
 ---
 ::
 
-## Utilities 
+## UTILITIES 
 
 ::ShAlert
 ---
