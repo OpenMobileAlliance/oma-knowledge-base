@@ -1,8 +1,10 @@
 ---
 title: Wireless Village
 description:
-layout: 
+layout: web
 ---
+# WIRELESS VILLAGE
+## Material from Affiliates
 
 Wireless Village has recently consolidated into the Open Mobile Alliance (OMA) and no longer exists as an independent organization. Following are the archived documents from the Wireless Village Initiative (PDF files).
 

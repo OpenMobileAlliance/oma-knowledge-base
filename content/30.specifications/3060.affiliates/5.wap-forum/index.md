@@ -1,10 +1,10 @@
 ---
 title: WAP Forum
 description:
-layout: 
+layout: web
 ---
-
-## Material from Affiliates - Wireless Application Protocol Downloads
+# WIRELESS APPLICATION PROTOCOL (WAP)
+## Material from Affiliates
 
 <div class="text-base">
 
