@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 description:
-layout: doc
+layout: web
 ---
 ## How to Contact Us
 If you have any questions or need additional information about OMA protocols, we encourage you to get in touch with us.
