@@ -21,7 +21,7 @@ export default {
     icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] dark:saturate-[300%] z-20",
     title: "title text-[24px] font-extrabold dark:saturate-[300%] break-words z-20",
     subtitle: "subtitle text-[20px] font-bold dark:saturate-[180%] mt-1 break-words z-20",
-    text: "text font-light text-[18px] mt-9 break-words z-20",
+    text: "text font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-[1.3rem] mt-9 break-words z-20"
   },
   teaser: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
