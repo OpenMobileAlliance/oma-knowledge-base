@@ -16,7 +16,7 @@
     "@iconify-json/fa6-brands": "^1.2.1",
     "@iconify-json/heroicons-solid": "^1.2.0",
     "@iconify-json/icons8": "^1.2.0",
-    "@imengyu/vue3-context-menu": "^1.4.4",
+    "@imengyu/vue3-context-menu": "^1.4.9",
     "@nuxt/content": "^2.12.1",
     "@nuxt/ui": "^2.18.0",
     "@nuxtjs/sitemap": "^7.0.0",
