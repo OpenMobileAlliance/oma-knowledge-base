@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@iconify-json/devicon": "^1.2.31",
-    "@iconify-json/fa6-brands": "^1.2.1",
+    "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/heroicons-solid": "^1.2.0",
     "@iconify-json/icons8": "^1.2.0",
     "@imengyu/vue3-context-menu": "^1.4.4",
