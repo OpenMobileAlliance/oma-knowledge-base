@@ -73,6 +73,7 @@ By enabling efficient, interoperable, and secure device management, the LwM2M 2.
 If you would like to learn more about OMA and LwM2M 2.0? Get our free whitepaper [here](https://share.hsforms.com/18d7X23OxTyeLmdL1GafEfQcnedl?hsCtaAttrib=191959697225).  
 
 **OMA** will be exhibiting at the **Smart City Expo World Congress**, taking place on **November 4–6, 2025, in Barcelona**. You can find us at **Hall 2, Booth F70**, where we will be showcasing the next phase of OMA’s commitment to interoperability in smart cities.
+
  
 _Reference Links:_
 - uCIFI and OMA: Driving Open IoT Standards: [https://www.openmobilealliance.org/solutions/smart_cities/](https://www.openmobilealliance.org/solutions/smart_cities/)
