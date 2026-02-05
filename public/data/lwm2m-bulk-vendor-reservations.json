@@ -306,5 +306,9 @@
      {
         "ObjectIDRange": "36300 - 36399", 
         "CompanyName": "HID"
+     },
+     {
+        "ObjectIDRange": "36400 - 36449", 
+        "CompanyName": "Telic"
      }
 ]
