@@ -310,5 +310,9 @@
      {
         "ObjectIDRange": "36400 - 36449", 
         "CompanyName": "Telic"
+     },
+     {
+        "ObjectIDRange": "36450 - 36499", 
+        "CompanyName": "Lantronix"
      }
 ]
