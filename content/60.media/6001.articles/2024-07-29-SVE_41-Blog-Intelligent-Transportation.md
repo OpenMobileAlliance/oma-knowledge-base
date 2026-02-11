@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/intelligent-transportation.png
 imageBackground: ""
 title:  "The Emergence of Intelligent Transportation, Riding Smart"
-subtitle: 
+subtitle: ""
 leftLabel: 2024-July-29
 rightLabel: OMA
 cardID: 100

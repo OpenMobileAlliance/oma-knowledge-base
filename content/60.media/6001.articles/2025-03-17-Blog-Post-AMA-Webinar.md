@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/smart-city-post-webinar.jpg
 imageBackground: ""
 title:  "The Future of Smart Cities: How OMA and uCIFI Are Standardizing Interoperability"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-Mar-17
 rightLabel: OMA
 cardID: 140

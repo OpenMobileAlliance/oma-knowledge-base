@@ -1,6 +1,6 @@
 ---
 title: OMA NEWS
-description:
+description: ""
 layout: web
 ---
 ::ShListCards

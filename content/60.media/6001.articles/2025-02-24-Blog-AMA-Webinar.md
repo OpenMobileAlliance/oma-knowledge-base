@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/ucifi/smart-cities-background.jpeg
 imageBackground: ""
 title:  "Join OMA and uCIFI Leaders for First-Ever Ask Me Anything (AMA) Event"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-Feb-24
 rightLabel: OMA
 cardID: 130

@@ -134,6 +134,16 @@ const { data: result } = await useAsyncData(`fetch-articles-by-cardID-in-${media
     .all()
 );
 
+result.value?.forEach(card => {
+  card.title = card.title || "" 
+  card.subtitle = card.subtitle || "" 
+  card.urlImage = card.urlImage || ""
+  card.path = card.path || ""
+  card.leftLabel = card.leftLabel || ""
+  card.rightLabel = card.rightLabel || ""
+  card.centerLabel = card.centerLabel || "" 
+});
+
 //Tag & Tag Manipulation
 // Process each card in the result and collect all tags
 const allCardTags: string[] = [];
