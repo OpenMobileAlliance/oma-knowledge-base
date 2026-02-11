@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/modernazing-utilities.png
 imageBackground: ""
 title:  Harnessing the Power of Automation and IoT in the Utilities Industry
-subtitle: 
+subtitle: ""
 leftLabel: 2024-June-3
 rightLabel: OMA
 cardID: 85

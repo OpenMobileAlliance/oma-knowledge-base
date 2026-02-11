@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/uCIFI-Alliance-Joins-Forces.png
 imageBackground: ""
 title:  "uCIFI® Alliance Joins Forces with OMA SpecWorks"
-subtitle: 
+subtitle: ""
 leftLabel: 2024-Dec-09
 rightLabel: OMA
 cardID: 120

@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/media/iiot-ecosystem.jpeg
 imageBackground: ""
 title:  "Building a Future-Proof IIoT Ecosystem with Open Standards: The Role of OMA Lightweight M2M (LwM2M)"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-July-15
 rightLabel: OMA
 cardID: 155

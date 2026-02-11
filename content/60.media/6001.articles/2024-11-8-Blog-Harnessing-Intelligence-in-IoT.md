@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/IoT-dashboard.png
 imageBackground: ""
 title:  "Harnessing Intelligence in IoT Dashboard Analytics"
-subtitle: 
+subtitle: ""
 leftLabel: 2024-Nov-08
 rightLabel: OMA
 cardID: 115

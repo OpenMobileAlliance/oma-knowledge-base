@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/ge-program-announce.jpg
 imageBackground: ""
 title:  "Announcement of the Government and Educational Participation Program"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-June-17
 rightLabel: OMA
 cardID: 150
