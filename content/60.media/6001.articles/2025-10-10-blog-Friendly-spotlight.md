@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/members-logo/friendly-logo-blog.png
 imageBackground: "OMA Member Spotlight on Friendly Technologies:"
 title:  "A Conversation with Sean van der Walt"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-October-10
 rightLabel: OMA
 cardID: 205

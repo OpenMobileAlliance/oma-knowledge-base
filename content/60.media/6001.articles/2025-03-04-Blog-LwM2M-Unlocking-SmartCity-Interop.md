@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/ucifi/smart-city-interop.jpg
 imageBackground: ""
 title:  "How LwM2M is unlocking the smart city interoperability conundrum"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-Mar-4
 rightLabel: OMA
 cardID: 135

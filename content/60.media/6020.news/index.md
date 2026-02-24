@@ -1,6 +1,6 @@
 ---
 title: In the News
-description:
+description: ""
 layout: web
 ---
 

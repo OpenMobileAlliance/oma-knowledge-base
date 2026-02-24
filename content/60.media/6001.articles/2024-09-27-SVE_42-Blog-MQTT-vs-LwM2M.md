@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/MQTT-image.png
 imageBackground: ""
 title:  "MQTT vs LwM2M: The Battle of IoT Protocols for Lightweight Connectivity and Secure Device Management"
-subtitle: 
+subtitle: ""
 leftLabel: 2024-Sep-27
 rightLabel: OMA
 cardID: 105

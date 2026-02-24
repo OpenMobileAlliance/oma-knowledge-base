@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/Industrial_Autom_Underway.png
 imageBackground: ""
 title:  "Industrial Automation: Connecting Operations, People, Machines"
-subtitle: 
+subtitle: ""
 leftLabel: 2024-July-5
 rightLabel: OMA
 cardID: 90
