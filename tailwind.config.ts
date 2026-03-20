@@ -3,6 +3,10 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
   content: [
+    'content/**/*.md',
+    'components/**/*.vue',
+    'pages/**/*.vue',
+    'app.vue',
     'ui.config/*.ts',
     'plugins/*.ts'
   ],
@@ -94,6 +98,9 @@ export default <Partial<Config>>{
   safelist: [
     {
       pattern: /gap-.*/
+    },
+    {
+      pattern: /(text|bg|border)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|gray|slate|zinc|neutral|stone|oma-red|oma-purple|oma-yellow|oma-cyan|oma-blue)-(50|100|200|300|400|500|600|700|800|900|950)/
     }
   ]
 }
