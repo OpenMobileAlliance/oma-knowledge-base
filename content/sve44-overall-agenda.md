@@ -2,6 +2,7 @@
 title: OVERALL AGENDA
 description:
 layout: web
+navigation: false
 ---
 
 ### Krakow Program Overview (April 20–23, 2026)
