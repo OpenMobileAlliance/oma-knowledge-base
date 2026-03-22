@@ -16,7 +16,7 @@ Each track has its own goals and schedule, with shared touchpoints during the ev
 ---
 cols: 2
 ui:
-  wrapper: "bg-stone-200 text-emerald-800 shadow-lg"
+  wrapper: bg-stone-700 text-emerald-400 shadow-lg
 class: text-left
 gap: gap-8
 ---
@@ -24,20 +24,20 @@ gap: gap-8
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-cyan-300 dark: bg-oma-cyan-300 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-cyan-900 text-stone-800 rounded-xl p-2"
   ---
 
-  - <a href="#interop-conformance-lab-april-2023" target="_blank">**Track 1**</a>: Interop & Conformance Lab <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
+  - <a href="#interop-conformance-lab-april-2023" target="_blank">[Track 1]{.font-bold}</a>: Interop & Conformance Lab <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
 
   :::
 
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-300 dark: bg-oma-yellow-300 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2"
   ---
 
-  - <a href="#working-groups-strategy-sessions-april-2023" target="_blank">**Track 2**</a>: Working Groups & Strategy <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
+  - <a href="#working-groups-strategy-sessions-april-2023" target="_blank">[Track 2]{.font-bold}</a>: Working Groups & Strategy <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
 
   :::
 ::   
@@ -45,7 +45,7 @@ gap: gap-8
 ::ShBadge
 ---
 ui:
-  wrapper: "min-w-sm not-prose mx-10 ml-2 mt-10 bg-oma-cyan-300 text-primary"
+  wrapper: dark:bg-oma-cyan-900 mt-24 max-h-10 not-prose mx-10 ml-2
 ---
 Track 1
 ::
@@ -57,7 +57,7 @@ A structured environment for hands-on testing across real implementations.
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-50 dark: bg-oma-cyan-50 text-stone-500 rounded-xl border shadow-md p-2"
+  wrapper: bg-oma-cyan-900 text-stone-500 rounded-xl p-2
 ---
   ### Lab Focus
   - End‑to‑end interoperability testing between independent solutions
@@ -68,24 +68,24 @@ ui:
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-50 dark: bg-oma-cyan-50 text-stone-500 rounded-xl border shadow-md p-2 mt-6"
+  wrapper: bg-oma-cyan-900 text-stone-500 rounded-xl p-2 mt-10
 ---
   ### Lab Schedule
 
 <table>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Monday, April 20</strong></td>
     <td>Lab environment setup, connectivity checks, and dry runs</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Tuesday, April 21</strong></td>
     <td>Full‑day structured Interop and conformance test sessions</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Wednesday, April 22</strong></td>
     <td>Continued test execution, troubleshooting, and result capture</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Thursday, April 23</strong></td>
     <td>Final test runs, preliminary results, and lab debrief</td>
   </tr>
@@ -102,9 +102,9 @@ cols: 3
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-200 dark: bg-oma-cyan-200 text-stone-500 rounded-xl border shadow-md p-2"
+  wrapper: bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
 ---
-**RESULTS**
+[RESULTS]{ .text-black .font-bold }
 
 Documented test results and <br>lessons learned for participants. 
 :::
@@ -112,9 +112,9 @@ Documented test results and <br>lessons learned for participants.
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-200 dark: bg-oma-cyan-200 text-stone-500 rounded-xl border shadow-md p-2"
+  wrapper: bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
 ---
-**INPUT**
+[INPUT]{ .text-black .font-bold }
 
 Concrete input back to <br>the technical working groups. 
 :::
@@ -122,9 +122,9 @@ Concrete input back to <br>the technical working groups.
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-200 dark: bg-oma-cyan-200 text-stone-500 rounded-xl border shadow-md p-2"
+  wrapper: "bg-oma-cyan-400 text-stone-500 rounded-xl p-2"
 ---
-**DIRECTION**
+[DIRECTION]{ .text-black .font-bold } 
 
 Direction for future Interop events <br>and conformance activities.
 :::
@@ -134,7 +134,7 @@ Direction for future Interop events <br>and conformance activities.
 ::ShBadge
 ---
 ui:
-  wrapper: "min-w-sm not-prose mx-10 ml-2 mt-10 bg-oma-yellow-300 dark:bg-oma-yellow-300 text-primary"
+  wrapper: min-w-sm not-prose mx-10 ml-2 mt-24 dark:bg-oma-yellow-800 text-primary
 ---
 Track 2
 ::
@@ -146,7 +146,7 @@ In parallel, working group and strategy meetings focus on specifications, roadma
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-50 dark: bg-oma-yellow-50 text-stone-500 rounded-xl border shadow-md p-2"
+  wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2"
 ---
   ### Working Group Focus
 - Technical working groups: specification evolution, stability, feature planning, and tools
@@ -157,24 +157,24 @@ ui:
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-50 dark: bg-oma-yellow-50 rounded-xl border shadow-md p-2 mt-6"
+  wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2 mt-6"
 ---
   ### Working Group Schedule
 
 <table>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Monday, April 20</strong></td>
     <td>Light coordination for chairs and early arrivals</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Tuesday, April 21</strong></td>
     <td>Opening session, technical working group blocks, and initial strategy discussions.</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Wednesday, April 22</strong></td>
     <td>Clenary preparation, long‑term planning, and coordination with related initiatives</td>
   </tr>
-  <tr class="border-l-blue-500 border-l-4">
+  <tr>
     <td><strong>Thursday, April 23</strong></td>
     <td>Joint wrap‑up sessions, action review, and planning for the next in‑person meeting.</td>
   </tr>
@@ -188,36 +188,35 @@ ui:
   wrapper: border text-center
 cols: 3
 ---
-:::ShSegment
----
-ui:
-  wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
----
-**SPECS**
+  :::ShSegment
+  ---
+  ui:
+    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+  ---
+  [SPECS]{ .text-black .font-bold }
 
-Decisions on specification evolution<br> and upcoming work items
-:::
+  Decisions on specification evolution<br> and upcoming work items
+  :::
 
-:::ShSegment
----
-ui:
-  wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
----
-**STRATEGY**
+  :::ShSegment
+  ---
+  ui:
+    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+  ---
+  [STRATEGY]{ .text-black .font-bold }
 
-Aligned priorities and <br>communications direction for the year
-:::
+  Aligned priorities and <br>communications direction for the year
+  :::
 
-:::ShSegment
----
-ui:
-  wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
----
-**ACTIONS**
+  :::ShSegment
+  ---
+  ui:
+    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+  ---
+  [ACTIONS]{ .text-black .font-bold }
 
-Clear next steps for cross-group <br>coordination and follow-up
-:::
-
+  Clear next steps for cross-group <br>coordination and follow-up
+  :::
 :: 
 
 ::ShBadge
