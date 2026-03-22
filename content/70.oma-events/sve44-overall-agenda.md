@@ -224,7 +224,7 @@ cols: 3
 ui:
   wrapper: "not-prose mx-10 ml-2 mt-10 bg-oma-blue-300 dark: bg-oma-blue-300 text-white"
 ---
-<a href="oma-events/sve44-plenary-agenda" target="_blank">Plenary</a>
+<a href="/oma-events/sve44-plenary-agenda" target="_blank">Plenary</a>
 ::
 
 ::ShAlert
