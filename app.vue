@@ -224,6 +224,11 @@ h7 {
   text-decoration: none !important;
 }
 
+a {
+  color: theme('colors.oma-blue.300');
+  text-decoration: none;
+}
+
 a:hover {
   color: theme('colors.blue.700');
 }

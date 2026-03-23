@@ -20,7 +20,7 @@ const config = {
     content: 'content flex-1 text-center text-xl',
     linkIcon: 'inline-block',
     button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
-    icon: 'text-3xl mr-4 text-white',
+    icon: 'text-3xl mr-4 dark:text-white',
 };
 
 const props = withDefaults(

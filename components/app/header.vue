@@ -17,7 +17,7 @@
             class="hidden md:flex 2xl:hidden lg:justify-between" />
         </div>
         <div :class="ui.right">
-          <!-- <ColorMode :class="ui.colorMode" /> -->
+          <ColorMode :class="ui.colorMode" />
           <AppLogin :class="ui.login" />
           <AppSocialLinks :class="ui.socialLinks" />
           <AppHamburgerMenu :class="ui.hamburgerMenu" />
