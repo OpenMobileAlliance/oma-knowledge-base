@@ -191,7 +191,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl shadow-md p-2"
   ---
   [SPECS]{ .text-black .font-bold }
 
@@ -201,7 +201,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl shadow-md p-2"
   ---
   [STRATEGY]{ .text-black .font-bold }
 
@@ -211,7 +211,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl shadow-md p-2"
   ---
   [ACTIONS]{ .text-black .font-bold }
 
@@ -222,7 +222,7 @@ cols: 3
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-10 bg-oma-blue-300 dark: bg-oma-blue-300 text-white"
+  wrapper: "not-prose mx-10 ml-2 mt-10 mb-10 bg-oma-blue-100 dark:bg-oma-blue-700 text-white"
 ---
 <a href="/oma-events/sve44-plenary-agenda" target="_blank">Plenary</a>
 ::

@@ -14,9 +14,9 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   :::ShBadge
   ---
   ui:
-    wrapper: w-fit not-prose dark:bg-oma-cyan-900 dark:text-white text-center text-base
+    wrapper: w-fit bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white text-center text-base
   ---
-  Track 1 <div>•</div> Interop Lab
+  Track 1 • Interop Lab
   :::
 
   <div>+</div>
@@ -24,9 +24,9 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   :::ShBadge
   ---
   ui:
-    wrapper: "w-fit not-prose dark:bg-oma-yellow-800 dark:text-white text-center text-base"
+    wrapper: w-fit bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-white text-center text-base
   ---
-  Track 2 <div>•</div> Working Groups
+  Track 2 • Working Groups
   :::
 
   <div>=></div>
@@ -34,7 +34,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   :::ShBadge
   ---
   ui:
-    wrapper: "w-fit not-prose bg-[#F0FFF4] dark:bg-[#22543D] dark:text-white text-center text-base"
+    wrapper: "w-fit bg-oma-blue-100 dark:bg-oma-blue-700 dark:text-white text-center text-base"
   ---
   Plenary
   :::
@@ -44,7 +44,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
 ::ShMultiColumn
 ---
 ui:
-  wrapper: bg-oma-blue-700 text-white mt-4 p-2 w-3/5
+  wrapper: bg-oma-blue-100 dark:bg-oma-blue-700 text-white mt-4 p-2 w-3/5
 cols: 4
 ---
   :::ShSegment
@@ -103,7 +103,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Welcome and Next In‑Person Meeting (10 minutes)
   - Opening remarks and purpose of the plenary.
@@ -129,7 +129,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Year in Review: 2025 Highlights (10 minutes)
   - Overview of major technical and strategic milestones from 2025.
@@ -155,7 +155,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Working Group Updates and Roadmaps (45 minutes)
   - Each working area provides a status and forward view.
@@ -181,7 +181,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Adoption, Ecosystem, and Case Studies (45 minutes)
   - Adoption snapshot across key sectors and deployment types.
@@ -207,7 +207,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Partnerships and Industry Collaboration (~5 minutes)
   - Update on collaboration with other alliances, standards bodies, and initiatives.
@@ -233,13 +233,15 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-500
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
   #### Closing, Participation, and Next Steps (~5 minutes)
   - How to engage in working groups, Interop activities, and communications.
   :::
 ::
 
-<div class="text-base italic">
+<br>
+<br>
+<div class="text-base text-right italic">
   <sup>[1]</sup> Session times are approximate. Actual timing may shift depending on session flow on the day.
 </div>
