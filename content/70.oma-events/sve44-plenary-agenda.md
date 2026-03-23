@@ -9,14 +9,14 @@ navigation: false
 
 A hybrid plenary session bringing together highlights from both tracks — sharing achievements, roadmap direction, and opportunities for broader community participation. <sup>[1]</sup>
 
-<div class="flex flex-row max-h-10">
+<div class="flex flex-row items-center gap-3">
 
   :::ShBadge
   ---
   ui:
-    wrapper: not-prose dark:bg-oma-cyan-900 text-white text-base mr-4
+    wrapper: w-fit not-prose dark:bg-oma-cyan-900 dark:text-white text-center text-base
   ---
-  Track 1 — Interop Lab
+  Track 1 <div>•</div> Interop Lab
   :::
 
   <div>+</div>
@@ -24,9 +24,9 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   :::ShBadge
   ---
   ui:
-    wrapper: "not-prose dark:bg-oma-yellow-800 text-white text-base mx-4"
+    wrapper: "w-fit not-prose dark:bg-oma-yellow-800 dark:text-white text-center text-base"
   ---
-  Track 2 — Working Groups
+  Track 2 <div>•</div> Working Groups
   :::
 
   <div>=></div>
@@ -34,7 +34,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   :::ShBadge
   ---
   ui:
-    wrapper: not-prose bg-[#F0FFF4] dark:bg-[#22543D] text-white text-base ml-4
+    wrapper: "w-fit not-prose bg-[#F0FFF4] dark:bg-[#22543D] dark:text-white text-center text-base"
   ---
   Plenary
   :::
@@ -50,7 +50,7 @@ cols: 4
   :::ShSegment
   ---
   ui:
-    wrapper: text-oma-yellow-100 text-center
+    wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**DATE**]{ .text-sm}<br>
   [Wednesday, April 23, 2026]{ .text-base}
@@ -59,7 +59,7 @@ cols: 4
   :::ShSegment
   ---
   ui:
-    wrapper: text-oma-yellow-100 text-center
+    wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TIME**]{ .text-sm}<br>
   [16:00 – 18:00 (local time)]{ .text-base}
@@ -68,7 +68,7 @@ cols: 4
   :::ShSegment
   ---
   ui:
-    wrapper: text-oma-yellow-100 text-center
+    wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**FORMAT**]{ .text-sm}<br>
   [Hybrid — onsite & virtual]{ .text-base}
@@ -77,7 +77,7 @@ cols: 4
   :::ShSegment
   ---
   ui:
-    wrapper: text-oma-yellow-100 text-center
+    wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TOTAL DURATION**]{ .text-sm}<br>
   [~2 hours]{ .text-base}
@@ -94,7 +94,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-2
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   16:00
   ---
@@ -120,7 +120,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-3
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-3
   ---
   16:10
   ---
@@ -146,7 +146,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-2
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   16:20
   ---
@@ -172,7 +172,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-2
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:05
   ---
@@ -198,7 +198,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-2
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:50
   ---
@@ -224,7 +224,7 @@ cols: 5
   :::ShSegment
   ---
   ui:
-    wrapper: text-stone-200 w-full text-right text-xs mt-2
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:55
   ---

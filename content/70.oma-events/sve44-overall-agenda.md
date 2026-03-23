@@ -16,7 +16,7 @@ Each track has its own goals and schedule, with shared touchpoints during the ev
 ---
 cols: 2
 ui:
-  wrapper: bg-stone-700 text-emerald-400 shadow-lg
+  wrapper: bg-stone-200 dark:bg-stone-700 dark:text-emerald-400
 class: text-left
 gap: gap-8
 ---
@@ -24,7 +24,7 @@ gap: gap-8
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-cyan-900 text-stone-800 rounded-xl p-2"
+    wrapper: "bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-800 rounded-xl p-2"
   ---
 
   - <a href="#interop-conformance-lab-april-2023" target="_blank">[Track 1]{.font-bold}</a>: Interop & Conformance Lab <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
@@ -34,7 +34,7 @@ gap: gap-8
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2"
+    wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2"
   ---
 
   - <a href="#working-groups-strategy-sessions-april-2023" target="_blank">[Track 2]{.font-bold}</a>: Working Groups & Strategy <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
@@ -45,7 +45,7 @@ gap: gap-8
 ::ShBadge
 ---
 ui:
-  wrapper: dark:bg-oma-cyan-900 mt-24 max-h-10 not-prose mx-10 ml-2
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 mt-24 max-h-10 not-prose mx-10 ml-2
 ---
 Track 1
 ::
@@ -57,7 +57,7 @@ A structured environment for hands-on testing across real implementations.
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-900 text-stone-500 rounded-xl p-2
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-500 rounded-xl p-2
 ---
   ### Lab Focus
   - End‑to‑end interoperability testing between independent solutions
@@ -68,7 +68,7 @@ ui:
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-900 text-stone-500 rounded-xl p-2 mt-10
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-500 rounded-xl p-2 mt-10
 ---
   ### Lab Schedule
 
@@ -102,7 +102,7 @@ cols: 3
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
+  wrapper: bg-oma-cyan-200 dark:bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
 ---
 [RESULTS]{ .text-black .font-bold }
 
@@ -112,7 +112,7 @@ Documented test results and <br>lessons learned for participants.
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
+  wrapper: bg-oma-cyan-200 dark:bg-oma-cyan-400 text-stone-500 rounded-xl shadow-md p-2
 ---
 [INPUT]{ .text-black .font-bold }
 
@@ -122,7 +122,7 @@ Concrete input back to <br>the technical working groups.
 :::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-cyan-400 text-stone-500 rounded-xl p-2"
+  wrapper: "bg-oma-cyan-200 dark:bg-oma-cyan-400 text-stone-500 rounded-xl p-2"
 ---
 [DIRECTION]{ .text-black .font-bold } 
 
@@ -134,7 +134,7 @@ Direction for future Interop events <br>and conformance activities.
 ::ShBadge
 ---
 ui:
-  wrapper: min-w-sm not-prose mx-10 ml-2 mt-24 dark:bg-oma-yellow-800 text-primary
+  wrapper: min-w-sm not-prose mx-10 ml-2 mt-24 bg-oma-yellow-400 dark:bg-oma-yellow-800 text-primary
 ---
 Track 2
 ::
@@ -146,7 +146,7 @@ In parallel, working group and strategy meetings focus on specifications, roadma
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2"
+  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2"
 ---
   ### Working Group Focus
 - Technical working groups: specification evolution, stability, feature planning, and tools
@@ -157,7 +157,7 @@ ui:
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-800 text-stone-500 rounded-xl p-2 mt-6"
+  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2 mt-6"
 ---
   ### Working Group Schedule
 
@@ -191,7 +191,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
   ---
   [SPECS]{ .text-black .font-bold }
 
@@ -201,7 +201,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
   ---
   [STRATEGY]{ .text-black .font-bold }
 
@@ -211,7 +211,7 @@ cols: 3
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-200 dark: bg-oma-yellow-200 text-stone-500 rounded-xl border shadow-md p-2"
+    wrapper: "bg-oma-yellow-200 dark:bg-oma-yellow-400 text-stone-500 rounded-xl border shadow-md p-2"
   ---
   [ACTIONS]{ .text-black .font-bold }
 
