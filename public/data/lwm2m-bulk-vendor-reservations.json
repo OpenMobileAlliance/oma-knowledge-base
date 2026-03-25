@@ -314,5 +314,9 @@
      {
         "ObjectIDRange": "36450 - 36499", 
         "CompanyName": "Lantronix"
+     },
+     {
+        "ObjectIDRange": "36500 - 36549", 
+        "CompanyName": "Trilliant Networks"
      }
 ]
