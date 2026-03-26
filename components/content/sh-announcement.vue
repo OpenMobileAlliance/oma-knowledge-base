@@ -15,7 +15,7 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
-    wrapper: 'p-1 sm:p-3 z-50', //bg-golden dark:bg-oma-yellow-500
+    wrapper: 'p-1 sm:p-3 z-50 bg-neutral-400/70 dark:bg-black border dark:border-neutral-500 rounded-3xl shadow-xl', //bg-golden dark:bg-oma-yellow-500
     base: 'flex items-center justify-between',
     content: 'content flex-1 text-center text-xl',
     linkIcon: 'inline-block',

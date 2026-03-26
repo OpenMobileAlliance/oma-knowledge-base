@@ -1,7 +1,7 @@
 ---
 title: InLocation Alliance
 description:
-layout: 
+layout: web
 ---
 
 # InLOCATION ALLIANCE

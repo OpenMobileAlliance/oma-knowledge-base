@@ -6,7 +6,7 @@
         <div :class="ui.contentAboveHr">
           <img src="/logo-dark.png" alt="logo" title="Official OMA logo" :class="ui.logo" />
           <div id="slogan" title="Our Slogan" :class="ui.slogan">
-            <b>For a Connected World</b>
+            <span>For a Connected World</span>
           </div>
           <AppSocialLinks :class="ui.socialLinks" />
         </div>
@@ -47,7 +47,7 @@ const config = {
   contentAboveHr: "flex-row space-y-10 md:flex md:justify-between md:items-center",
   backgroundImg: "absolute bottom-0 left-0 w-full opacity-20 object-cover h-full xl:h-auto xl:object-fill object-center z-20",
   logo: "size-[50%] md:size-[13%] mx-auto md:mx-0 md:mt-10",
-  slogan: "text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-thin text-golden text-center font-expressa",
+  slogan: "text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-gray-700 dark:text-golden text-center font-expressa",
   socialLinks: "justify-center text-2xl md:text-3xl space-x-2 pl-3",
   hr: "mx-auto mb-10 mt-10 dark:border-neutral-600",
   megaFooterContent: "text-left z-40",
