@@ -165,6 +165,18 @@ const { data: navigation } = useQueryCollectionNavigation('content', 'navigation
 
 const main = useAppConfig().main
 
+const tabTitle = computed(() => {
+  if (page.value.path === '/' || page.value.path === '/home') {
+    return 'Open Mobile Alliance'
+  } else {
+    return `OMA • ${page.value.title}`
+  }
+})
+
+useHead({
+  title: tabTitle.value,
+})
+
 const routeDepth = route.path.split('/').length
 const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0
 
