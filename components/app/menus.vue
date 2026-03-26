@@ -115,7 +115,7 @@ const config = {
     button: 'w-full flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-oma-yellow-700 transition duration-200',
     label: 'font-small text-gray-900 dark:text-gray-100 truncate',
     contentIcon: '',
-    chevronIcon: 'ml-auto text-white group-hover/rootMenuButton:rotate-90 group-hover/rootMenuButton:scale-125 group-hover/item:rotate-90 group-hover/item:scale-125 group-hover/label:rotate-90 transition-transform duration-200',
+    chevronIcon: 'ml-auto dark:text-white group-hover/rootMenuButton:rotate-90 group-hover/rootMenuButton:scale-125 group-hover/item:rotate-90 group-hover/item:scale-125 group-hover/label:rotate-90 transition-transform duration-200',
 }
 
 const props = withDefaults(
