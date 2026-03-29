@@ -15,12 +15,12 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
-    wrapper: 'p-1 sm:p-3 z-50', //bg-golden dark:bg-oma-yellow-500
-    base: 'flex items-start justify-between',
+    wrapper: 'p-1 sm:p-3 z-50 bg-neutral-400/70 dark:bg-black border dark:border-neutral-500 rounded-3xl shadow-xl', //bg-golden dark:bg-oma-yellow-500
+    base: 'flex items-center justify-between',
     content: 'content flex-1 text-center text-xl',
     linkIcon: 'inline-block',
     button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
-    icon: 'text-3xl mr-4 text-white',
+    icon: 'text-3xl mr-4 dark:text-white',
 };
 
 const props = withDefaults(

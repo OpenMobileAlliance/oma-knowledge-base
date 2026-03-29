@@ -93,37 +93,17 @@
         </div>
       </template>
 
-      <!-- <template v-else>
+      <template v-else>
         <div class="grid grid-cols-12 ">
           <ContentRenderer v-if="page" :value="page" :style="{ fontSize: main.font.size }"
             class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
+            <template #not-found>
+              <UAlert title="File not found!" description="The requested resource cannot be found."
+                icon="i-heroicons-exclamation-triangle" />
+            </template>
           </ContentRenderer>
-          <div v-else class="col-start-1 col-span-12 lg:col-start-4 lg:col-span-6 w-full p-8 -mt-8">
-            <div class="p-5 border-2 dark:border-golden dark:bg-golden/15 rounded-xl">
-              <div class="flex">
-                <UIcon name="arcticons:trexrunner" class="dark:text-[#DE8800] text-6xl" />
-                <h1 class="mt-6 ml-3">Uh-oh, this is embarrassing!</h1>
-              </div>
-              <p class="dark:text-golden text-xl flex items-center">
-                <UIcon name="tabler:error-404" class="mr-2 text-3xl dark:text-[#DE8800]" />
-                We couldn't find the file at &nbsp;<code>{{ route.path }}</code>
-              </p>
-              <p class="dark:text-golden text-xl flex items-center">
-                <UIcon name="mdi:refresh" class="mr-2 text-2xl dark:text-[#DE8800]" />
-                Try refreshing the page and checking your internet connection.
-              </p>
-              <p class="dark:text-golden text-xl flex items-center break-words">
-                <UIcon name="mdi:headset" class="mr-2 text-2xl dark:text-[#DE8800]" />
-                If the problem persists, contact our
-                <NuxtLink to="/about/contact#send-us-your-comments" class="ml-1 mr-1">helpdesk
-                </NuxtLink>
-                for further assistance.
-              </p>
-            </div>
-          </div>
-
         </div>
-      </template> -->
+      </template>
     </article>
   </main>
 </template>
@@ -164,6 +144,18 @@ const { data: articles } = await useAsyncData(`article-${articleID.value}`, () =
 const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
 
 const main = useAppConfig().main
+
+const tabTitle = computed(() => {
+  if (page.value.path === '/' || page.value.path === '/home') {
+    return 'Open Mobile Alliance'
+  } else {
+    return `OMA • ${page.value.title}`
+  }
+})
+
+useHead({
+  title: tabTitle.value,
+})
 
 const routeDepth = route.path.split('/').length
 const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0

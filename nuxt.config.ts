@@ -73,7 +73,19 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/subscription', '/media/articles/', '/specifications/registries/objects/'],
+      routes: [
+        '/guidelines', 
+        '/groups', 
+        '/media', 
+        '/oma-events', 
+        '/oma-events/sve44-overall-agenda', //remove once the agenda is over
+        '/oma-events/sve44-plenary-agenda', //remove once the agenda is over
+        '/about/faq/', 
+        '/oma-events/past-events', 
+        '/about/subscription', 
+        '/media/articles/', 
+        '/specifications/registries/objects/'
+      ],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
