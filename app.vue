@@ -13,6 +13,7 @@
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
+    <AppCookieConsent />
     <UNotifications>
       <template #description="{ description }">
         <span v-html="description" />
@@ -26,6 +27,7 @@
 const main = useAppConfig().main;
 const route = useRoute();
 const toast = useToast();
+const { init: initCookieConsent } = useCookieConsent();
 
 const theme = useColorMode();
 
@@ -46,23 +48,8 @@ useHead(() => ({
 
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
-  // Cookie consent notification
-  if (!localStorage.getItem('cookie-consent-accepted')) {
-    toast.add({
-      id: 'cookie-consent',
-      title: 'Cookie Notice',
-      description: 'This website uses cookies to ensure you get the best experience. <br> By continuing to use this site, you accept our <a href="/about/legal#cookie-policy">Cookie Policy</a>.',
-      icon: 'i-heroicons-information-circle',
-      timeout: 0,
-      closeButton: false,
-      actions: [{
-        label: 'Accept',
-        click: () => {
-          localStorage.setItem('cookie-consent-accepted', 'true')
-        }
-      }]
-    })
-  }
+  // Initialize cookie consent — GTM stays disabled until user explicitly accepts
+  initCookieConsent();
 
   for (let i = 1; i <= 7; i++) {
     document.documentElement.style.setProperty(`--h${i}-font-type`, main[`h${i}`].font.type);
