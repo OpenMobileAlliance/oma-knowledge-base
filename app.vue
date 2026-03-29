@@ -13,7 +13,11 @@
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
-    <UNotifications />
+    <UNotifications>
+      <template #description="{ description }">
+        <span v-html="description" />
+      </template>
+    </UNotifications>
   </div>
 </template>
 
@@ -47,7 +51,7 @@ onMounted(() => {
     toast.add({
       id: 'cookie-consent',
       title: 'Cookie Notice',
-      description: 'This website uses cookies to ensure you get the best experience. By continuing to use this site, you accept our use of cookies.',
+      description: 'This website uses cookies to ensure you get the best experience. By continuing to use this site, you accept our <a href="/about/legal#cookie-policy">Cookie Policy</a>.',
       icon: 'i-heroicons-information-circle',
       timeout: 0,
       closeButton: false,
