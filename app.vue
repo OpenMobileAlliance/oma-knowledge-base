@@ -51,7 +51,7 @@ onMounted(() => {
     toast.add({
       id: 'cookie-consent',
       title: 'Cookie Notice',
-      description: 'This website uses cookies to ensure you get the best experience. By continuing to use this site, you accept our <a href="/about/legal#cookie-policy">Cookie Policy</a>.',
+      description: 'This website uses cookies to ensure you get the best experience. <br> By continuing to use this site, you accept our <a href="/about/legal#cookie-policy">Cookie Policy</a>.',
       icon: 'i-heroicons-information-circle',
       timeout: 0,
       closeButton: false,
