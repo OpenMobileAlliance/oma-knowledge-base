@@ -62,7 +62,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TIME**]{ .text-sm}<br>
-  [16:00 – 18:00 (local time)]{ .text-base}
+  [16:00 – 17:30 (local time)]{ .text-base}
   :::
 
   :::ShSegment
@@ -80,7 +80,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TOTAL DURATION**]{ .text-sm}<br>
-  [~2 hours]{ .text-base}
+  [~90 minutes]{ .text-base}
   :::
 ::
 
@@ -105,7 +105,7 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Welcome and Next In‑Person Meeting (10 minutes)
+  #### Welcome and Next In‑Person Meeting (5 minutes)
   - Opening remarks and purpose of the plenary.
   - Announcement of the next face‑to‑face meeting (location and target timeframe).
   :::
@@ -122,7 +122,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-3
   ---
-  16:10
+  16:05
   ---
   :::
 
@@ -131,7 +131,7 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Year in Review: 2025 Highlights (10 minutes)
+  #### Year in Review: 2025 Highlights (5 minutes)
   - Overview of major technical and strategic milestones from 2025.
   - Key community achievements and visible impact in the market.
   :::
@@ -148,7 +148,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  16:20
+  16:10
   ---
   :::
 
@@ -157,7 +157,7 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Working Group Updates and Roadmaps (45 minutes)
+  #### Working Group Updates and Roadmaps (20 minutes)
   - Each working area provides a status and forward view.
   - Brief updates from core specification, API, security/compliance, and strategy/outreach areas, plus plans for 2026 Interop and conformance activities.
   :::
@@ -174,7 +174,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  17:05
+  16:30
   ---
   :::
 
@@ -183,7 +183,7 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Adoption, Ecosystem, and Case Studies (45 minutes)
+  #### Adoption, Ecosystem, and Case Studies (50 minutes)
   - Adoption snapshot across key sectors and deployment types.
   - Real‑world implementation stories, featuring **confirmed speakers from Itron, Paradox, AVSystem, Schreder and more**, highlighting business outcomes and technical lessons learned.
   :::
@@ -200,7 +200,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  17:50
+  17:20
   ---
   :::
 
@@ -226,7 +226,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  17:55
+  17:25
   ---
   :::
 
