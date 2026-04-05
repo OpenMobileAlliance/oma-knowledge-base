@@ -172,7 +172,7 @@ ui:
   </tr>
   <tr>
     <td><strong>Wednesday, April 22</strong></td>
-    <td>Clenary preparation, long‑term planning, and coordination with related initiatives</td>
+    <td>Plenary preparation, long‑term planning, and coordination with related initiatives</td>
   </tr>
   <tr>
     <td><strong>Thursday, April 23</strong></td>
