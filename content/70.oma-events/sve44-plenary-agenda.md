@@ -105,9 +105,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Welcome and Next In‑Person Meeting (5 minutes)
+  #### •	Welcome and introductions (5 minutes)
   - Opening remarks and purpose of the plenary.
-  - Announcement of the next face‑to‑face meeting (location and target timeframe).
   :::
 ::
 
@@ -131,9 +130,9 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Year in Review: 2025 Highlights (5 minutes)
+  #### Year in Review: 2025 Highlights and Accomplishments (5 minutes)
   - Overview of major technical and strategic milestones from 2025.
-  - Key community achievements and visible impact in the market.
+  - Key adoption observations: *Rivir, SE Water, Maersk, Starlink, Battery Passport*.
   :::
 ::
 
@@ -157,9 +156,14 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Working Group Updates and Roadmaps (20 minutes)
-  - Each working area provides a status and forward view.
-  - Brief updates from core specification, API, security/compliance, and strategy/outreach areas, plus plans for 2026 Interop and conformance activities.
+  #### Looking Ahead: 2026 Roadmap and Working Group Updates (20 minutes)
+  - **DMSO / LwM2M** — status and forward view.
+  - **Northbound API** — developments and roadmap.
+  - **Smart Cities** — initiatives and direction.
+  - **Collaborations** — GEISA, JTC-1, Municipal Agencies, Universities.
+  - **Vertical Applications and Certifications** — plans for 2026.
+  #### Call to action / point to membership.
+  #### Announcement of the next face‑to‑face meeting: *Expo Congress*.
   :::
 ::
 
@@ -183,35 +187,19 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Adoption, Ecosystem, and Case Studies (50 minutes)
+  #### Adoption, Ecosystem, and Case Studies (~55 minutes)
   - Adoption snapshot across key sectors and deployment types.
-  - Real‑world implementation stories, featuring **confirmed speakers from Itron, Paradox, AVSystem, Schreder and more**, highlighting business outcomes and technical lessons learned.
-  :::
-::
+  - Real‑world implementation stories highlighting business outcomes and technical lessons learned.
 
-::ShMultiColumn
----
-ui:
-  wrapper: mt-10 p-2
-cols: 5
----
-  :::ShSegment
-  ---
-  ui:
-    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
-  ---
-  17:20
-  ---
-  :::
-
-  :::ShSegment
-  ---
-  ui:
-    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
-  ---
-  #### Partnerships and Industry Collaboration (~5 minutes)
-  - Update on collaboration with other alliances, standards bodies, and initiatives.
-  - How members can plug into joint work.
+  | Company | Status | Duration |
+  |---|---|---|
+  | **AVSystem** | ✅ Confirmed | 10–15 min |
+  | **Itron** | ✅ Confirmed | 10–15 min |
+  | **Paradox Engineering** | ✅ Confirmed | 10–15 min |
+  | Schreder | ⏳ Pending | ~10 min |
+  | Aetheros | ⏳ Pending | ~10 min |
+  | Friendly Technologies | ⏳ Pending | ~10 min |
+  | Madrid Digital Office | ⏳ Pending | ~10 min |
   :::
 ::
 
@@ -237,6 +225,7 @@ cols: 5
   ---
   #### Closing, Participation, and Next Steps (~5 minutes)
   - How to engage in working groups, Interop activities, and communications.
+  - Membership call to action — information for prospective members.
   :::
 ::
 
