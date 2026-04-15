@@ -1,5 +1,5 @@
 ---
-title: PLENARY AGENDA
+title: TEST EVENTS
 description:
 layout: web
 navigation: false
