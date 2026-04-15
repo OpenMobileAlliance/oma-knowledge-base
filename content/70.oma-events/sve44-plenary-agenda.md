@@ -16,7 +16,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   ui:
     wrapper: w-fit bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white text-center text-base
   ---
-  Track 1 • LwM2M TestFest
+  Track 1 • Interop Lab
   :::
 
   <div>+</div>
