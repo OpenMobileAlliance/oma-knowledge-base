@@ -1,5 +1,5 @@
 ---
-title: TEST EVENTS
+title: PLENARY AGENDA
 description:
 layout: web
 navigation: false
@@ -16,7 +16,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
   ui:
     wrapper: w-fit bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white text-center text-base
   ---
-  Track 1 • Interop Lab
+  Track 1 • LwM2M TestFest
   :::
 
   <div>+</div>
@@ -53,7 +53,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**DATE**]{ .text-sm}<br>
-  [Wednesday, April 23, 2026]{ .text-base}
+  [Wednesday, April 22, 2026]{ .text-base}
   :::
 
   :::ShSegment
@@ -62,7 +62,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TIME**]{ .text-sm}<br>
-  [16:00 – 17:30 (local time)]{ .text-base}
+  [16:00 – 17:30 CET]{ .text-base}
   :::
 
   :::ShSegment
@@ -97,7 +97,6 @@ cols: 5
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   16:00
-  ---
   :::
 
   :::ShSegment
@@ -105,8 +104,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### •	Welcome and introductions (5 minutes)
-  - Opening remarks and purpose of the plenary.
+  #### Opening (15 minutes)
+  - Welcome and introductions.
   :::
 ::
 
@@ -121,8 +120,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-3
   ---
-  16:05
-  ---
+  16:15
   :::
 
   :::ShSegment
@@ -130,9 +128,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Year in Review: 2025 Highlights and Accomplishments (5 minutes)
-  - Overview of major technical and strategic milestones from 2025.
-  - Key adoption observations: *Rivir, SE Water, Maersk, Starlink, Battery Passport*.
+  #### Year in Review: 2025 Highlights and Accomplishments (10 minutes)
+  - Summary of key accomplishments and milestones achieved in 2025.
   :::
 ::
 
@@ -147,8 +144,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  16:10
-  ---
+  16:25
   :::
 
   :::ShSegment
@@ -156,14 +152,12 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Looking Ahead: 2026 Roadmap and Working Group Updates (20 minutes)
-  - **DMSO / LwM2M** — status and forward view.
-  - **Northbound API** — developments and roadmap.
-  - **Smart Cities** — initiatives and direction.
-  - **Collaborations** — GEISA, JTC-1, Municipal Agencies, Universities.
-  - **Vertical Applications and Certifications** — plans for 2026.
-  #### Call to action / point to membership.
-  #### Announcement of the next face‑to‑face meeting: *Expo Congress*.
+  #### Looking Ahead: 2026 Roadmap and Working Group Updates (27 minutes)
+  - **DMSO / LwM2M** *(16:25 – 16:32)* — Roadmap and priorities for the Device Management & Service Enablement Object WG; LwM2M specification updates and TestFest outcomes.
+  - **Northbound API (NB API)** *(16:32 – 16:38)* — NB API Working Group priorities and upcoming deliverables.
+  - **Smart Cities** *(16:38 – 16:44)* — Smart City Working Group activities, regional engagements, and next steps.
+  - **Collaborations** *(16:44 – 16:48)* — Active and prospective collaboration agreements with external organizations.
+  - **Vertical Applications & Certifications** *(16:48 – 16:52)* — Status of vertical application initiatives and certification program development.
   :::
 ::
 
@@ -178,8 +172,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  16:30
-  ---
+  16:52
   :::
 
   :::ShSegment
@@ -187,19 +180,41 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Adoption, Ecosystem, and Case Studies (~55 minutes)
-  - Adoption snapshot across key sectors and deployment types.
-  - Real‑world implementation stories highlighting business outcomes and technical lessons learned.
+  #### Member Success Stories (~28 minutes)
+  - Ecosystem highlights, user stories, case studies, and adoption evidence.
 
   | Company | Status | Duration |
   |---|---|---|
-  | **AVSystem** | ✅ Confirmed | 10–15 min |
-  | **Itron** | ✅ Confirmed | 10–15 min |
-  | **Paradox Engineering** | ✅ Confirmed | 10–15 min |
-  | Schreder | ⏳ Pending | ~10 min |
-  | Aetheros | ⏳ Pending | ~10 min |
-  | Friendly Technologies | ⏳ Pending | ~10 min |
-  | Madrid Digital Office | ⏳ Pending | ~10 min |
+  | **AVSystem** | ✅ Confirmed | ~5 min |
+  | **PGE Distribution** | ✅ Confirmed | ~5 min |
+  | **Paradox Engineering** | ✅ Confirmed | ~5 min |
+  | **Itron** | ✅ Confirmed | ~5 min |
+  | **Friendly Technologies** | ✅ Confirmed | ~5 min |
+  | **Madrid Digital Office** | ✅ Confirmed | ~5 min |
+  :::
+::
+
+::ShMultiColumn
+---
+ui:
+  wrapper: mt-10 p-2
+cols: 5
+---
+  :::ShSegment
+  ---
+  ui:
+    wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
+  ---
+  17:20
+  :::
+
+  :::ShSegment
+  ---
+  ui:
+    wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
+  ---
+  #### Next Meeting (5 minutes)
+  - Announcement of the next OMA Face-to-Face meeting.
   :::
 ::
 
@@ -215,7 +230,6 @@ cols: 5
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:25
-  ---
   :::
 
   :::ShSegment
@@ -223,9 +237,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Closing, Participation, and Next Steps (~5 minutes)
-  - How to engage in working groups, Interop activities, and communications.
-  - Membership call to action — information for prospective members.
+  #### Closing (~5 minutes)
+  - Closing remarks and Plenary adjournment.
   :::
 ::
 
