@@ -106,7 +106,7 @@ ui:
 ---
 [RESULTS]{ .text-black .font-bold }
 
-Documented test results and <br>lessons learned for participants.
+Documented test results, lessons learned by participants, and GitHub issues raised to capture findings and drive resolution
 :::
 
 :::ShSegment
