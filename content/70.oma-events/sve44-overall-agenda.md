@@ -74,7 +74,7 @@ ui:
 
 <table>
   <tr>
-    <td><strong>Monday, April 20: 09-17h CET</strong></td>
+    <td><strong>Monday, April 20: 10-15h CET</strong></td>
     <td>TestFest setup and dry run — all Test Event participants validate their test configurations and connectivity</td>
   </tr>
   <tr>
@@ -260,8 +260,8 @@ ui:
 
 <table>
   <tr>
-    <td>09:00 – 17:00</td>
-    <td>TestFest setup and dry run:<br>all Test Event participants validate their test configurations. <br>No Working Group meetings scheduled.</td>
+    <td>10:00 – 15:00</td>
+    <td>TestFest setup and dry run:<br>All Test Event participants validate their test configurations. <br>No Working Group meetings scheduled.</td>
   </tr>
 </table>
 
