@@ -74,19 +74,19 @@ ui:
 
 <table>
   <tr>
-    <td><strong>Monday, April 20: 10-15h CET</strong></td>
+    <td><strong>Monday, April 20</strong>: 10-15h CET</td>
     <td>TestFest setup and dry run — all Test Event participants validate their test configurations and connectivity</td>
   </tr>
   <tr>
-    <td><strong>Tuesday, April 21: 09-17h CET</strong></td>
+    <td><strong>Tuesday, April 21</strong>: 09-17h CET</td>
     <td>Full‑day structured interop and conformance test sessions commence</td>
   </tr>
   <tr>
-    <td><strong>Wednesday, April 22: 09-17h CET</strong></td>
+    <td><strong>Wednesday, April 22</strong>: 09-17h CET</td>
     <td>Continued test execution, troubleshooting, and result capture</td>
   </tr>
   <tr>
-    <td><strong>Thursday, April 23: 09-11h CET</strong></td>
+    <td><strong>Thursday, April 23</strong>: 09-11h CET</td>
     <td>Final day of testing — review of test results and lessons learned</td>
   </tr>
 </table>
@@ -167,15 +167,15 @@ ui:
     <td>TestFest setup day — no Working Group meetings scheduled</td>
   </tr>
   <tr>
-    <td><strong>Tuesday, April 21: : 09-18h CET</strong></td>
+    <td><strong>Tuesday, April 21</strong>: 09-18h CET</td>
     <td>Opening welcome and year-in-review <br>DMSO, NB API, and Smart City WG sessions <br>Strategy Committee meeting (members only)</td>
   </tr>
   <tr>
-    <td><strong>Wednesday, April 22: 09-18h CET</strong></td>
+    <td><strong>Wednesday, April 22</strong>: 09-18h CET</td>
     <td>Strategy Committee continued <br>DMSO, NB API, and Smart City WG sessions <br>OMA Plenary (F2F & remote)</td>
   </tr>
   <tr>
-    <td><strong>Thursday, April 23: 09-15h CET</strong></td>
+    <td><strong>Thursday, April 23</strong>: 09-15h CET</td>
     <td>WG sessions <br>Strategy Committee post-Plenary recap <br>Conformance Program joint session <br>All-Hands closing</td>
   </tr>
 </table>
@@ -373,7 +373,7 @@ ui:
   </tr>
   <tr>
     <td>16:00 – 18:00</td>
-    <td>OMA Plenary Meeting — F2F &amp; Remote (see detailed<a href="https://www.openmobilealliance.org/oma-events/sve44-plenary-agenda">Plenary Agenda)</td>
+    <td>OMA Plenary Meeting — F2F &amp; Remote (see detailed <a href="https://www.openmobilealliance.org/oma-events/sve44-plenary-agenda">Plenary Agenda)</td>
   </tr>
 </table>
 
