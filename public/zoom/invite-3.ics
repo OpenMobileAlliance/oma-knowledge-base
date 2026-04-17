@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Groups.io Inc//Groups.io Calendar//EN
+METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Warsaw
+LAST-MODIFIED:20260306T231828Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Warsaw
+X-LIC-LOCATION:Europe/Warsaw
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+X-GIOIDS:Event:3120129 
+UID:oySy.1776199377559942561.MuR2@groups.io
+DTSTAMP:20260414T204310Z
+ORGANIZER;CN=Seth Newberry;SENT-BY="mailto:snewberry@omaorg.org":mailto:s
+ newberry@omaorg.org
+DTSTART:20260422T140000Z
+DTEND:20260422T153000Z
+SUMMARY:OMA Plenary Meeting
+DESCRIPTION:*EVENT DETAILS*\nDate: Wednesday\, April 22\, 2026\nTime: 16:
+ 00 – 17:30 CEST (UTC+2)\nVenue: Q Hotel Plus Kraków\nHost: AVSystem\nA
+ ddress: Wygrana 6\, 30-311 Kraków\, Poland\nFormat: In-person and remote
+  via Zoom\n\n*AGENDA HIGHLIGHTS*\n2025 Accomplishments and Adoption Highl
+ ights\n2026 Looking Forward\n\n* \nDMSO/LwM2M\n\n* \nNorthbound API\n\n* 
+ \nSmart Cities\n\n* \nCollaborations\n\n* \nVertical Applications and Cer
+ tifications\n\n* \nUpcoming Events\n\nIndustry Partner Presentations\n\n*
+  \nAVSystem\n\n* \nPGE Distribution\n\n* \nParadox Engineering\n\n* \nItr
+ on\n\n* \nFriendly Technologies\n\n* \nMadrid Digital Office\n\n*REMOTE P
+ ARTICIPATION*\nRemote dial-in is available via Zoom. A calendar invitatio
+ n with the Zoom link is included in this email.\n\nZoom Link: https://zoo
+ m.us/j/97445566817?pwd=aW9sT2dBWHZBMU9MZ0g5a1BEM09LQT09\nMeeting ID: 974 
+ 4556 6817\nPasscode: 960502
+LOCATION:https://zoom.us/j/97445566817?pwd=aW9sT2dBWHZBMU9MZ0g5a1BEM09LQT
+ 09.  Meeting ID: 974 4556 6817 Passcode: 960502
+URL:https://oma.groups.io/g/strat-comm/viewevent?eventid=3120129
+X-ADD-TO-CALENDAR-URL:https://oma.groups.io/g/strat-comm/ics/invite.ics?e
+ ventid=3120129
+SEQUENCE:2
+END:VEVENT
+END:VCALENDAR

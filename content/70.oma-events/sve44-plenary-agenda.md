@@ -45,7 +45,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
 ---
 ui:
   wrapper: bg-oma-blue-100 dark:bg-oma-blue-700 text-white mt-4 p-2 w-3/5
-cols: 4
+cols: 5
 ---
   :::ShSegment
   ---
@@ -81,6 +81,15 @@ cols: 4
   ---
   [**TOTAL DURATION**]{ .text-sm}<br>
   [~90 minutes]{ .text-base}
+  :::
+
+  :::ShSegment
+  ---
+  ui:
+    wrapper: dark:text-oma-yellow-100 text-center
+  ---
+  [**ADD TO CALENDAR**]{ .text-sm}<br>
+  [📅 Download .ics](/zoom/invite-3.ics){ .text-base target="_blank"}
   :::
 ::
 
