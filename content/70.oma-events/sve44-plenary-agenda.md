@@ -45,7 +45,7 @@ A hybrid plenary session bringing together highlights from both tracks — shari
 ---
 ui:
   wrapper: bg-oma-blue-100 dark:bg-oma-blue-700 text-white mt-4 p-2 w-3/5
-cols: 4
+cols: 5
 ---
   :::ShSegment
   ---
@@ -53,7 +53,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**DATE**]{ .text-sm}<br>
-  [Wednesday, April 23, 2026]{ .text-base}
+  [Wednesday, April 22, 2026]{ .text-base}
   :::
 
   :::ShSegment
@@ -62,7 +62,7 @@ cols: 4
     wrapper: dark:text-oma-yellow-100 text-center
   ---
   [**TIME**]{ .text-sm}<br>
-  [16:00 – 17:30 (local time)]{ .text-base}
+  [16:00 – 17:30 CET]{ .text-base}
   :::
 
   :::ShSegment
@@ -82,6 +82,15 @@ cols: 4
   [**TOTAL DURATION**]{ .text-sm}<br>
   [~90 minutes]{ .text-base}
   :::
+
+  :::ShSegment
+  ---
+  ui:
+    wrapper: dark:text-oma-yellow-100 text-center
+  ---
+  [**ADD TO CALENDAR**]{ .text-sm}<br>
+  [📅 Download .ics](/zoom/invite-3.ics){ .text-base target="_blank"}
+  :::
 ::
 
 
@@ -97,7 +106,6 @@ cols: 5
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   16:00
-  ---
   :::
 
   :::ShSegment
@@ -105,9 +113,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Welcome and Next In‑Person Meeting (5 minutes)
-  - Opening remarks and purpose of the plenary.
-  - Announcement of the next face‑to‑face meeting (location and target timeframe).
+  #### Opening (15 minutes)
+  - Welcome and introductions.
   :::
 ::
 
@@ -122,8 +129,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-3
   ---
-  16:05
-  ---
+  16:15
   :::
 
   :::ShSegment
@@ -131,9 +137,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-4 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Year in Review: 2025 Highlights (5 minutes)
-  - Overview of major technical and strategic milestones from 2025.
-  - Key community achievements and visible impact in the market.
+  #### Year in Review: 2025 Highlights and Accomplishments (10 minutes)
+  - Summary of key accomplishments and milestones achieved in 2025.
   :::
 ::
 
@@ -148,8 +153,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  16:10
-  ---
+  16:25
   :::
 
   :::ShSegment
@@ -157,9 +161,12 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Working Group Updates and Roadmaps (20 minutes)
-  - Each working area provides a status and forward view.
-  - Brief updates from core specification, API, security/compliance, and strategy/outreach areas, plus plans for 2026 Interop and conformance activities.
+  #### Looking Ahead: 2026 Roadmap and Working Group Updates (27 minutes)
+  - **DMSO / LwM2M** *(16:25 – 16:32)* — Roadmap and priorities for the Device Management & Service Enablement Object WG; LwM2M specification updates and TestFest outcomes.
+  - **Northbound API (NB API)** *(16:32 – 16:38)* — NB API Working Group priorities and upcoming deliverables.
+  - **Smart Cities** *(16:38 – 16:44)* — Smart City Working Group activities, regional engagements, and next steps.
+  - **Collaborations** *(16:44 – 16:48)* — Active and prospective collaboration agreements with external organizations.
+  - **Vertical Applications & Certifications** *(16:48 – 16:52)* — Status of vertical application initiatives and certification program development.
   :::
 ::
 
@@ -174,8 +181,7 @@ cols: 5
   ui:
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
-  16:30
-  ---
+  16:52
   :::
 
   :::ShSegment
@@ -183,9 +189,17 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Adoption, Ecosystem, and Case Studies (50 minutes)
-  - Adoption snapshot across key sectors and deployment types.
-  - Real‑world implementation stories, featuring **confirmed speakers from Itron, Paradox, AVSystem, Schreder and more**, highlighting business outcomes and technical lessons learned.
+  #### Member Success Stories (~28 minutes)
+  - Ecosystem highlights, user stories, case studies, and adoption evidence.
+
+  | Company | Status | Duration |
+  |---|---|---|
+  | **AVSystem** | ✅ Confirmed | ~5 min |
+  | **PGE Distribution** | ✅ Confirmed | ~5 min |
+  | **Paradox Engineering** | ✅ Confirmed | ~5 min |
+  | **Itron** | ✅ Confirmed | ~5 min |
+  | **Friendly Technologies** | ✅ Confirmed | ~5 min |
+  | **Madrid Digital Office** | ✅ Confirmed | ~5 min |
   :::
 ::
 
@@ -201,7 +215,6 @@ cols: 5
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:20
-  ---
   :::
 
   :::ShSegment
@@ -209,9 +222,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Partnerships and Industry Collaboration (~5 minutes)
-  - Update on collaboration with other alliances, standards bodies, and initiatives.
-  - How members can plug into joint work.
+  #### Next Meeting (5 minutes)
+  - Announcement of the next OMA Face-to-Face meeting.
   :::
 ::
 
@@ -227,7 +239,6 @@ cols: 5
     wrapper: dark:text-stone-200 w-full text-right text-xs mt-2
   ---
   17:25
-  ---
   :::
 
   :::ShSegment
@@ -235,8 +246,8 @@ cols: 5
   ui:
     wrapper: col-span-4 rounded-xl shadow-md p-2 bg-oma-purple-200 dark:bg-oma-purple-500
   ---
-  #### Closing, Participation, and Next Steps (~5 minutes)
-  - How to engage in working groups, Interop activities, and communications.
+  #### Closing (~5 minutes)
+  - Closing remarks and Plenary adjournment.
   :::
 ::
 
