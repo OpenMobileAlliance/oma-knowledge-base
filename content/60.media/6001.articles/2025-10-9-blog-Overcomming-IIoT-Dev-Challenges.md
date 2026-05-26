@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/IIoT-blog1.jpg
 imageBackground: ""
 title:  "Overcoming IIoT Device Management Challenges in Utilities with Lightweight M2M 2.0"
-subtitle: "A multi-organization effort led by Madrid Digital to improve interoperability across municipal and smart city ecosystems."
+subtitle: ""
 leftLabel: 2025-October-9
 rightLabel: OMA
 cardID: 200
