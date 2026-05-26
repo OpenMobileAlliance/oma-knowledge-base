@@ -1,9 +1,9 @@
 ---
 layout: articles
-urlImage: /images/media/oma_smart_cities_sig_banner.jpg
+urlImage: /images/news/oma_smart_cities_sig_banner.jpg
 imageBackground: ""
 title:  "OMA Supports Collaborative Smart Cities SIG Initiative"
-subtitle: "While the IoT industry talks about scale, Germany quietly delivered itA multi-organization effort led by Madrid Digital to improve interoperability across municipal and smart city ecosystems2026-May-25"
+subtitle: "A multi-organization effort led by Madrid Digital to improve interoperability across municipal and smart city ecosystems."
 rightLabel: OMA
 cardID: 230
 tags: 
