@@ -12,7 +12,6 @@ tags:
 ---
 
 **San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced that its Board of Directors has formally approved a new Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems.
-
 <!--more-->
 
 The initiative will bring together organizations including Madrid Digital, FIWARE Foundation, Smart Data Objects initiatives, Universidad Politécnica de Madrid, municipalities, and additional standards and technology organizations to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
