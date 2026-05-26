@@ -14,7 +14,7 @@ tags:
 **San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced that its Board of Directors has formally approved a new Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems.
 <!--more-->
 
-The initiative will bring together organizations including Madrid ([Digital Office @ City Council](www.madrid.es/digitalcapital)) , the [Smart Data Models](https://smartdatamodels.org/) led by the [FiWARE Foundation](https://www.fiware.org/), the [Polytechnic University of Madrid](https://iotmadlab.es/en/), and additional standards and technology organizations such as [AIOTI](https://aioti.eu/cities-5-0/). The objective, is to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
+The initiative will bring together organizations including Madrid [Digital Office @ City Council](www.madrid.es/digitalcapital) , the [Smart Data Models](https://smartdatamodels.org/) led by the [FiWARE Foundation](https://www.fiware.org/), the [Polytechnic University of Madrid](https://iotmadlab.es/en/), and additional standards and technology organizations such as [AIOTI](https://aioti.eu/cities-5-0/). The objective, is to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
 
 While OMA will provide technical guidance, interoperability expertise, collaboration infrastructure, and program management support, the initiative itself will be led by Madrid Digital Office team with the participation of a growing ecosystem.
 
