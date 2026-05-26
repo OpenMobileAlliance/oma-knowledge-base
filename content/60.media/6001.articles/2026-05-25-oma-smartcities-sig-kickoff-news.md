@@ -1,6 +1,6 @@
 ---
 layout: articles
-urlImage: /images/media/oma_smart_cities_sig__banner.png
+urlImage: /images/media/oma_smart_cities_sig_banner.jpg
 imageBackground: ""
 title:  "OMA Supports Collaborative Smart Cities SIG Initiative"
 subtitle: "While the IoT industry talks about scale, Germany quietly delivered itA multi-organization effort led by Madrid Digital to improve interoperability across municipal and smart city ecosystems2026-May-25"
@@ -10,9 +10,6 @@ tags:
     - news
     - blogs
 ---
-# Press Release Draft
-
-## Open Mobile Alliance Board Approves New Smart Cities SIG Initiative to Advance Municipal Interoperability Collaboration
 
 **San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced that its Board of Directors has formally approved a new Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems.
 
