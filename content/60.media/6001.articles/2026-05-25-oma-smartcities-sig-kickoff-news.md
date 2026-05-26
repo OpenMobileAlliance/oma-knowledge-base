@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/news/oma_smart_cities_sig_banner.jpg
 imageBackground: ""
 title:  "OMA Supports Collaborative Smart Cities SIG Initiative"
-subtitle: "A multi-organization effort led by Madrid Digital to improve interoperability across municipal and smart city ecosystems."
+subtitle: "A multi-organization effort led by Madrid Digital Office @ City Council to improve interoperability across municipal and smart city ecosystems."
 rightLabel: OMA
 cardID: 230
 tags: 
