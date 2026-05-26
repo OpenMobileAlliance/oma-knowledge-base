@@ -14,15 +14,15 @@ tags:
 **San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced that its Board of Directors has formally approved a new Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems.
 <!--more-->
 
-The initiative will bring together organizations including Madrid Digital, FIWARE Foundation, Smart Data Objects initiatives, Universidad Politécnica de Madrid, municipalities, and additional standards and technology organizations to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
+The initiative will bring together organizations including Madrid ([Digital Office @ City Council](www.madrid.es/digitalcapital)) , the [Smart Data Models](https://smartdatamodels.org/) led by the [FiWARE Foundation](https://www.fiware.org/), the [Polytechnic University of Madrid](https://iotmadlab.es/en/), and additional standards and technology organizations such as [AIOTI](https://aioti.eu/cities-5-0/). The objective, is to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
 
-While OMA will provide technical guidance, interoperability expertise, collaboration infrastructure, and program management support, the initiative itself will be led by Juan Jesús Muñoz Esteban, Madrid Digital Office Director, and the Madrid Digital team.
+While OMA will provide technical guidance, interoperability expertise, collaboration infrastructure, and program management support, the initiative itself will be led by Madrid Digital Office team with the participation of a growing ecosystem.
 
 The Smart Cities SIG is not intended to develop a new standard. Instead, its purpose is to establish a practical methodology for understanding municipal requirements and expressing them in a form that can be interpreted consistently across multiple standards organizations, open ecosystems, and technology platforms.
 
 The initiative aims to create a bridge between real operational city requirements and interoperable digital frameworks, enabling municipalities and technology providers to align implementations while reducing fragmentation across ecosystems.
 
-A key objective of the work is to produce outputs capable of interoperating with Smart Data Objects and related digital twin ecosystems, supporting greater portability, semantic consistency, and cross-domain interoperability.
+One of the project’s key objectives is to develop a catalog of [Smart Data Models](https://smartdatamodels.org/) , with semantics shared with selected IPSO/OMA data objects, to address the specific use cases identified by the cities and the companies collaborating with them. In this way, the convergence of raw device data with the context required by the digital twin will make it easier to enable interoperability across domains—promoting greater portability and semantic consistency—and give manufacturers advance notice of what will be needed: historical data series that are comparable over time and across services and cities, to support data-driven management.
 
 Initial activities will focus on real municipal use cases contributed by participating cities and organizations, including public infrastructure and smart city operational scenarios.
 
