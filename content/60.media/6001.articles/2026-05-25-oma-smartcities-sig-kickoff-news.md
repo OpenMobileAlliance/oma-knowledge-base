@@ -26,9 +26,10 @@ One of the project’s key objectives is to develop a catalog of [Smart Data Mod
 
 Initial activities will focus on real municipal use cases contributed by participating cities and organizations, including public infrastructure and smart city operational scenarios.
 
-“This initiative represents a collaborative effort to better connect municipal operational needs with interoperable technology ecosystems,” said OMA representatives. “By working together with municipalities, academia, open-source communities, and standards organizations, we aim to help create a common understanding that can accelerate practical interoperability across smart city deployments.” “Cities need practical interoperability that can evolve across technologies, standards, and operational domains,” said representatives from the Madrid Digital Office. “This initiative is intended to help municipalities express their operational requirements in a reusable way while enabling collaboration between cities, industry, academia, and standards organizations.”
+“This initiative represents a collaborative effort to better connect municipal operational needs with interoperable technology ecosystems,” said Joaquin Prado, OMA Technical Director. “By working together with municipalities, academia, open-source communities, and standards organizations, we aim to help create a common understanding that can accelerate practical interoperability across smart city deployments.”
+
+“Cities need practical interoperability that can evolve across technologies, standards, and operational domains,” said Juan Muñoz, representative of Madrid Digital Office @ City Council. “This initiative is intended to help municipalities express their operational requirements in a reusable way while enabling collaboration between cities, industry, academia, and standards organizations.”
 
 The Smart Cities SIG initiative will present its initial results, methodology, and lessons learned during the Smart City Expo World Congress 2026 in Barcelona, Spain, taking place November 3–5, 2026.
 
 For more information about OMA initiatives and interoperability programs, visit https://openmobilealliance.org.
-
