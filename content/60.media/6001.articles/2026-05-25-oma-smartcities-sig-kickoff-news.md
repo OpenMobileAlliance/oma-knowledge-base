@@ -11,12 +11,12 @@ tags:
     - blogs
 ---
 
-**San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced its participation in a collaborative Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems. The initiative, led by the Madrid Digital Office team with participation from a growing ecosystem of organizations, has been formally approved for support by the OMA Board of Directors.
+**San Diego, CA, USA — May 2026** — The Open Mobile Alliance (OMA) today announced its participation in a collaborative Smart Cities Special Interest Group (SIG) initiative focused on improving interoperability collaboration between municipalities, industry organizations, academia, and standards ecosystems. The initiative, led by the Madrid Digital Office team with participation from a growing ecosystem of municipalities and private companies, has been formally approved for support by the OMA Board of Directors.
 <!--more-->
 
 The initiative will bring together organizations including Madrid [Digital Office @ City Council](www.madrid.es/digitalcapital) , the [Smart Data Models](https://smartdatamodels.org/) led by the [FiWARE Foundation](https://www.fiware.org/), the [Polytechnic University of Madrid](https://iotmadlab.es/en/), and additional standards and technology organizations such as [AIOTI](https://aioti.eu/cities-5-0/). The objective, is to collaboratively analyze and structure municipal operational requirements in a reusable and interoperable manner.
 
-OMA will contribute technical guidance, interoperability expertise, collaboration infrastructure, and program management support, while the initiative itself is led by the Madrid Digital Office team with participation from a growing ecosystem of organizations.
+OMA will contribute technical guidance, interoperability expertise, collaboration infrastructure, and program management support, while the initiative itself is led by the Madrid Digital Office team with participation from a growing ecosystem of municipalities and private companies.
 
 The Smart Cities SIG is not intended to develop a new standard. Instead, its purpose is to establish a practical methodology for understanding municipal requirements and expressing them in a form that can be interpreted consistently across multiple standards organizations, open ecosystems, and technology platforms.
 
@@ -28,7 +28,7 @@ Initial activities will focus on real municipal use cases contributed by partici
 
 “This initiative represents a collaborative effort to better connect municipal operational needs with interoperable technology ecosystems,” said Joaquin Prado, OMA Technical Director. “By working together with municipalities, academia, open-source communities, and standards organizations, we aim to help create a common understanding that can accelerate practical interoperability across smart city deployments.”
 
-“Cities need practical interoperability that can evolve across technologies, standards, and operational domains,” said Juan Muñoz, representative of Madrid Digital Office @ City Council. “This initiative is intended to help municipalities express their operational requirements in a reusable way while enabling collaboration between cities, industry, academia, and standards organizations.”
+“Cities need practical interoperability that can evolve across technologies, standards, and operational domains,” said Juan J. Muñoz, Technical lead for IoT at Madrid Digital Office. “This initiative is intended to help municipalities express their operational requirements in a reusable way while enabling collaboration between cities, industry, academia, and standards organizations.”
 
 The Smart Cities SIG initiative will present its initial results, methodology, and lessons learned during the Smart City Expo World Congress 2026 in Barcelona, Spain, taking place November 3–5, 2026.
 
