@@ -523,6 +523,4 @@ watch(items,
   },
   { immediate: true }
 )
-
-await updateData()
 </script>
