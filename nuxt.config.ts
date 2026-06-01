@@ -84,8 +84,7 @@ export default defineNuxtConfig({
         '/about/faq/', 
         '/oma-events/past-events', 
         '/about/subscription', 
-        '/media/articles/', 
-        '/specifications/registries/objects/'
+        '/media/articles/',
       ],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,

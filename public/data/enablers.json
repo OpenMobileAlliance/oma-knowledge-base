@@ -5709,6 +5709,12 @@
             "status": "Approved",
             "version": "V2.1",
             "date": "2024-01-23"
+          },
+          {
+            "name": "V3_0-20250414-A",
+            "status": "Approved",
+            "version": "V3.0",
+            "date": "2025-04-14"
           }
         ]
       }
