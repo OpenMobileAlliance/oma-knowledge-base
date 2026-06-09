@@ -146,7 +146,7 @@ const { data: navigation } = useQueryCollectionNavigation('content', 'navigation
 const main = useAppConfig().main
 
 const tabTitle = computed(() => {
-  if (page.value.path === '/' || page.value.path === '/home') {
+  if (!page.value || page.value.path === '/' || page.value.path === '/home') {
     return 'Open Mobile Alliance'
   } else {
     return `OMA • ${page.value.title}`
@@ -154,14 +154,14 @@ const tabTitle = computed(() => {
 })
 
 useHead({
-  title: tabTitle.value,
+  title: tabTitle,
 })
 
 const routeDepth = route.path.split('/').length
 const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0
 
 const contentClass = computed(() => {
-  if (page?.value.layout === 'doc') {
+  if (page.value?.layout === 'doc') {
     return page.value.body?.toc?.links?.length > 0 ? "mr-64" : ""
   } else {
     return ""
@@ -202,6 +202,7 @@ const filterNavigation = (list: Array, path: string) => {
 }
 
 const displayNavigation = computed(() => {
+  if (!page.value) return []
   let res = filterNavigation(navigation.value, page.value.path)
   if (minDepth > 0) {
     let depth = minDepth

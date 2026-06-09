@@ -1,5 +1,5 @@
 <template>
-    <div v-if="visible === true" :class="ui.wrapper">
+    <div v-if="visible" :class="ui.wrapper">
         <div :class="ui.base">
             <div :class="ui.content">
                 <ContentRenderer :value="announcement ?? {}" />
@@ -38,17 +38,12 @@ const { ui, attrs } = useUI(
     config,
 );
 
-const visible = ref(false);
-
 const { data: announcement } = useQueryCollection('content', '/announcement');
 
-if (announcement.value?.meta?.visible === true) {
-    visible.value = true;
-} else {
-    visible.value = false;
-}
+const dismissed = ref(false);
+const visible = computed(() => !dismissed.value && announcement.value?.meta?.visible === true);
 
 const hideAnnouncement = () => {
-    visible.value = false;
+    dismissed.value = true;
 };
 </script>
