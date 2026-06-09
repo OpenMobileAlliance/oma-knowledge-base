@@ -70,6 +70,11 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   compatibilityDate: "2024-08-13",
+  vite: {
+    optimizeDeps: {
+      include: ['xml-js'],
+    },
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
