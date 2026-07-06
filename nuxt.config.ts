@@ -66,9 +66,6 @@ export default defineNuxtConfig({
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
       ],
       script: [
-        // HubSpot tracking code. HubSpot recommends loading it just before the
-        // closing </body> tag, so we use tagPosition: 'bodyClose'.
-        // https://knowledge.hubspot.com/reports/install-the-hubspot-tracking-code
         {
           id: "hs-script-loader",
           type: "text/javascript",
