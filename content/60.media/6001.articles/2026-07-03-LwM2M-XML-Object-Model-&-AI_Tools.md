@@ -1,12 +1,12 @@
 ---
 layout: articles
 urlImage: /images/news/xml-objects-with-ai-tools.jpg
-title:  "AI-Assisted by Design:"
+title: "AI-Assisted by Design:"
 subtitle: "Why LwM2M's XML Object Model Works So Well With Modern AI Tools"
 leftLabel: 2026-July-3
 rightLabel: OMA
 cardID: 245
-tags: 
+tags:
     - news
     - blogs
 ---
