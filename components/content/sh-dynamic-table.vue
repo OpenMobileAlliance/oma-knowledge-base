@@ -1,5 +1,5 @@
 <template>
-  <div :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
+  <div ref="tableRoot" :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
     <div v-if="props.header" :class="ui.header">
       <MDC v-if="props.header" :value="props.header" />
     </div>
@@ -8,11 +8,11 @@
         <div class="flex flex-row gap-2">
           <div class="text-base flex flex-row items-center">
             <span class="pr-2">Show: </span>
-            <select class="" @change="onPerPageChange">
-              <option v-for="item in PER_PAGE_LIST" :key="item" :value="item" :class="{ selected: perPage === item }">
-                {{ item }}
+            <select class="" :value="perPage" @change="onPerPageChange">
+              <option v-for="option in perPageOptions" :key="option.value" :value="option.value"
+                :selected="option.value === perPage">
+                {{ option.label }}
               </option>
-              <option value="-1" key="-1" :class="{ selected: perPage === -1 }">All</option>
             </select>
           </div>
           <div class="pl-4">
@@ -21,7 +21,8 @@
             </button>
           </div>
           <div class="pl-8 grow">
-            <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+            <UInput ref="searchInput" v-model="q" type="text" @keyup="onSearch"
+              placeholder="type a token to search for" />
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@
           </template>
         </UAccordion>
       </div>
-      <div class="w-full overflow-x-auto">
+      <div ref="tableContainer" :class="ui.tableContainer">
         <table :class="[ui.table, 'min-w-full']">
           <thead :calss="ui.thead">
             <tr :ui.tr.base>
@@ -66,11 +67,10 @@
             </tr>
           </thead>
           <tbody :calss="ui.tbody">
-            <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
-              <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
-                <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
+            <template v-for="(row, index) in displayItems" :key="index">
+              <tr :calss="ui.tr.base">
+                <template v-for="(column, cIndex) in props.columns" :key="column.name">
                   <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
-                    :id="`${column.name}-${index}-${Date.now()}`"
                     :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
                   </td>
                 </template>
@@ -84,8 +84,8 @@
           <div class="text-xs">
             {{ infoMessage }}
           </div>
-          <UPagination v-model="page" :page-count="perPage" :total="numberOfItems" :max="10" @click="onPageChange"
-            show-last show-first />
+          <UPagination v-if="perPage !== -1" v-model="page" :page-count="perPage" :total="numberOfItems" :max="10"
+            @click="onPageChange" show-last show-first />
         </div>
       </div>
     </div>
@@ -127,8 +127,9 @@ const props = withDefaults(
     ui?: Partial<typeof config>;
     header?: String;
     footer?: String;
-    perPage?: Number;
+    perPage?: number;
     transformRawData?: any;
+    autofocusSearch?: Boolean;
     class?: Any;
   }>(),
   {
@@ -140,6 +141,7 @@ const props = withDefaults(
     footer: '',
     perPage: config.default.perPage,
     transformRawData: () => null,
+    autofocusSearch: false,
     class: () => undefined
   });
 
@@ -208,6 +210,33 @@ const updateData = async () => {
 }
 
 const infoMessage = toRef("")
+const tableContainer = toRef(null)
+const tableRoot = toRef(null)
+const searchInput = toRef(null)
+
+const goToSearch = () => {
+  nextTick(() => {
+    if (!window.location.hash) {
+      const header = document.querySelector('header')
+      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16
+      const headerBottom = header ? header.getBoundingClientRect().height : 0
+      const top = window.scrollY + tableRoot.value.getBoundingClientRect().top - headerBottom - rem
+
+      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' })
+    }
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      searchInput.value?.input?.focus({ preventScroll: true })
+    }
+  })
+}
+
+const scrollTableToTop = () => {
+  nextTick(() => {
+    if (tableContainer.value) {
+      tableContainer.value.scrollTop = 0
+    }
+  })
+}
 
 const updateDisplayData = () => {
 
@@ -218,29 +247,30 @@ const updateDisplayData = () => {
   stats.value = getStats(filteredData)
 
   numberOfItems.value = filteredData?.length > 0 ? filteredData.length : 0
+  const rows = filteredData || []
 
   if (perPage.value === -1) {
-    for (let index = 0; index < numberOfItems.value; index++) {
-      displayItems.value.push(filteredData[index])
-    }
+    displayItems.value = rows.slice()
 
     infoMessage.value = `Showing ${numberOfItems.value} items`
 
   } else {
-    let startIndex = page.value * perPage.value - perPage.value
-    let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
-
-    infoMessage.value = ""
-    displayItems.value = []
-    nextTick()
-
-    for (let index = startIndex; index < endIndex; index++) {
-      displayItems.value.push(filteredData[index])
+    // Keep the current page inside the available range, otherwise a page-size
+    // change while on a late page slices past the end and renders no rows.
+    const lastPage = Math.max(1, Math.ceil(numberOfItems.value / perPage.value))
+    if (page.value > lastPage) {
+      page.value = lastPage
     }
+
+    const startIndex = (page.value - 1) * perPage.value
+    const endIndex = Math.min(startIndex + perPage.value, numberOfItems.value)
+
+    displayItems.value = rows.slice(startIndex, endIndex)
 
     infoMessage.value = `Showing ${endIndex > 0 ? startIndex + 1 : 0} to ${endIndex} out of ${numberOfItems.value} items`
   }
   nextTick()
+  scrollTableToTop()
 }
 
 const items = toRef([])
@@ -261,6 +291,20 @@ const accordionItems = toRef([
 ])
 const sortColumn = toRef({})
 const sortedFilters = toRef([])
+
+// "Show" options: the configured page sizes plus All (-1). A page can pass any
+// perPage it likes, so add that value to the list when it is not one of them,
+// otherwise the select would have no option to display.
+const perPageOptions = computed(() => {
+  const sizes = perPage.value === -1 || PER_PAGE_LIST.includes(perPage.value)
+    ? [...PER_PAGE_LIST]
+    : [...PER_PAGE_LIST, perPage.value].sort((l, r) => l - r)
+
+  return [
+    ...sizes.map(size => ({ value: size, label: `${size}` })),
+    { value: -1, label: 'All' }
+  ]
+})
 
 const sortFilters = () => {
   sortedFilters.value = []
@@ -324,8 +368,10 @@ const filterDataByQuickFilter = (data) => {
 }
 
 const sortDisplayData = (data) => {
-  if (Object.keys(sortColumn).length > 0) {
-    return (data && typeof data.sort === 'function') ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
+  if (Object.keys(sortColumn.value).length > 0) {
+    // Sort a copy: with no query and no quick filter active the filters return
+    // the source array itself, and sort() would reorder it in place.
+    return (data && typeof data.sort === 'function') ? [...data].sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
   } else {
     return data
   }
@@ -512,8 +558,12 @@ const onPerPageChange = (e) => {
   }
 }
 
-onMounted(() => {
-  updateData()
+onMounted(async () => {
+  await updateData()
+
+  if (props.autofocusSearch) {
+    goToSearch()
+  }
 })
 
 watch(items,
