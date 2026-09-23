@@ -33,4 +33,5 @@ direction: vertical
     🏙️ OMA Conformance Tool • [Apply for Early Access](/specifications/resources/lwm2m-client-conformance-tool){ .hover:cursor-pointer } • Validate your Smart City implementation against official OMA conformance test cases •
   </div>
   :::
+
 ::
