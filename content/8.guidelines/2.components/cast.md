@@ -4,6 +4,32 @@ description: Meet the full cast of components, one line each on who they are and
 layout: web
 ---
 
+This page is a single-scroll reference to every component in the design system: what each one is for, its props/defaults/enum values, and a link to its full documentation page. Use it to quickly pick the right component for a given piece of content — human authors writing MDC by hand and AI assistants generating page content can both work from this page alone for component selection and prop names, then follow the linked page for a complete worked example before writing the final block.
+
+## How to use any component
+
+Every component below is an MDC (Markdown Components) block with the same shape:
+
+```mdc
+::ComponentName
+---
+propOne: value
+propTwo: value
+ui:
+  wrapper: extra-tailwind-classes
+---
+Optional slot content goes here, below the closing `---`. It supports Markdown
+(links, emphasis, etc.) and can contain other components nested the same way.
+::
+```
+
+- **Opening/closing tags**: `::ComponentName` opens the block, a lone `::` on its own line closes it.
+- **Props**: written as YAML between the two `---` lines. Use the prop names, defaults, and allowed enum values listed in the Technical Description column below.
+- **Slot content**: anything after the second `---` fills the component's default slot. Some components take their body text via a prop instead (e.g. `text` on `ShActionCard`); others expect it as slot content (e.g. `ShBadge`, `ShSegment`) — check the component's own page for which applies.
+- **`ui` prop**: nearly every component accepts a `ui` object to override specific Tailwind classes on named parts (`wrapper`, `title`, `icon`, etc.); the parts available are listed per component below.
+- **Nesting**: components can be nested inside another component's slot content (e.g. `ShMicroCard` inside `ShCarousel` or `ShSegment`, `ShColumn`/`ShTwoColumns` inside `ShMultiColumn`). Some have explicit nesting rules — e.g. `ShMultiColumn` must not be nested inside another `ShMultiColumn`.
+- **Exact syntax**: each component's linked page has a full worked example (`::ComponentName ... ::`) — follow that page's example rather than guessing prop formatting, especially for multi-line YAML strings (`|`) or nested `ui` objects.
+
 | Component | Description | Technical Description |
 | --- | --- | --- |
 | [`ShActionCard`](/guidelines/components/sh-action-card) | Lets visitors submit their email to sign up for a newsletter or subscription. | Props: `urlImage`/`altImage`, `title`, `subtitle`, `text`, `icon`/`altIcon`, `imageBackground`, `urlButton`, `labelButton`, `colorButton` (default `black`), `styleButton` (default `solid`; outline/soft/solid/link/ghost). `ui` exposes `wrapper`, `image`, `title`, `subtitle`, `text`, `button`, `icon`, styled by default as a Tailwind grid in `ShActionCard.ts`. |
