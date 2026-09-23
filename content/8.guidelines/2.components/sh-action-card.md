@@ -173,6 +173,12 @@ The <b>{{ $doc.constructorName }}</b> constructor allows for clients and custome
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>
+    <tr>
+      <td><code>imageBackground</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Sets a background image on the card via inline CSS background-image.</td>
+    </tr>
   </tbody>
 </table>
 
