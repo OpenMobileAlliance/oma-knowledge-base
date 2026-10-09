@@ -32,9 +32,9 @@ export default defineNuxtConfig({
     },
     build: {
       markdown: {
-        // Include h1-h6 in the generated table of contents (default is h2-h3)
+        // Table of contents lists h2 only (1 = h2, 2 = h2-h3, up to 5 = h2-h6)
         toc: {
-          depth: 6,
+          depth: 1,
           searchDepth: 6,
         },
       },
