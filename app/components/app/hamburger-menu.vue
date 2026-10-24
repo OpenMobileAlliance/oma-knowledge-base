@@ -20,8 +20,8 @@
                                 </button>
                             </div>
                         </div>
-                        <hr class="flex md:hidden border-golden/35 mt-5 mb-2 w-[95%] mx-auto">
-                        <AppBreadcrumbs class="flex md:hidden" />
+                        <hr class="border-golden/35 mt-5 mb-2 w-[95%] mx-auto">
+                        <AppBreadcrumbs />
                     </template>
 
                     <div class="h-full overscroll-contain overflow-y-auto max-h-[calc(100vh-8rem)]">

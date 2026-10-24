@@ -13,7 +13,6 @@
         </div>
         <div :class="ui.center">
           <AppMenus :class="ui.menus" />
-          <AppBreadcrumbs :class="ui.breadcrumbs" class="hidden md:flex 2xl:hidden" />
         </div>
         <div :class="ui.right">
           <AppSocialLinks :class="ui.socialLinks" />

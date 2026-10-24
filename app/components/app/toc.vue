@@ -29,16 +29,5 @@ const ui = {
 
 const { visible } = useActiveHeading()
 
-// Flatten the nested toc (h1-h6) into a list, keeping each link's nesting depth for indentation
-const flatLinks = computed(() => {
-  const result: { id: string, text: string, depth: number }[] = []
-  const walk = (links: any[] = [], depth = 0) => {
-    for (const link of links) {
-      result.push({ id: link.id, text: link.text, depth })
-      walk(link.children, depth + 1)
-    }
-  }
-  walk(props.page?.body?.toc?.links)
-  return result
-})
+const flatLinks = useTocLinks(() => props.page)
 </script>
