@@ -22,6 +22,10 @@
             <PrevNextPage v-if="route.path !== '/'" />
           </section>
 
+          <!-- Mobile floating buttons: stand in for the two rails, which are hidden below lg -->
+          <AppPageMenu v-if="displayNavigation.length > 0" :items="displayNavigation" />
+          <AppPageContents v-if="(page.body?.toc?.links?.length ?? 0) > 0" :page="page" />
+
           <!-- Table of Contents and Useful Links -->
           <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 max-h-[calc(100vh-12rem)] overflow-y-auto overflow-x-hidden lg:-ml-10 xl:-ml-14">
             <AppToc :page="page" />
