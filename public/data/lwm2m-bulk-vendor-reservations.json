@@ -334,5 +334,9 @@
      {
         "ObjectIDRange": "36700 - 36749", 
         "CompanyName": "Decentlab GmbH"
+     },
+     {
+        "ObjectIDRange": "36750 - 36799", 
+        "CompanyName": "Flow-Tronic"
      }
 ]
