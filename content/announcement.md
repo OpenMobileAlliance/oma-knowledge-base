@@ -18,7 +18,7 @@ direction: vertical
   <div class="flex items-center gap-3 sm:gap-8 px-2 sm:px-5">
     <img src="/logo.png" width="40" height="40" class="hidden sm:block" />
 
-    • Meet OMA at [Smart City Expo World Congress](/oma-events/sce-2026){ .hover:cursor-pointer } • Barcelona • 3–5 November 2026 • Hall 3, Street F, Stand 90 • <br> • Live LwM2M demos • [Water 2.0 panel](/oma-events/sce-2026#water-20-panel){ .hover:cursor-pointer } • [Smart City SIG sessions](/oma-events/sce-2026#smart-city-sig-sessions){ .hover:cursor-pointer } •
+    • Thank you for joining OMA at [Smart City Expo World Congress](/oma-events/sce-2026){ .hover:cursor-pointer } • <span class="hidden sm:inline">Barcelona • 3–5 November 2026 •</span> <br> • Read the [event recap](/oma-events/sce-2026){ .hover:cursor-pointer } • [Water 2.0 panel](/oma-events/sce-2026#water-20-panel){ .hover:cursor-pointer } • [Smart City SIG sessions](/oma-events/sce-2026#smart-city-sig-sessions){ .hover:cursor-pointer } •
   </div>
   :::
 
